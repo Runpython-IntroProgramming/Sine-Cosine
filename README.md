@@ -1,7 +1,7 @@
 # Sine-Cosine
 
 In this assignment you must use *list comprehensions* to generate sprites that show the behavior
-of certain mathematical functions: **sine** and **cosine**. See the references at the end for a 
+of certain mathematical functions: **sine** and **cosine**. See the [references](References) at the end for a 
 tutorial that introduces this technique.
 
 Fork this repository and create your program in the ```sinecosine.py``` file.
@@ -38,7 +38,7 @@ in blue and red, and a circle of circles in purple.
 
 Submit your work in the usual way.
 
-See:
+## References
 * [General information on using ggame](https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/TUTORIAL:-Displaying-Graphics)
 * [General information on using list comprehensions with graphics]
   (https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/TUTORIAL:-Programmed-Graphics)
