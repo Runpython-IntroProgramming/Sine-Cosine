@@ -1,7 +1,7 @@
 # Sine-Cosine
 
 In this assignment you must use *list comprehensions* to generate sprites that show the behavior
-of certain mathematical functions: **sine** and **cosine**. See the [references](References) at the end for a 
+of certain mathematical functions: **sine** and **cosine**. See the [references](# References) at the end for a 
 tutorial that introduces this technique.
 
 Fork this repository and create your program in the ```sinecosine.py``` file.
