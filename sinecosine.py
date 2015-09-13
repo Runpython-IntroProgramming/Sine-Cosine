@@ -20,10 +20,10 @@ See:
 https://github.com/HHS-IntroProgramming/Sine-Cosine/blob/master/README.md
 for a detailed list of requirements for this assignment.
 
-https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/TUTORIAL:-Displaying-Graphics
+https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Displaying-Graphics
 for general information on how to use ggame.
 
-https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/TUTORIAL:-Programmed-Graphics
+https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Programmed-Graphics
 for general information on using list comprehensions to generate graphics.
 
 http://brythonserver.github.io/ggame/
