@@ -1,4 +1,4 @@
-# Sine-Cosine
+# Plotting Sine and Cosine
 
 In this assignment you must use *list comprehensions* to generate sprites that show the behavior
 of certain mathematical functions: **sine** and **cosine**. See the [references](#references) at the end for a 
