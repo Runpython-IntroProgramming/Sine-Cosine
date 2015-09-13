@@ -19,7 +19,7 @@ Your program must:
 1. Import the necessary names (e.g. CircleAsset, App, etc.) from the  ```ggame``` library.
 2. Import ```sin```, ```cos```, and ```radians``` names from the ```math``` library.
 3. Using the technique in the [last tutorial]
-  (https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/TUTORIAL:-Programmed-Graphics),
+  (https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Programmed-Graphics),
   generate a series of blue circles, a series of red circles, and a series of **purple** circles, such
   that:
 4. The x-coordinates of the blue and red circles will vary between 0 and 360, in steps of 10.
@@ -39,7 +39,7 @@ in blue and red, and a circle of circles in purple.
 Submit your work in the usual way.
 
 ## References
-* [General information on using ggame](https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/TUTORIAL:-Displaying-Graphics)
+* [General information on using ggame](https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Displaying-Graphics)
 * [General information on using list comprehensions with graphics]
-  (https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/TUTORIAL:-Programmed-Graphics)
+  (https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Programmed-Graphics)
 * [Detailed information on ggame](http://brythonserver.github.io/ggame/)
