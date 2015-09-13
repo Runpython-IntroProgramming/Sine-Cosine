@@ -17,6 +17,9 @@ in. You should use your submission for the Picture assignment
 (https://github.com/HHS-IntroProgramming/Picture) as a reference for starting this assignment. 
 
 See:
+https://github.com/HHS-IntroProgramming/Sine-Cosine/blob/master/README.md
+for a detailed list of requirements for this assignment.
+
 https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/TUTORIAL:-Displaying-Graphics
 for general information on how to use ggame.
 
@@ -26,3 +29,4 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
+
