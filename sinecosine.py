@@ -1,6 +1,6 @@
 """
 sinecosine.py
-Author: <your name here>
+Author: Adam Pikielny
 Credit: <list sources used, if any>
 
 Assignment:
@@ -30,3 +30,5 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+import math
+from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
