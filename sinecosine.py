@@ -32,9 +32,12 @@ for detailed information on ggame.
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 from math import sin, cos, radians
-red=(0x0066FF)
-blue=(0xCC0000)
-purple=(0x6600FF)
-
+red=Color(0x0066FF)
+blue=Color(0xCC0000)
+purple=Color(0x6600FF)
+linea=LineStyle(1,blue)
+blucir=CircleAsset(20,linea,blue)
+bxcor=range(100,600,10)
+sprites=[Sprite(blucir,(x,x*0.5+100)) for x in bxcor]
 myapp = App()
 myapp.run()
