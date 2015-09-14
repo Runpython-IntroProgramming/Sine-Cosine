@@ -24,13 +24,13 @@ Your program must:
   that:
 4. The x-coordinates of the blue and red circles will vary between 0 and 360, in steps of 10.
 5. The y-coordinates of the **blue** circles will be calculated using: 
-  ```100+100*math.sin(math.radians(x)))```, where x values come from the x-coordinates in step 4.
+  ```100+100*sin(radians(x)))```, where x values come from the x-coordinates in step 4.
 6. The y-coordinates of the **red** circles will be calculated using:
-  ```100+100*math.cos(math.radians(x)))```, where x values come from the x-coordinates in step 4.
+  ```100+100*cos(radians(x)))```, where x values come from the x-coordinates in step 4.
 7. The x-coordinates of the **purple** circles will be calculated using:
-  ```100+100*math.cos(math.radians(x))```, where x values come from the x-coordinates in step 4.
+  ```100+100*cos(radians(x))```, where x values come from the x-coordinates in step 4.
 8. The y-coordinates of the **purple** circles will be calculated using:
-  ```400+100*math.sin(math.radians(x))```, where x values come from the x-coordinates in step 4.
+  ```400+100*sin(radians(x))```, where x values come from the x-coordinates in step 4.
 
 The final result should look like [sine and cosine curves]
 (https://www.google.com/search?q=sine+and+cosine+curves&rlz=1CAZZAD_enUS644US644&espv=2&biw=1280&bih=715&tbm=isch&tbo=u&source=univ&sa=X&ved=0CCoQsARqFQoTCOfPrMn48scCFYqXgAodHWIAUg)
