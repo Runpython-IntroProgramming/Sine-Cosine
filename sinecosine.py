@@ -42,9 +42,10 @@ blucir=CircleAsset(20,linea,blue)
 redcir=CircleAsset(20,lineb,red)
 purcir=CircleAsset(20,linec,purple)
 brxcor=range(0,360,10)
-pxcor=
-
-
+pxcor=100+100*cos(radians(brxcor))
+bycor=100+100*sin(radians(brxcor)))
+rycor=100+100*cos(radians(brxcor)))
+pycor=400+100*sin(radians(brxcor))
 Sprite(blucir,(brxcor,bycor))
 Sprite(redcir,(brxcor,bycor))
 Sprite(purcir,(pxcor,pycor))
