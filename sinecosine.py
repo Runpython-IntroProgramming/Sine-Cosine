@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: <your name here>
-Credit: <list sources used, if any>
+Credit: http://www.w3schools.com/tags/ref_colorpicker.asp
 
 Assignment:
 
@@ -31,8 +31,10 @@ for detailed information on ggame.
 """
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
-
-
+from math import sin, cos, radians
+red=(0x
+blue=(0x
+purple=(0x
 
 myapp = App()
 myapp.run()
