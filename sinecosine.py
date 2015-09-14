@@ -45,7 +45,6 @@ xcoordinates = range(100, 600, 10)
 
 # Generate a list of sprites that form a line!
 sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
-Sprite(rectangle, (50,30))
 
 
 # add your code here /\  /\  /\
