@@ -41,8 +41,8 @@ purple = Color(0x7D26CD, 1.0)
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
-myredcircle = CircleAsset(5,thinline, red)
-mypurplecircle = CircleAsset(5,thinline, purple)
+myredcircle = CircleAsset(5, thinline, red)
+mypurplecircle = CircleAsset(5, thinline, purple)
 xcoordinates = range(0, 360, 10)
 
 # Generate a list of sprites that form a line!
