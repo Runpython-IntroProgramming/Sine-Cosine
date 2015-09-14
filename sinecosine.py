@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Adam Pikielny
-Credit: <list sources used, if any>
+Credit: Roger, Python Math Library Website
 
 Assignment:
 
