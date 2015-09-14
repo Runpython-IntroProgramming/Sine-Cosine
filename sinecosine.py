@@ -42,9 +42,9 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(100, 600, 10)
-
+ycoordinates = 100+100*sin(radians(x)))
 # Generate a list of sprites that form a line!
-sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
+sprites = [Sprite(mycircle, (x, y)) for x in xcoordinates for y in ycoordinates]
 
 
 # add your code here /\  /\  /\
