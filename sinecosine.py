@@ -32,9 +32,9 @@ for detailed information on ggame.
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 from math import sin, cos, radians
-red=(0x
-blue=(0x
-purple=(0x
+red=(0x0066FF)
+blue=(0xCC0000)
+purple=(0x6600FF)
 
 myapp = App()
 myapp.run()
