@@ -33,7 +33,7 @@ for detailed information on ggame.
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 from math import sin, cos, radians
 red=Color(0x0066FF,0.75)
-blue=Color(0xCC00000,0.75)
+blue=Color(0x0033CC,0.75)
 purple=Color(0x6600FF,0.75)
 linea=LineStyle(1,blue)
 blucir=CircleAsset(20,linea,blue)
