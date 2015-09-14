@@ -44,7 +44,7 @@ mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(100, 600, 10)
 ycoordinates = range(100+100*sin(radians(x)))
 # Generate a list of sprites that form a line!
-sprites = [Sprite(mycircle, (x, y)) for x in xcoordinates for y in ycoordinates]
+sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
 
 
 # add your code here /\  /\  /\
