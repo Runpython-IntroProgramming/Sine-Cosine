@@ -38,6 +38,6 @@ purple=Color(0x6600FF,0.75)
 linea=LineStyle(1,blue)
 blucir=CircleAsset(20,linea,blue)
 brxcor=range(0,360,10)
-Sprite
+Sprite(blucir,(brxcor,bycor))
 myapp = App()
 myapp.run()
