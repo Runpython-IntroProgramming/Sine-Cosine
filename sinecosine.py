@@ -46,8 +46,8 @@ pxcor=100+100*cos(radians(brxcor))
 bycor=100+100*sin(radians(brxcor))
 rycor=100+100*cos(radians(brxcor))
 pycor=400+100*sin(radians(brxcor))
-sprites=[Sprite(blucir,((x, x*1)) for x in brxcor),((x, x*1)) for x in bycor)]
-sprites=[Sprite(redcir,((x, x*1)) for x in brxcor),((x, x*1)) for x in rycor)]
-sprites=[Sprite(purcir,((x, x*1)) for x in pxcor),((x, x*1)) for x in pycor)]
+sprites=[Sprite(blucir,(x, x*1)) for x in brxcor,(x, x*1) for x in bycor]
+sprites=[Sprite(redcir,(x, x*1)) for x in brxcor,(x, x*1) for x in rycor]
+sprites=[Sprite(purcir,(x, x*1)) for x in pxcor,(x, x*1) for x in pycor]
 myapp = App()
 myapp.run()
