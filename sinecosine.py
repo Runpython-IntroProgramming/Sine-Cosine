@@ -1,6 +1,6 @@
 """
 sinecosine.py
-Author: <your name here>
+Author: Milo Wilcox
 Credit: http://www.w3schools.com/tags/ref_colorpicker.asp
 
 Assignment:
