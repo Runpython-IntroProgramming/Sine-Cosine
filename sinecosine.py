@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Milo Wilcox
+Credit: http://www.w3schools.com/tags/ref_colorpicker.asp
 
 Assignment:
 
@@ -30,3 +30,24 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
+from math import sin, cos, radians
+red=Color(0x0066FF,0.75)
+blue=Color(0x0033CC,0.75)
+purple=Color(0x6600FF,0.75)
+linea=LineStyle(1,blue)
+lineb=LineStyle(1,red)
+linec=LineStyle(1,blue)
+blucir=CircleAsset(5,linea,blue)
+redcir=CircleAsset(5,lineb,red)
+purcir=CircleAsset(5,linec,purple)
+brxcor=range(0,360,10)
+fpxcor=lambda x: 100+100*cos(radians(x))
+fbycor=lambda x: 100+100*sin(radians(x))
+frycor=lambda x: 100+100*cos(radians(x))
+fpycor=lambda x: 400+100*sin(radians(x))
+sprites=[Sprite(blucir,(x, fbycor(x))) for x in brxcor]
+sprites=[Sprite(redcir,(x, frycor(x))) for x in brxcor]
+sprites=[Sprite(purcir,(100+100*cos(radians(x)), fpycor(x))) for x in brxcor]
+myapp=App()
+myapp.run()
