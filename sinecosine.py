@@ -48,6 +48,6 @@ frycor=lambda x: 100+100*cos(radians(x))
 fpycor=lambda x: 400+100*sin(radians(x))
 sprites=[Sprite(blucir,(x, fbycor(x))) for x in brxcor]
 sprites=[Sprite(redcir,(x, frycor(x))) for x in brxcor]
-sprites=[Sprite(purcir,(x, fpycor(x))) for x in brxcor]
+sprites=[Sprite(purcir,(100+100*cos(radians(x)), fpycor(x))) for x in brxcor]
 myapp=App()
 myapp.run()
