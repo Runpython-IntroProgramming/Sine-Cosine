@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: James Napier
+Credit: http://www.discoveryplayground.com/computer-programming-for-kids/rgb-colors/
 
 Assignment:
 
@@ -30,3 +30,26 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+from ggame import App, Color, CircleAsset, LineStyle, Sprite
+
+blue=Color(0x0000ff, 1.0)
+red=Color(0xff0000, 1.0)
+purple=Color(0xa020f0, 1.00)
+black=Color(0x000000, 1.0)
+
+thinline=LineStyle(1, black)
+mycircle=CircleAsset(5, thinline, blue)
+mycircle2=CircleAsset(5, thinline, red)
+mycircle3=CircleAsset(5, thinline, purple)
+
+xcoordinates=range(0, 360, 10)
+ycoordinates=100+100*math.sins(radians(x))
+y2coordinates=100+100*math.cos(radians(x))
+x2coordinates=100+100*math.cos(radians(x))
+y3coordinates=400+100*math.sin(radians(x))
+
+sprites=[Sprite(mycircle, (x, y*100+100))for x in xcoordinates]
+sprites=[Sprite(mycircle2, (x, y2*100+100))for x in xcoordinates]
+sprites=[Sprite(mycircle3, (x2, y3*100+100))for x in xcoordinates]
+myapp=App()
+myapp.run()
