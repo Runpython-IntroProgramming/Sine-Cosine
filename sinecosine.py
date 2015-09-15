@@ -49,5 +49,5 @@ pycor=400+100*sin(radians(brxcor))
 sprites=[Sprite(blucir,(x, x*1)) for x in brxcor,(x, x*1) for x in bycor]
 sprites=[Sprite(redcir,(x, x*1)) for x in brxcor,(x, x*1) for x in rycor]
 sprites=[Sprite(purcir,(x, x*1)) for x in pxcor,(x, x*1) for x in pycor]
-myapp = App()
+myapp=App()
 myapp.run()
