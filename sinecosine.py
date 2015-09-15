@@ -30,7 +30,7 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
-
+from math import sin, cos, radians
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -39,7 +39,10 @@ black = Color(0x000000, 1.0)
 aqua = Color(0x00ffff, .70)
 
 thinline = LineStyle(1, black)
+mycircle = CircleAsset(5, thinline, blue)
+xcoordinates = range(0, 360, 10)
 
+sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x))))) for x in xcoordinates]
 
 
 
