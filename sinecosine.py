@@ -44,7 +44,7 @@ pcircle = CircleAsset(5, thinline, purple)
 
 xcoords = range(0, 360, 10)
 
-sineline = [Sprite(sincircle, (x, (100+100*sin(radians(x))))) for x in xcoords]
+sinline = [Sprite(sincircle, (x, (100+100*sin(radians(x))))) for x in xcoords]
 
 
 
