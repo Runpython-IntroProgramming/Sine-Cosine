@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Jeff
+Credit: None
 
 Assignment:
 
@@ -29,4 +29,7 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
+import math
+from ggame import App, Color, LineStyle, Sprite
+from ggame import RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 
