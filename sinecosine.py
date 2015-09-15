@@ -41,10 +41,12 @@ aqua = Color(0x00ffff, .70)
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(0, 360, 10)
+sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 
-sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x))))) for x in xcoordinates]
+mycircle2 = CircleAsset(5, thinline, red)
+sprites2 = [Sprite(mycircle2, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
 
-
+mycircle3 = CircleAsset(5, thinkline
 
 
 
