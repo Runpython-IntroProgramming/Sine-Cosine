@@ -46,7 +46,8 @@ sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 mycircle2 = CircleAsset(5, thinline, red)
 sprites2 = [Sprite(mycircle2, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
 
-mycircle3 = CircleAsset(5, thinline, purple
+mycircle3 = CircleAsset(5, thinline, purple)
+sprites3 = [Sprite(my circle2, (100+100*cos(radians(x)), 400+100*sin(radians(x))
 
 
 
