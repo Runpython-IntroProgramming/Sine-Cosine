@@ -38,11 +38,13 @@ green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
-thinline=LineStyle(5,red)
+thinline=LineStyle(1,red)
 
-circle=CircleAsset(10, thinline, blue)
+circle=CircleAsset(5, thinline, blue)
+xcoordinates = range(100, 600, 5)
 
-sprite(
+sprites = [Sprite(circle, (x, 50*sin(10*x)+100)) for x in xcoordinates]
+sprites = [Sprite(circle, (x, 50*cos(10*x)+100)) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
