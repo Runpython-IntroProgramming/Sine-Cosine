@@ -1,9 +1,9 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Suhan Gui
+Credit: None
 
-Assignment:
+Assignment: Sin & Cos
 
 In this assignment you must use *list comprehensions* to generate sprites that show the behavior
 of certain mathematical functions: sine and cosine. 
@@ -31,13 +31,18 @@ for detailed information on ggame.
 """
 from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
-import math
+from math import sin, cos, radians
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
+thinline=LineStyle(5,red)
+
+circle=CircleAsset(10, thinline, blue)
+
+sprite(
 
 myapp = App()
 myapp.run()
