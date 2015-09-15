@@ -43,12 +43,12 @@ purple = Color(0xff00ff, 1.0)
 thinline = LineStyle(0, black)
 
 xcord = range(0, 360, 10)
-dot1 = CircleAsset(5, thinline, red)
-dot2 = CircleAsset(5, thinline, blue)
-dot3 = CircleAsset(5, thinline, purple)
+dot1 = CircleAsset(4, thinline, red)
+dot2 = CircleAsset(4, thinline, blue)
+dot3 = CircleAsset(4, thinline, purple)
 
-sprites = [Sprite(dot1, (x, 100+100*cos(radians(x))) for x in xcord]
-sprites1 = [Sprite(dot2, (x, 100+100*sin(radians(x))) for x in xcord]
-sprites2 = [Sprite(dot3, ((100+100*cos(radians(x))), 400+100*sin(radians(x))) for x in xcord]
+sprites = [Sprite(dot1, (x, 100+100*cos(radians(x))))for x in xcord]
+sprites1 = [Sprite(dot2, (x, 100+100*sin(radians(x)))) for x in xcord]
+sprites2 = [Sprite(dot3, ((100+100*cos(radians(x))), 400+100*sin(radians(x)))) for x in xcord]
 myapp = App()
 myapp.run()
