@@ -36,7 +36,7 @@ red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
-aqua = Color(0x00ffff, .70)
+purple = Color(0xA020F0, 1.0)
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
@@ -46,7 +46,7 @@ sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 mycircle2 = CircleAsset(5, thinline, red)
 sprites2 = [Sprite(mycircle2, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
 
-mycircle3 = CircleAsset(5, thinkline
+mycircle3 = CircleAsset(5, thinline, purple
 
 
 
