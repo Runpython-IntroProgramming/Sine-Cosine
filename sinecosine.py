@@ -50,7 +50,7 @@ y3coordinates=400+100*sin(radians(x))
 
 sprites=[Sprite(mycircle, (x, y*100+100))for x in xcoordinates]
 sprites=[Sprite(mycircle2, (x, y2*100+100))for x in xcoordinates]
-sprites=[Sprite(mycircle3, (x2, y3*100+100))for x in xcoordinates]
+sprites=[Sprite(mycircle3, (x2, y3*400+100))for x in xcoordinates]
 
 #ask milo about cos, sin, radians and importing
 myapp=App()
