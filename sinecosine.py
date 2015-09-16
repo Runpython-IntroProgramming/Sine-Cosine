@@ -42,18 +42,19 @@ purple= Color(0x660066, 1.0)
 thinline=LineStyle(1,black)
 
 bluecircle=CircleAsset(5,thinline, blue)
-xcoordinates = range(200, 200, 10)
-ycoordinates= (100+100*sin(radians(x))) for x in xcoordinates
-sprites = [Sprite(bluecircle, (x, 100+100*sin(x)) for x in xcoordinates]
+xcoordinates = range(300, 10)
+sprites = [Sprite(bluecircle, (x,100*sin(x)) for x in xcoordinates]
+ycoordinates= range(100+100*sin(radians(x)),10)
 
 redcircle=CircleAsset(5, thinline, red)
-xcoordinates = range(200, 200, 10)
-ycoordinates= 100+100*cos(radians(x)))
+xcoordinates = range(300, 10)
 sprites = [Sprite(redcircle, (x, 50*sin(10*x)+100)) for x in xcoordinates]
+ycoordinates= range(100+100*cos(radians(x)), 10)
 
 purplecircle=CircleAsset(5, thinline, purple)
-xcoordinates= 100+100*cos(radians(x))
-ycoordinates= 400+100*sin(radians(x))
+xcoordinates= range(100+100*cos(radians(x)),10)
+sprites = [Sprite(purplecircle, (x, 50*sin(10*x)+100)) for x in xcoordinates]
+ycoordinates= range(400+100*sin(radians(x)),10)
 
 myapp = App()
 myapp.run()
