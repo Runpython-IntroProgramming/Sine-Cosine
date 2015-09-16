@@ -31,7 +31,7 @@ for detailed information on ggame.
 """
 
 from ggame import App, Color, CircleAsset, LineStyle, Sprite
-from math import Sine, Cosine, Radians
+from math import sin, cos, radians
 blue=Color(0x0000ff, 1.0)
 red=Color(0xff0000, 1.0)
 purple=Color(0xa020f0, 1.00)
@@ -43,10 +43,10 @@ mycircle2=CircleAsset(5, thinline, red)
 mycircle3=CircleAsset(5, thinline, purple)
 
 xcoordinates=range(0, 360, 10)
-ycoordinates=100+100*sin(Radians(x))
-y2coordinates=100+100*cos(Radians(x))
-x2coordinates=100+100*cos(Radians(x))
-y3coordinates=400+100*sin(Radians(x))
+ycoordinates=100+100*sin(radians(x))
+y2coordinates=100+100*cos(radians(x))
+x2coordinates=100+100*cos(radians(x))
+y3coordinates=400+100*sin(radians(x))
 
 sprites=[Sprite(mycircle, (x, y*100+100))for x in xcoordinates]
 sprites=[Sprite(mycircle2, (x, y2*100+100))for x in xcoordinates]
