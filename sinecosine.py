@@ -46,8 +46,7 @@ xcoords = range(0, 360, 10)
 
 sinline = [Sprite(sincircle, (x, (100+100*sin(radians(x))))) for x in xcoords]
 cosline = [Sprite(coscircle, (x, (100+100*cos(radians(x))))) for x in xcoords]
-xvaluecircle = [(100+100*cos(radians(x))) for x in xcoords]
-circle = [Sprite(pcircle, (x, (400+100*sin(radians(x))))) for x in xcoords]
+circle = [Sprite(pcircle, ((100+100*cos(radians(x))), (400+100*sin(radians(x))))) for x in xcoords]
 
 myapp = App()
 myapp.run()
