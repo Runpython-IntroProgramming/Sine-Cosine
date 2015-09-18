@@ -43,3 +43,6 @@ circle2= CircleAsset(10, thinline, red)
 circle3= CircleAsset(10, thinline, purple)
 
 Sprite = (circle1)
+
+myapp = App()
+myapp.run()
