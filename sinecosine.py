@@ -38,11 +38,14 @@ purple = Color(0xff00ff, 1.0)
 black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 
-circle1= CircleAsset(50, thinline, blue)
+circle1= CircleAsset(10, thinline, blue)
 circle2= CircleAsset(10, thinline, red)
 circle3= CircleAsset(10, thinline, purple)
+Sprite(circle3, (470, 250))
 
-Sprite = (circle1)
+Sprite(circle1, (444, 444))
+Sprite(circle2, (111, 111))
+Sprite(circle3, (666,666))
 
 myapp = App()
 myapp.run()
