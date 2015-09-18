@@ -41,6 +41,8 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(100, 600, 10)
+mycircle = CircleAsset(5, thinline, red)
+xcoordinates = range(100, 600, 10)
 
 myapp = App()
 myapp.run()
