@@ -47,11 +47,11 @@ redcircle = CircleAsset(2, thinline, red)
 pcircle = CircleAsset(2, thinline, purple)
 xcoordinates = range(100, 360, 10)
 redcoordinates = range(100, 360, 10)
-purplecoordinates = range(100, 360, 10)
+purplecoordinates = range(100, 600, 10)
 
 sprites = [Sprite(mycircle, (x,100+100*sin(radians(x)))) for x in xcoordinates]
 sprites = [Sprite(redcircle, (x,100+100*cos(radians(x)))) for x in xcoordinates]
-sprites = [Sprite(pcircle, (100+100*sin(radians(x)),100+100*cos(radians(x)))) for x in xcoordinates]
+sprites = [Sprite(pcircle, (400+100*sin(radians(x)),100+100*cos(radians(x)))) for x in xcoordinates]
 
 
 myapp = App()
