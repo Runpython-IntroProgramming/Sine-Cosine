@@ -70,8 +70,9 @@ ycoordinatespurple = 400+100*sin(radians(x))
 
 
 # Generate a list of sprites that form a line!
-Sprite = (mycircle, (xcoordinatesblue , ycoordinatesblue)
-Sprite = 
+Sprite = (bluecircle, (xcoordinatesblue , ycoordinatesblue))
+Sprite = (redcircle, (xcoordinatesred, ycoordinatesred))
+Sprite = (purplecircle, (xcoordinatespurple, ycoordinatespurple))
 
 
 
