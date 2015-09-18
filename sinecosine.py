@@ -33,9 +33,9 @@ for detailed information on ggame.
 
 from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
-from ggame import SquareAsset
-from ggame import PolygonAsset
-from ggame import EllipseAsset
+#from ggame import SquareAsset
+#from ggame import PolygonAsset
+#from ggame import EllipseAsset
 from ggame import sin
 from ggame import cos
 from ggame import radians
