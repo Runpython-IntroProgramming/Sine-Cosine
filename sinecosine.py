@@ -51,9 +51,9 @@ sprites = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates
 
 purplecircle=CircleAsset(5, thinline, purple)
 xcoordinates= range(0,100,10)
-sprites = [Sprite(purplecircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
-xcoordinates=range(0,300,10)
-sprites= [Sprite(purplecircle, (x, 400+100*sin(radians(x)))) for x in ycoordinates]
+ycoordinates=range(0,300,10)
+sprites= [Sprite(purplecircle, (x, ((cos(radians(x))**2+(sin(radians(x))**2))))) for x in xcoordinates]
+
 
 myapp = App()
 myapp.run()
