@@ -43,7 +43,10 @@ circle2= CircleAsset(10, thinline, red)
 circle3= CircleAsset(10, thinline, purple)
 Sprite(circle3, (470, 250))
 
-Sprite(circle1, (444, 444))
+list(range(0, 360, 10)
+x1(100+100*sin(radians(x)))
+
+Sprite(circle1, (x1, 444))
 Sprite(circle2, (111, 111))
 Sprite(circle3, (666,666))
 
