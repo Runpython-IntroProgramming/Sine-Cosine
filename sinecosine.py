@@ -1,9 +1,9 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Sam Supattapone
+Credit: none
 
-Assignment:
+Assignment: Plotting Sin and Cosine
 
 In this assignment you must use *list comprehensions* to generate sprites that show the behavior
 of certain mathematical functions: sine and cosine. 
