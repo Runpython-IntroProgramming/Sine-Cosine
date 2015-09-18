@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Suhan Gui
-Credit: None
+Credit: Jeff
 
 Assignment: Sin & Cos
 
@@ -42,17 +42,16 @@ purple= Color(0x660066, 1.0)
 thinline=LineStyle(1,black)
 
 bluecircle=CircleAsset(5,thinline, blue)
-xcoordinates = range(0,300, 10)
+xcoordinates = range(0,360, 10)
 sprites = [Sprite(bluecircle, (x,100+100*sin(radians(x)))) for x in xcoordinates]
 
 redcircle=CircleAsset(5, thinline, red)
-xcoordinates = range(0,300, 10)
+xcoordinates = range(0,360, 10)
 sprites = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
 
 purplecircle=CircleAsset(5, thinline, purple)
-xcoordinates= range(0,100,10)
-ycoordinates=range(0,300,10)
-sprites= [Sprite(purplecircle, (x, ((100+100*cos(radians(x)**2))))) for x in xcoordinates]+[Sprite(purplecircle, (y, ((100+100*sin(radians(y)**2)-1)))) for y in ycoordinates]
+xcoordinates= range(0,360,10)
+sprites= sprites2 = [Sprite(purplecircle, ((100+100*cos(radians(x))), 400+100*sin(radians(x)))) for x in xcoordinates]
 
 
 myapp = App()
