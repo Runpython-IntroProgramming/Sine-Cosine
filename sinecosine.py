@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: James Napier
+Credit: http://www.discoveryplayground.com/computer-programming-for-kids/rgb-colors/, Mr. Dennison
 
 Assignment:
 
@@ -29,4 +29,33 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
+
+from ggame import App, Color, CircleAsset, LineStyle, Sprite
+from math import sin, cos, radians
+blue=Color(0x0000ff, 1.0)
+red=Color(0xff0000, 1.0)
+purple=Color(0xa020f0, 1.00)
+black=Color(0x000000, 1.0)
+
+thinline=LineStyle(1, black)
+mycircle=CircleAsset(5, thinline, blue)
+mycircle2=CircleAsset(5, thinline, red)
+mycircle3=CircleAsset(5, thinline, purple)
+
+xcoordinates=range(0, 360, 10)
+ycoordinates=[100+100*sin(radians(x))for x in xcoordinates]
+y2coordinates=[100+100*cos(radians(x))for x in xcoordinates]
+x2coordinates=[100+100*cos(radians(x))for x in xcoordinates]
+y3coordinates=[400+100*sin(radians(x))for x in xcoordinates]
+
+xy=zip(xcoordinates, ycoordinates)
+xy2=zip(xcoordinates, y2coordinates)
+x2y3=zip(x2coordinates, y3coordinates)
+#use ziping for lists tomorrow of Friday
+sprites=[Sprite(mycircle, x)for x in xy]
+sprites=[Sprite(mycircle2, x)for x in xy2]
+sprites=[Sprite(mycircle3, x)for x in x2y3]
+
+myapp=App()
+myapp.run()
 
