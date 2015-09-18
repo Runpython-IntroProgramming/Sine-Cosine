@@ -39,15 +39,19 @@ red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
+purple = Color(0x800080, 1.0)
 
 thinline = LineStyle(0.5, black)
 mycircle = CircleAsset(2, thinline, blue)
 redcircle = CircleAsset(2, thinline, red)
-xcoordinates = range(100, 600, 10)
-redcoordinates = range(100, 600, 10)
+pcircle = CircleAsset(2, thinline, purple)
+xcoordinates = range(100, 360, 10)
+redcoordinates = range(100, 360, 10)
+purplecoordinates = range(100, 360, 10)
 
-sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
-sprites = [Sprite(redcircle, (x, x*0.5 + 200)) for x in redcoordinates]
+sprites = [Sprite(mycircle, (x,100+100*sin(radians(x)))) for x in xcoordinates]
+sprites = [Sprite(redcircle, (x,100+100*cos(radians(x)))) for x in xcoordinates]
+sprites = [Sprite(pcircle, (100+100*sin(radians(x)),100+100*cos(radians(x)))) for x in xcoordinates]
 
 
 myapp = App()
