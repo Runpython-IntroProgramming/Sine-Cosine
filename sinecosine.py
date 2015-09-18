@@ -48,10 +48,12 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 purple = Color(0x551A8B, 1.0)
 
+
 thinline = LineStyle(1, black)
 
 
 mycircle = CircleAsset(5, thinline, blue)
+
 
 x = xcoordinatesblueandred
 
@@ -61,6 +63,7 @@ xcoordinatespurple = 100+100*cos(radians(x))
 ycoordinatesblue = 100+100*sin(radians(x))
 ycoordinatesred = 100+100*cos(radians(x))
 ycoordinatespurple = 400+100*sin(radians(x))
+
 
 # Generate a list of sprites that form a line!
 sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
