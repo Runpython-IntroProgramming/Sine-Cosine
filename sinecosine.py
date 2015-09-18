@@ -36,11 +36,13 @@ from ggame import CircleAsset
 #from ggame import SquareAsset
 #from ggame import PolygonAsset
 #from ggame import EllipseAsset
-from ggame import sin
-from ggame import cos
-from ggame import radians
+from ggame import Sine
+from ggame import Cosine
+from ggame import Radians
 
-sin = sine
+sin = Sine
+cos = Cosine
+radians = Radians
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
