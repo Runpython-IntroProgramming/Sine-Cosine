@@ -36,9 +36,9 @@ from ggame import CircleAsset
 #from ggame import SquareAsset
 #from ggame import PolygonAsset
 #from ggame import EllipseAsset
-from ggame import Sine
-from ggame import Cosine
-from ggame import Radians
+#from ggame import Sine
+#from ggame import Cosine
+#from ggame import Radians
 
 sin = Sine
 cos = Cosine
