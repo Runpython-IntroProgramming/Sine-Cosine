@@ -33,16 +33,27 @@ for detailed information on ggame.
 
 from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
+from ggame import SquareAsset
+from ggame import PolygonAsset
+from ggame import EllipseAsset
+from ggame import sin
+from ggame import cos
+from ggame import radians
 
+sin = sine
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
-
+purple = Color(0x551A8B, 1.0)
 
 thinline = LineStyle(1, black)
+
+
 mycircle = CircleAsset(5, thinline, blue)
+
+
 xcoordinates = range(100, 600, 10)
 
 # Generate a list of sprites that form a line!
