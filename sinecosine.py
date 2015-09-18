@@ -3,7 +3,7 @@ sinecosine.py
 Author: Sam Supattapone
 Credit: none
 
-Assignment: Plotting Sin and Cosine
+Assignment: Plotting Sine and Cosine
 
 In this assignment you must use *list comprehensions* to generate sprites that show the behavior
 of certain mathematical functions: sine and cosine. 
@@ -29,4 +29,3 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
-
