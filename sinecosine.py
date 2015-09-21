@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Dina
-Credit: <list sources used, if any>
+Credit: teacher
 
 Assignment:
 
