@@ -53,7 +53,7 @@ sprites1 = [Sprite(mycircle2, (x, 100+100*math.cos(math.radians(x))+200)) for x 
 
 mycircle3 = CircleAsset(5, thinline, purple)
 
-sprites2 = [Sprite(mycircle3, (100+100*math.cos(math.radians(x))), (400+100*math.sin(math.radians(x))) for x in xcoordinates]
+sprites2 = [Sprite(mycircle3, (100+100*math.cos(math.radians(x)), 400+100*math.sin(math.radians(x))+100)) for x in xcoordinates]
 myapp = App()
 myapp.run()
 
