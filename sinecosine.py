@@ -31,14 +31,8 @@ for detailed information on ggame.
 """
 
 
-from math import App, Color, LineStyle, Sprite
-from math import CircleAsset
-#from ggame import SquareAsset
-#from ggame import PolygonAsset
-#from ggame import EllipseAsset
-#from ggame import Sine
-#from ggame import Cosine
-#from ggame import Radians
+from ggame import App, Color, LineStyle, Sprite, CircleAsset
+from math import sin, cos, radians
 
 
 
@@ -57,12 +51,14 @@ redcircle = CircleAsset(5, thinline, red)
 purplecircle = CircleAsset(5, thinline, purple)
 
 
-x = xcoordinatesblue
-x = xcoordinatesred
-
-xcoordinatesblue = range(0, 361, 10)
-xcoordinatesred = range(0, 361, 10)
+coordinatesblue = range(0, 361, 10)
+xoordinatesred = range(0, 361, 10)
 xcoordinatespurple = 100+100*cos(radians(x))
+
+
+x = coordinatesblue
+x = coordinatesred
+
 
 ycoordinatesblue = 100+100*sin(radians(x))
 ycoordinatesred = 100+100*cos(radians(x))
@@ -70,8 +66,8 @@ ycoordinatespurple = 400+100*sin(radians(x))
 
 
 # Generate a list of sprites that form a line!
-Sprite = (bluecircle, (xcoordinatesblue , ycoordinatesblue))
-Sprite = (redcircle, (xcoordinatesred, ycoordinatesred))
+Sprite = (bluecircle, (coordinatesblue , ycoordinatesblue))
+Sprite = (redcircle, (coordinatesred, ycoordinatesred))
 Sprite = (purplecircle, (xcoordinatespurple, ycoordinatespurple))
 
 
