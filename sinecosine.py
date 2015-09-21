@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Anoushka Alavilli
-Credit: <list sources used, if any>
+Credit: html color code website and Sarah Dunbar
 
 Assignment:
 
