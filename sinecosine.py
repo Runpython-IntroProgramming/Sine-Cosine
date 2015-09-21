@@ -31,8 +31,8 @@ for detailed information on ggame.
 """
 
 
-from ggame import App, Color, LineStyle, Sprite
-from ggame import CircleAsset
+from math import App, Color, LineStyle, Sprite
+from math import CircleAsset
 #from ggame import SquareAsset
 #from ggame import PolygonAsset
 #from ggame import EllipseAsset
@@ -40,9 +40,7 @@ from ggame import CircleAsset
 #from ggame import Cosine
 #from ggame import Radians
 
-sin = Sine
-cos = Cosine
-radians = Radians
+
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -56,7 +54,7 @@ thinline = LineStyle(1, black)
 
 bluecircle = CircleAsset(5, thinline, blue)
 redcircle = CircleAsset(5, thinline, red)
-purplecircle - CircleAsset(5, thinline, purple)
+purplecircle = CircleAsset(5, thinline, purple)
 
 
 x = xcoordinatesblue
