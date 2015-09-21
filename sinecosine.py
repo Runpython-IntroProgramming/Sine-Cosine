@@ -42,7 +42,7 @@ thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(100, 600, 10)
 
-sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
+sprites = [Sprite(mycircle, (x, 110+100*sin(radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
