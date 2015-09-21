@@ -43,11 +43,10 @@ purple = Color(0x5F04B4, 1.0)
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(100, 600, 10)
-mycircle = CircleAsset(5, thinline, red)
-xcoordinates = range(100, 600, 10)
+mycircle = CircleAsset(5, thinline, purple)
+xcoordinates = range(0, 360, 10)
 sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
 mycircle1 = CircleAsset(5, thinline, purple)
-x1coordinates = range(
 sprites = [Sprite(mycircle1, (x, x*0.5 + 100)) for x in xcoordinates]
 
 myapp = App()
