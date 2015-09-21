@@ -45,7 +45,8 @@ xcoordinates = range(0, 360, 10)
 sprites = [Sprite(mybluecircle, (x, (100+100*sin(radians(x))))) for x in xcoordinates]
 myredcircle = CircleAsset(5, thinline, red)
 sprites = [Sprite(myredcircle, (x, (100+100*cos(radians(x))))) for x in xcoordinates]
-
+mypurplecircle = CircleAsset(5, thinline, purple)
+sprites = [Sprite(mypurplecircle, (x, (400+100*sin(radians(x))))) for x in xcoordinates]
 
 
 myapp = App()
