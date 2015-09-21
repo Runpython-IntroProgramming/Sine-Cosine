@@ -41,12 +41,9 @@ thinline = LineStyle(1, black)
 circle1= CircleAsset(10, thinline, blue)
 circle2= CircleAsset(10, thinline, red)
 circle3= CircleAsset(10, thinline, purple)
-Sprite(circle3, (470, 250))
+x in list(range(0, 360, 10))
 
-x = (range(0, 360, 10))
-x1 = (100+100*sin(radians(x)))
-
-Sprite(circle1, (x1, 444))
+Sprite(circle1, ((100+100*sin(radians(x))) for x in range(0, 360, 10), x))
 Sprite(circle2, (111, 111))
 Sprite(circle3, (666,666))
 
