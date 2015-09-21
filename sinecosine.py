@@ -41,10 +41,10 @@ thinline = LineStyle(1, black)
 circle1= CircleAsset(10, thinline, blue)
 circle2= CircleAsset(10, thinline, red)
 circle3= CircleAsset(10, thinline, purple)
-x-coordinates (range(0, 360, 10))
+xCoordinates = range(0, 360, 10)
 
-Sprite(circle1, (x, (100+100*sin(radians(x))))) for x in x-coordinates
-Sprite(circle2, (111, 111))
+[Sprite(circle1, (x, (100+100*sin(radians(x))))) for x in xCoordinates]
+[Sprite(circle2, (111, 111))]
 Sprite(circle3, (666,666))
 
 myapp = App()
