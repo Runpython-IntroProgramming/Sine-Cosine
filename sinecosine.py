@@ -43,6 +43,8 @@ thinline = LineStyle(1, black)
 mybluecircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(0, 360, 10)
 sprites = [Sprite(mybluecircle, (x, (100+100*sin(radians(x))))) for x in xcoordinates]
+myredcircle = CircleAsset(5, thinline, blue)
+sprites = [Sprite(myredcircle, (x, (100+100*cos(radians(x))))) for x in xcoordinates]
 
 
 
