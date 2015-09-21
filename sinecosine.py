@@ -44,8 +44,8 @@ circle3= CircleAsset(10, thinline, purple)
 xCoordinates = range(0, 360, 10)
 
 [Sprite(circle1, (x, (100+100*sin(radians(x))))) for x in xCoordinates]
-[Sprite(circle2, (111, 111))]
-Sprite(circle3, (666,666))
+[Sprite(circle2, (x, 100+100*cos(radians(x)))) for x in xCoordinates]
+[Sprite(circle3, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xCoordinates]
 
 myapp = App()
 myapp.run()
