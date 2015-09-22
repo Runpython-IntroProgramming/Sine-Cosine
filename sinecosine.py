@@ -1,9 +1,9 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Sam Supattapone
+Credit: none
 
-Assignment:
+Assignment: Plotting Sine and Cosine
 
 In this assignment you must use *list comprehensions* to generate sprites that show the behavior
 of certain mathematical functions: sine and cosine. 
@@ -29,4 +29,28 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
+from math import sin, cos, radians
+from ggame import App, Color, LineStyle, Sprite
+from ggame import CircleAsset
 
+red = Color(0xff0000, 1.0)
+blue = Color(0x0000ff, 1.0)
+purple = Color(0x800080, 1.0)
+black = Color(0x000000, 1.0)
+
+thinline = LineStyle(1, black)
+mycircle = CircleAsset(5, thinline, blue)
+xcoordinates = range(100, 720, 5)
+
+sprites = [Sprite(mycircle, (x, 110+100*sin(radians(x)))) for x in xcoordinates]
+
+mycircle = CircleAsset(5, thinline, red)
+
+sprites = [Sprite(mycircle, (x, 110+100*cos(radians(x)))) for x in xcoordinates]
+
+mycircle = CircleAsset(5, thinline, purple)
+
+sprites = [Sprite(mycircle, (200+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
+
+myapp = App()
+myapp.run()
