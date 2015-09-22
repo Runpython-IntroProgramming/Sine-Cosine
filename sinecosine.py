@@ -64,9 +64,9 @@ ycoordinatespurple = 400+100*sin(radians(x))
 
 # Generate a list of sprites that form a line!
 
-[Sprite = (bluecircle, (xcoordinatesblue , 100+100*sin(radians(x))) for x in range(0, 361, 10)]
-Sprite1 = (redcircle, (xcoordinatesred, ycoordinatesred))
-Sprite2 = (purplecircle, (xcoordinatespurple, ycoordinatespurple))
+[Sprite(bluecircle, (xcoordinatesblue, 100+100*sin(radians(x)))) for x in range(0, 361, 10)]
+Sprite = (redcircle, (xcoordinatesred, ycoordinatesred))
+Sprite = (purplecircle, (xcoordinatespurple, ycoordinatespurple))
 
 
 myapp = App()
