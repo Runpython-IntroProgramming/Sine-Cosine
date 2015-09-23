@@ -36,27 +36,27 @@ from ggame import App, Color, LineStyle, Sprite, CircleAsset
 from math import sin, cos, radians
 
 
-red = Color(0xff0000, 0.15)
+red = Color(0xff0000, 0.1)
 green = Color(0x00ff00, 1.0)
-blue = Color(0x0000ff, 0.15)
+blue = Color(0x0000ff, 0.1)
 black = Color(0x000000, 1.0)
-purple = Color(0x551A8B, 0.25)
+purple = Color(0x551A8B, 0.1)
 
 
 thinline = LineStyle(1, black)
 
 
-bluecircle = CircleAsset(50, thinline, blue)
-redcircle = CircleAsset(50, thinline, red)
+bluecircle = CircleAsset(30, thinline, blue)
+redcircle = CircleAsset(30, thinline, red)
 purplecircle = CircleAsset(50, thinline, purple)
 
 
-x = range(0, 361, 5)
+x = range(0, 361, 1)
 
 
-[Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in range(0, 361, 10)]
-[Sprite(redcircle, (x+100, 100+100*sin(radians(x)))) for x in range(0, 361, 10)]
-[Sprite(purplecircle, (200+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in range(0, 361, 10)]
+[Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in range(0, 361, 5)]
+[Sprite(redcircle, (x+100, 100+100*sin(radians(x)))) for x in range(0, 361, 5)]
+[Sprite(purplecircle, (200+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in range(0, 361, 5)]
 
 myapp = App()
 myapp.run()
