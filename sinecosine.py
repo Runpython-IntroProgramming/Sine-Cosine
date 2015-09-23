@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Ryan Kynor
-Credit: <list sources used, if any>
+Credit: none
 
 Assignment:
 
@@ -54,34 +54,9 @@ purplecircle = CircleAsset(5, thinline, purple)
 x = range(0, 361, 10)
 
 
-#yblue = 100+100*sin(radians(x))
-#yred = 100+100*cos(radians(x))
-#ypurple = 400+100*sin(radians(x))
-
-
-# Generate a list of sprites that form a line!
-
 [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in range(0, 361, 10)]
 [Sprite(redcircle, (x+100, 100+100*sin(radians(x)))) for x in range(0, 361, 10)]
-
-
-
-
-
-
-
-
-
 [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in range(0, 361, 10)]
-
-
-
-
-
-
-
-
-
 
 myapp = App()
 myapp.run()
