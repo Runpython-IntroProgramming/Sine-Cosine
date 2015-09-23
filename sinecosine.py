@@ -40,7 +40,7 @@ red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
-purple = Color(0x551A8B, 1.0)
+purple = Color(0x551A8B, 0.25)
 
 
 thinline = LineStyle(1, black)
@@ -48,7 +48,7 @@ thinline = LineStyle(1, black)
 
 bluecircle = CircleAsset(5, thinline, blue)
 redcircle = CircleAsset(5, thinline, red)
-purplecircle = CircleAsset(5, thinline, purple)
+purplecircle = CircleAsset(50, thinline, purple)
 
 
 x = range(0, 361, 10)
@@ -56,7 +56,7 @@ x = range(0, 361, 10)
 
 [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in range(0, 361, 10)]
 [Sprite(redcircle, (x+100, 100+100*sin(radians(x)))) for x in range(0, 361, 10)]
-[Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in range(0, 361, 10)]
+[Sprite(purplecircle, (200+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in range(0, 361, 10)]
 
 myapp = App()
 myapp.run()
