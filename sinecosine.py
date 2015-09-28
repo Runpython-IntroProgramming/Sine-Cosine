@@ -34,15 +34,18 @@ import math
 
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
+purple = Color(0x800080, 1.0)
 
 nostroke = LineStyle(0, red)
 circleBlue = CircleAsset(5, nostroke, blue)
 circleRed = CircleAsset(5, nostroke, red)
+circlePurple = CircleAsset(5, nostroke, purple)
 
 xcoordinates = range(0, 360, 10)
 
 spriteBlue = [Sprite(circleBlue, (x, 100+100*math.sin(math.radians(x)))) for x in xcoordinates]
-
+spriteRed = [Sprite(circleRed, (x, 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
+spritePurple = [Sprite(circlePurple, (100+100*math.cos(math.radians(x)), 400+100*math.sin(math.radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
