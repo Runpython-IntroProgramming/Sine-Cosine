@@ -36,9 +36,12 @@ red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
 
 nostroke = LineStyle(0, red)
-circle = CircleAsset(5, nostroke, blue)
+circleBlue = CircleAsset(5, nostroke, blue)
+circleRed = CircleAsset(5, nostroke, red)
 
+xcoordinates = range(0, 360, 10)
 
+spriteBlue = [Sprite(circleBlue, (x, 100+100*math.sin(math.radians(x)))) for x in xcoordinates]
 
 
 myapp = App()
