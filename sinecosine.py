@@ -45,11 +45,13 @@ purplecircle = CircleAsset(5, thinline, red)
 
 xcoordinates = range(0, 360, 10)
 
-blues = [Sprite(bluecircle, (100+100*sin(radians(x))) for x in xcoordinates]
-reds = [Sprite(redcircle, (100+100*cos(radians(x))) for x in xcoordinates]
-purples = [Sprite(purplecircle, (400+100*sin(radians(x))) for x in xcoordinates]
+blues = [Sprite(bluecircle, (x, (100+100*math.sin(math.radians(x))))) for x in xcoordinates]
+reds = [Sprite(redcircle, (x, (100+100*math.cos(math.radians(x))))) for x in xcoordinates]
+purples = [Sprite(purplecircle, (x, (400+100*math.sin(math.radians(x))))) for x in xcoordinates]
 
-
+"""
+sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
+"""
 
 myapp = App()
 myapp.run()
