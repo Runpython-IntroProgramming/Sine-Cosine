@@ -49,25 +49,5 @@ blues = [Sprite(bluecircle, (x, (100+100*math.sin(math.radians(x))))) for x in x
 reds = [Sprite(redcircle, (x, (100+100*math.cos(math.radians(x))))) for x in xcoordinates]
 purples = [Sprite(purplecircle, (x, (400+100*math.sin(math.radians(x))))) for x in xcoordinates]
 
-"""
-sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
-"""
-
 myapp = App()
 myapp.run()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
