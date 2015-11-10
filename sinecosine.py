@@ -49,9 +49,9 @@ dot3 = CircleAsset(1, thinline, purple)
 xaxis = RectangleAsset(1700,1, thinline, black)
 yaxis = RectangleAsset(1,1050, thinline, black)
 
-sprites = [Sprite(dot1, (x, 525+100*cos(radians(-x))))for x in xcord]
-sprites1 = [Sprite(dot2, (x, 525+100*sin(radians(-x)))) for x in xcord]
-sprite2 = Sprite(xaxis, (0, 525))
+sprites = [Sprite(dot1, (x, 400+100*cos(radians(-x))))for x in xcord]
+sprites1 = [Sprite(dot2, (x, 400+100*sin(radians(-x)))) for x in xcord]
+sprite2 = Sprite(xaxis, (0, 400))
 sprite3 = Sprite(yaxis, (850, 0))
 
 myapp = App()
