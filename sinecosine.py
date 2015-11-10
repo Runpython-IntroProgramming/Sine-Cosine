@@ -52,7 +52,7 @@ yaxis = RectangleAsset(1,1050, thinline, black)
 sprites = [Sprite(dot1, (x, 400+100*cos(radians(-x))))for x in xcord]
 sprites1 = [Sprite(dot2, (x, 400+100*sin(radians(-x)))) for x in xcord]
 sprite2 = Sprite(xaxis, (0, 400))
-sprite3 = Sprite(yaxis, (750, 0))
+sprite3 = Sprite(yaxis, (718, 0))
 
 myapp = App()
 myapp.run()
