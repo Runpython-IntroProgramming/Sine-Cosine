@@ -42,13 +42,15 @@ purple = Color(0xff00ff, 1.0)
 
 thinline = LineStyle(0, black)
 
-xcord = range(0, 360, 1)
+xcord = range(0, 720, 1)
 dot1 = CircleAsset(1, thinline, red)
 dot2 = CircleAsset(1, thinline, blue)
 dot3 = CircleAsset(1, thinline, purple)
+xaxis = RectangleAsset(720,1, thinline, black)
 
 sprites = [Sprite(dot1, (x, 400+100*cos(radians(-x))))for x in xcord]
 sprites1 = [Sprite(dot2, (x, 400+100*sin(radians(-x)))) for x in xcord]
+sprite2 = Sprite(xaxis, (0, 400))
 
 myapp = App()
 myapp.run()
