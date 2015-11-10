@@ -47,8 +47,8 @@ dot1 = CircleAsset(1, thinline, red)
 dot2 = CircleAsset(1, thinline, blue)
 dot3 = CircleAsset(1, thinline, purple)
 
-sprites = [Sprite(dot1, (x, 100+cos(radians(x))))for x in xcord]
-sprites1 = [Sprite(dot2, (x, 100+sin(radians(x)))) for x in xcord]
-sprites2 = [Sprite(dot3, ((100+cos(radians(x))), 400+sin(radians(x)))) for x in xcord]
+sprites = [Sprite(dot1, (x, 300+100*cos(radians(x))))for x in xcord]
+sprites1 = [Sprite(dot2, (x, 300+100*sin(radians(x)))) for x in xcord]
+sprites2 = [Sprite(dot3, ((300+100*cos(radians(x))), 700+100*sin(radians(x)))) for x in xcord]
 myapp = App()
 myapp.run()
