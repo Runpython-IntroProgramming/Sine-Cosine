@@ -42,7 +42,7 @@ purple = Color(0xff00ff, 1.0)
 
 thinline = LineStyle(0, black)
 
-xcord = range(0, 720, 1)
+xcord = range(0, 1500, 1)
 dot1 = RectangleAsset(2,2, thinline, red)
 dot2 = RectangleAsset(2,2, thinline, blue)
 dot3 = CircleAsset(1, thinline, purple)
