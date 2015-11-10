@@ -42,7 +42,7 @@ purple = Color(0xff00ff, 1.0)
 
 thinline = LineStyle(0, black)
 
-xcord = range(0, 360, 10)
+xcord = range(0, 360, 1)
 dot1 = CircleAsset(1, thinline, red)
 dot2 = CircleAsset(1, thinline, blue)
 dot3 = CircleAsset(1, thinline, purple)
