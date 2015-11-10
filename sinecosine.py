@@ -56,7 +56,7 @@ yaxis = RectangleAsset(1,1050, thinline, black)
 sprite2 = Sprite(xaxis, (0, 404))
 sprite3 = Sprite(yaxis, (718, 0))
 
-sprites4 = [Sprite(dot1, (x, 400+100*(-x))) for x in xcord]
+sprites4 = [Sprite(dot1, (x, 400+100*x)) for x in xcord]
 
 myapp = App()
 myapp.run()
