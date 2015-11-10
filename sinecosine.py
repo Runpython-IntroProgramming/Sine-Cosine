@@ -34,7 +34,8 @@ from ggame import App, Color, LineStyle, Sprite
 from ggame import RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 from math import sin, cos, radians
 
-ampli = int(input("Set the amplifier "))
+k = int(input("f(x) = kx + b, set k: "))
+b = int(input("f(x) = kx + b, set b: "))
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -56,7 +57,7 @@ yaxis = RectangleAsset(1,1050, thinline, black)
 sprite2 = Sprite(xaxis, (0, 404))
 sprite3 = Sprite(yaxis, (718, 0))
 
-sprites4 = [Sprite(dot1, (x, 400-ampli*(x-718))) for x in xcord]
+sprites4 = [Sprite(dot1, (x, 400-ampli*(x-718)-100*b)) for x in xcord]
 
 myapp = App()
 myapp.run()
