@@ -18,7 +18,7 @@ class Axis(Sprite):
     yaxis = RectangleAsset(1,1050, thinline, black)
     
     def __init__(self, position):
-        super().__init__(Axis.asset, position)
+        position = (718, 404)
 
 class Dot(Sprite):
     
@@ -41,9 +41,7 @@ class Grapher(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         
-        sprite1 = Sprite(xaxis, (0, 404))
-        sprite2 = Sprite(yaxis, (718, 0))
-        
+       
     def step():
         for dot in self.getSpritesbyClass(Dot):
             dot.step()
