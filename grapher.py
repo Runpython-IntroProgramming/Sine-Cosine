@@ -24,7 +24,7 @@ class Dot(Sprite):
         self.x = 0
         
     def Linear(self):
-        self.y = 400-k*(x-718)-100*b
+        self.y = k*(x-718)-100*b
         
     def step(self):
         self.Linear()
