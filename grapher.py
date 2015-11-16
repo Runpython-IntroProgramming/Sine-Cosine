@@ -30,7 +30,7 @@ class Dot(Sprite):
         
     def step(self):
         self.Linear()
-        sprite0 = [Dot(x, 400-k*(x-718)-100*b) for x in xcord]
+        sprite0 = [Dot(x, 404-k*(x-718)+100*b) for x in xcord]
 
 class Grapher(App):
     def __init__(self, width, height):
