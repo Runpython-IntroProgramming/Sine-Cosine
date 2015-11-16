@@ -36,8 +36,8 @@ class Grapher(App):
         thinline = LineStyle(0, black)
         xaxis = RectangleAsset(1500,1, thinline, black)
         yaxis = RectangleAsset(1,1050, thinline, black)
-        sprite1 = (xaxis, (0, 404))
-        sprite2 = (yaxis, (718, 0))
+        sprite1 = Sprite(xaxis, (0, 404))
+        sprite2 = Sprite(yaxis, (718, 0))
         
     def step():
         for dot in self.getSpritesbyClass(Dot):
