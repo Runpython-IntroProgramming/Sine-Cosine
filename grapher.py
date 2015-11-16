@@ -14,8 +14,7 @@ thinline = LineStyle(0, black)
         
 class Axis(Sprite):
     
-    xaxis = RectangleAsset(1500,1, thinline, black)
-    yaxis = RectangleAsset(1,1050, thinline, black)
+    
     
     def __init__(self, position):
         super().__init__(Axis.xaxis, position)
@@ -42,8 +41,10 @@ class Grapher(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         
-        Axis.xaxis((0, 404))
-        Axis.yaxis((718, 0))
+        xaxis = RectangleAsset(1500,1, thinline, black)
+        yaxis = RectangleAsset(1,1050, thinline, black)
+        sprite1 = (xaxis, (0, 404))
+        sprite2 = (yaxis, (718, 0))
         
     def step():
         for dot in self.getSpritesbyClass(Dot):
