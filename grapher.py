@@ -41,6 +41,8 @@ class Grapher(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         
+        black = Color(0x000000, 1.0)
+        thinline = LineStyle(0, black)
         xaxis = RectangleAsset(1500,1, thinline, black)
         yaxis = RectangleAsset(1,1050, thinline, black)
         sprite1 = (xaxis, (0, 404))
