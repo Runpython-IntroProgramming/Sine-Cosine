@@ -12,6 +12,8 @@ black = Color(0x000000, 1.0)
 purple = Color(0xff00ff, 1.0)
 thinline = LineStyle(0, black)
 
+xcord = range(0, 1500, 1)
+
 k = int(input("f(x) = kx + b, set the value of k: "))
 b = int(input("f(x) = kx + b, set the value of b: "))
         
@@ -28,9 +30,7 @@ class Dot(Sprite):
         
     def step(self):
         self.Linear()
-        Dot(self.position)
-        while self.x <= 1500:
-            self.x += 1
+        sprite0 = [Dot(x, 400-k*(x-718)-100*b) for x in xcord]
 
 class Grapher(App):
     def __init__(self, width, height):
