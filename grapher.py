@@ -42,8 +42,8 @@ class Grapher(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         
-        sprite1 = Sprite(xaxis, (0, 404))
-        sprite2 = Sprite(yaxis, (718, 0))
+        Axis.xaxis((0, 404))
+        Axis.yaxis((718, 0))
         
     def step():
         for dot in self.getSpritesbyClass(Dot):
