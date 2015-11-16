@@ -27,7 +27,6 @@ class Dot(Sprite):
 
     def __init__(self, position):
         super().__init__(Dot.asset, position)
-        self
     
     def Linear(self):
         self.y = k * self.x + b
