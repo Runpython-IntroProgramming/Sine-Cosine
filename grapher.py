@@ -29,7 +29,8 @@ class Dot(Sprite):
     def step(self):
         self.Linear()
         Dot(self.position)
-        self.x += 1
+        while self.x <= 1500:
+            self.x += 1
 
 class Grapher(App):
     def __init__(self, width, height):
