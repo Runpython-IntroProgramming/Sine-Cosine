@@ -24,7 +24,7 @@ class Dot(Sprite):
         super().__init__(Dot.asset, position)
         self.x = 0
     def Linear(self):
-        self.y = k * (self.x-404) + b * 100
+        self.y = 400-k*(x-718)-100*b
         
     def step(self):
         self.Linear()
