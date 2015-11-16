@@ -11,6 +11,9 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 purple = Color(0xff00ff, 1.0)
 thinline = LineStyle(0, black)
+
+k = int(input("f(x) = kx + b, set the value of k: "))
+b = int(input("f(x) = kx + b, set the value of b: "))
         
 class Dot(Sprite):
     
