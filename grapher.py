@@ -12,14 +12,6 @@ black = Color(0x000000, 1.0)
 purple = Color(0xff00ff, 1.0)
 thinline = LineStyle(0, black)
         
-class Axis(Sprite):
-    
-    
-    
-    def __init__(self, position):
-        super().__init__(Axis.xaxis, position)
-        super().__init__(Axis.yaxis, position)
-
 class Dot(Sprite):
     
     dot1 = RectangleAsset(2,2, thinline, red)
