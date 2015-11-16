@@ -17,12 +17,12 @@ b = int(input("f(x) = kx + b, set the value of b: "))
         
 class Dot(Sprite):
     
-    dot1 = RectangleAsset(2,2, thinline, red)
-    dot2 = RectangleAsset(2,2, thinline, blue)
+    asset = RectangleAsset(2,2, thinline, red)
 
     def __init__(self, position):
         super().__init__(Dot.asset, position)
         self.x = 0
+        
     def Linear(self):
         self.y = 400-k*(x-718)-100*b
         
