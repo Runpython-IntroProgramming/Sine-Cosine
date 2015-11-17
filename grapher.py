@@ -30,8 +30,8 @@ class Dot(Sprite):
         
     def step(self):
         self.Linear()
-        sprite0 = [Dot(x, 404-k*(x-718)+b) for x in xcord]
-
+        #sprite0 = [Dot(x, 404-k*(x-718)+b) for x in xcord]
+        
 class Grapher(App):
     def __init__(self, width, height):
         super().__init__(width, height)
@@ -42,6 +42,8 @@ class Grapher(App):
         yaxis = RectangleAsset(1,1050, thinline, black)
         sprite1 = Sprite(xaxis, (0, 404))
         sprite2 = Sprite(yaxis, (718, 0))
+        
+        sprite0 = [Sprite(Dot.asset, (x, 404-k*(x-718)+b)) for x in xcord]
         
     def step():
         for dot in self.getSpritesbyClass(Dot):
