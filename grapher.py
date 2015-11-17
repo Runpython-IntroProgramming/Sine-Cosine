@@ -38,8 +38,8 @@ class Grapher(App):
         
         black = Color(0x000000, 1.0)
         thinline = LineStyle(0, black)
-        xaxis = RectangleAsset(1500,1, thinline, black)
-        yaxis = RectangleAsset(1,1050, thinline, black)
+        xaxis = RectangleAsset(1500,2, thinline, black)
+        yaxis = RectangleAsset(2,1050, thinline, black)
         sprite1 = Sprite(xaxis, (0, 404))
         sprite2 = Sprite(yaxis, (718, 0))
         
