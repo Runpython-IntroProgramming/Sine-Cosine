@@ -28,11 +28,12 @@ class Dot(Sprite):
     def __init__(self, position):
         super().__init__(Dot.asset, position)
         self.x = 0
+        sprite = Sprite(self.asset, (self.x, 450-k*(self.x-718)-100*b))
         
         
     def step(self):
-        self.Linear()
-        #sprite0 = [Dot(x, 404-k*(x-718)+b) for x in xcord]
+        self.x += 1
+        sprite0 = Dot(x, 404-k*(x-718)+b)
         
 class Grapher(App):
     def __init__(self, width, height):
