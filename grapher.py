@@ -33,7 +33,7 @@ class Dot(Sprite):
         
     def step(self):
         self.x += 1
-        sprite0 = Dot(x, 404-k*(x-718)+b)
+        sprite0 = Dot(self.x, 450-k*(self.x-718)-100*b)
         
 class Grapher(App):
     def __init__(self, width, height):
@@ -46,7 +46,7 @@ class Grapher(App):
         sprite1 = Sprite(xaxis, (0, 450))
         sprite2 = Sprite(yaxis, (718, 0))
         
-        sprite0 = [Sprite(Dot.asset, (x, 450-k*(x-718)-100*b)) for x in xcord]
+        #sprite0 = [Sprite(Dot.asset, (x, 450-k*(x-718)-100*b)) for x in xcord]
         
     def step():
         for dot in self.getSpritesbyClass(Dot):
