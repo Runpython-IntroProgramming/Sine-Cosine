@@ -43,7 +43,7 @@ class Grapher(App):
         sprite1 = Sprite(xaxis, (0, 404))
         sprite2 = Sprite(yaxis, (718, 0))
         
-        sprite0 = [Sprite(Dot.asset, (x, 404-k*(x-718)+100*b)) for x in xcord]
+        sprite0 = [Sprite(Dot.asset, (x, 404-k*(x-718)-100*b)) for x in xcord]
         
     def step():
         for dot in self.getSpritesbyClass(Dot):
