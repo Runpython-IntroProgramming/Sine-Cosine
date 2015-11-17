@@ -14,8 +14,12 @@ thinline = LineStyle(0, black)
 
 xcord = range(0, 1500, 1)
 
-k = int(input("f(x) = kx + b, set the value of k: "))
-b = int(input("f(x) = kx + b, set the value of b: "))
+mode = input("Which type of function do you have? L for linear, T for Trig, P for Parabola ")
+if mode == "L":
+    k = int(input("f(x) = kx + b, set the value of k: "))
+    b = int(input("f(x) = kx + b, set the value of b: "))
+elif mode == "T":
+    a = int(input("f(x) = a sin h (x + k) , set the value of a: "))
         
 class Dot(Sprite):
     
@@ -25,8 +29,6 @@ class Dot(Sprite):
         super().__init__(Dot.asset, position)
         self.x = 0
         
-    def Linear(self):
-        self.y = k*(x-718)-100*b
         
     def step(self):
         self.Linear()
