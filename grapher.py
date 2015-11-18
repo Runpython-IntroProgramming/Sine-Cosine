@@ -36,7 +36,7 @@ class Dot(Sprite):
             if mode == "l":
                 sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
             elif mode == "t":
-                s
+                sprite = Sprite(Dot.asset, (self.x, 200*math.sin(100*self.x)))
             
             
 class Grapher(App):
