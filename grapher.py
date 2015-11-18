@@ -29,12 +29,16 @@ class Dot(Sprite):
         super().__init__(Dot.asset, position)
         self.x = 0
         
+        self.dotmade = False
+        
         #sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
         
         
     def step(self):
         self.x += 1
-        sprite0 = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
+        if not self.dotmade and self.x < 1500:
+            sprite0 = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
+            self.dotmade = True
         
 class Grapher(App):
     def __init__(self, width, height):
@@ -47,7 +51,7 @@ class Grapher(App):
         sprite1 = Sprite(xaxis, (0, 450))
         sprite2 = Sprite(yaxis, (750, 0))
         
-        Dot((100,100))
+        Dot((self.x, 450-k*(self.x-750)-100*b))
         
         #sprite0 = [Sprite(Dot.asset, (x, 450-k*(x-750)-100*b)) for x in xcord]
         
