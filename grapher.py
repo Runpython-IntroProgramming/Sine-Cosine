@@ -39,7 +39,7 @@ class Dot(Sprite):
         self.x += 1
         if self.x < 1500:
             #sprite0 = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
-            sprite = Sprite(Dot.asset, (self.x, 200))
+            sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
 class Grapher(App):
     def __init__(self, width, height):
         super().__init__(width, height)
@@ -51,12 +51,11 @@ class Grapher(App):
         sprite1 = Sprite(xaxis, (0, 450))
         sprite2 = Sprite(yaxis, (750, 0))
         
-        Dot((0, 100))
+        #Dot((0, 100))
         
         #sprite0 = [Sprite(Dot.asset, (x, 450-k*(x-750)-100*b)) for x in xcord]
         
     def step(self):
-        print("Heelo")
         for dot in self.getSpritesbyClass(Dot):
             dot.step()
             
