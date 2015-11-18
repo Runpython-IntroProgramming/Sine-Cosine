@@ -33,8 +33,11 @@ class Dot(Sprite):
     def step(self):
         self.x += 1
         if self.x < 1500:
-            #sprite0 = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
             sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
+        self.x += 1
+        if self.x < 1500:
+            sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
+            
 class Grapher(App):
     def __init__(self, width, height):
         super().__init__(width, height)
