@@ -31,12 +31,13 @@ class Dot(Sprite):
         
         
     def step(self):
-        self.x += 1
-        if self.x < 1500:
-            sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
-        self.x += 1
-        if self.x < 1500:
-            sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
+        if mode == "l":
+            
+            self.x += 1
+            if self.x < 1500:
+                sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
+        elif mode == "t":
+            self.x += 1
             
 class Grapher(App):
     def __init__(self, width, height):
@@ -54,6 +55,8 @@ class Grapher(App):
         #sprite0 = [Sprite(Dot.asset, (x, 450-k*(x-750)-100*b)) for x in xcord]
         
     def step(self):
+        for dot in self.getSpritesbyClass(Dot):
+            dot.step()
         for dot in self.getSpritesbyClass(Dot):
             dot.step()
             
