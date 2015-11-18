@@ -31,13 +31,13 @@ class Dot(Sprite):
         
         
     def step(self):
-        if mode == "l":
-            
-            self.x += 1
-            if self.x < 1500:
+        self.x += 1
+        if self.x < 1500:
+            if mode == "l":
                 sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
-        elif mode == "t":
-            self.x += 1
+            elif mode == "t":
+                s
+            
             
 class Grapher(App):
     def __init__(self, width, height):
