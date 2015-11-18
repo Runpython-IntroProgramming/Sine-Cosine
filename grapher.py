@@ -30,12 +30,7 @@ class Dot(Sprite):
         self.x = 0
         
         
-        
-        #sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
-        
-        
     def step(self):
-        print(self.x)
         self.x += 1
         if self.x < 1500:
             #sprite0 = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
@@ -51,7 +46,7 @@ class Grapher(App):
         sprite1 = Sprite(xaxis, (0, 450))
         sprite2 = Sprite(yaxis, (750, 0))
         
-        #Dot((0, 100))
+        Dot((0, 450-k*(0-750)-100*b))
         
         #sprite0 = [Sprite(Dot.asset, (x, 450-k*(x-750)-100*b)) for x in xcord]
         
