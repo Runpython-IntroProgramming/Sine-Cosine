@@ -36,7 +36,7 @@ class Dot(Sprite):
             if mode == "l":
                 sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
             elif mode == "t":
-                sprite = Sprite(Dot.asset, (self.x, math.sin(100*self.x)-400))
+                sprite = Sprite(Dot.asset, (self.x, 450-(100*math.sin(0.16*self.x))))
             
             
 class Grapher(App):
@@ -51,7 +51,7 @@ class Grapher(App):
         sprite2 = Sprite(yaxis, (750, 0))
         
         #Dot((0, 450-k*(0-750)-100*b))
-        Dot((750,0))
+        Dot((0,450))
         #sprite0 = [Sprite(Dot.asset, (x, 450-k*(x-750)-100*b)) for x in xcord]
         
     def step(self):
