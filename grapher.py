@@ -36,7 +36,6 @@ class Dot(Sprite):
             if mode == "l":
                 sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
             elif mode == "t":
-                #sprite = Sprite(Dot.asset, (self.x, 450-(100*math.sin(0.016*self.x))))
                 sprite = Sprite(Dot.asset, (self.x, 450-a*100*math.sin((self.x-750)/100)))
             
             
