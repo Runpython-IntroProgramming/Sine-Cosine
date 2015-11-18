@@ -14,7 +14,7 @@ thinline = LineStyle(0, black)
 
 xcord = range(0, 1500, 1)
 
-mode = input("Which type of function do you have? \nL for linear, T for Trig, P for Parabola ")
+mode = input("Which type of function do you have? \nl for linear, t for Trig, p for Parabola ")
 if mode == "L":
     k = float(input("f(x) = kx + b, set the value of k: "))
     b = float(input("f(x) = kx + b, set the value of b: "))
