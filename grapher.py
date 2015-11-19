@@ -44,7 +44,8 @@ class Dot(Sprite):
                     n -= 1
                 while n < self.y1 - (450-k*(self.x-750)-100*b):
                     self.y += 1
-                    sprite = Sprite(Dot.asset, (self.x, self.y))
+                    sprite = Sprite(Dot.asset, (self.x+1, self.y))
+                    n += 1
             elif mode == "t":
                 sprite = Sprite(Dot.asset, (self.x, 450-a*100*math.tan((self.x-750)/100)))
                 self.x += 1
