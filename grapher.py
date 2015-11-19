@@ -28,20 +28,22 @@ class Dot(Sprite):
     def __init__(self, position):
         super().__init__(Dot.asset, position)
         self.x = 0
-        
+    
+    def l(self.x):
+        return 450-k*(self.x-750)-100*b
         
     def step(self):
         self.x += 1
         if self.x < 1500:
             if mode == "l":
-                self.y = 450-k*(self.x-750)-100*b
-                self.y1 = 450-k*(self.x-749)-100*b
+                self.y = l(self.x)
+                self.y1 = l(self.x+1)
                 n = (self.y1 - self.y)/2
                 while n > 0:
                     sprite = Sprite(Dot.asset, (self.x, self.y))
                     self.y += 1
                     n -= 1
-                while n < self.y1 - (450-k*(self.x-750)-100*b):
+                while n < self.y1 - l(x):
                     sprite = Sprite(Dot.asset, (self.x+1, self.y))
                     n += 1
                     self.y += 1
@@ -62,7 +64,6 @@ class Grapher(App):
         sprite1 = Sprite(xaxis, (0, 450))
         sprite2 = Sprite(yaxis, (750, 0))
         
-        #Dot((0, 450-k*(0-750)-100*b))
         Dot((0,450))
         #sprite0 = [Sprite(Dot.asset, (x, 450-k*(x-750)-100*b)) for x in xcord]
         
