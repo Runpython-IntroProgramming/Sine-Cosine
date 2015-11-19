@@ -34,9 +34,20 @@ class Dot(Sprite):
         self.x += 1
         if self.x < 1500:
             if mode == "l":
-                sprite = Sprite(Dot.asset, (self.x, 450-k*(self.x-750)-100*b))
+                self.y = 450-k*(self.x-750)-100*b
+                self.y1 = 450-k*(self.x-749)-100*b
+                n = (self.y1 - self.y)/2
+                sprite = Sprite(Dot.asset, (self.x, self.y))
+                while n > 0:
+                    self.y += 1
+                    sprite = Sprite(Dot.asset, (self.x, self.y))
+                    n -= 1
+                while n < self.y1 - (450-k*(self.x-750)-100*b):
+                    self.y += 1
+                    sprite = Sprite(Dot.asset, (self.x, self.y))
             elif mode == "t":
-                sprite = Sprite(Dot.asset, (self.x, 450-a*100*math.sin((self.x-750)/100)))
+                sprite = Sprite(Dot.asset, (self.x, 450-a*100*math.tan((self.x-750)/100)))
+                self.x += 1
             
             
 class Grapher(App):
