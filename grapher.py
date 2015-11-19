@@ -38,14 +38,14 @@ class Dot(Sprite):
             if mode == "l":
                 self.y = l(self.x)
                 self.y1 = l(self.x+1)
-                n = (self.y1 - self.y)/2
+                n = m = (self.y1 - self.y)/2
                 while n > 0:
                     sprite = Sprite(Dot.asset, (self.x, self.y))
                     self.y += 1
                     n -= 1
-                while n < self.y1 - l(x):
+                while m > 0:
                     sprite = Sprite(Dot.asset, (self.x+1, self.y))
-                    n += 1
+                    m -= 1
                     self.y += 1
                     
             elif mode == "t":
