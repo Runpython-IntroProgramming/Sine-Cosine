@@ -29,7 +29,7 @@ class Dot(Sprite):
         super().__init__(Dot.asset, position)
         self.x = 0
     
-    def l(self.x):
+    def l(self, self.x):
         return 450-k*(self.x-750)-100*b
         
     def step(self):
