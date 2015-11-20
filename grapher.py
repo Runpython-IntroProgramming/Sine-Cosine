@@ -37,7 +37,7 @@ class Dot(Sprite):
             if mode == "l":
                 self.y = self.l()
                 sprite = Sprite(Dot.asset, (self.x, self.y))
-                n = math.abs(450-k*(self.x-749)-100*b-self.y)
+                n = 450-k*(self.x-749)-100*b-self.y
                 while n > 0:
                     self.y += 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
