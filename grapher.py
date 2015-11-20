@@ -23,25 +23,25 @@ elif mode == "t":
         
 class Dot(Sprite):
     
-    asset = RectangleAsset(2,2, thinline, red)
+    asset = RectangleAsset(2,2, thinline, blue)
 
     def __init__(self, position):
         super().__init__(Dot.asset, position)
         self.x = 0
     
-    def l(self, position):
-        return 450-k*(self.x-750)-100*b
+    def l(self, x):
+        return 450-k*(x-750)-100*b
         
     def step(self):
         self.x += 1
         if self.x < 1500:
             if mode == "l":
                 self.y = self.l(self.x)
-                self.y1 = self.l(self.x+1)
-                n = math.abs(self.y1 - self.y)
+                sprite = Sprite(Dot.asset, (self.x, self.y))
+                n = math.abs(450-k*(self.x-749)-100*b-self.y)
                 while n > 0:
+                    self.y += 1
                     sprite = Sprite(Dot.asset, (self.x, self.y))
-                    self.y += 2
                     n -= 1
                     
             elif mode == "t":
