@@ -35,7 +35,7 @@ class Dot(Sprite):
     def step(self):
         if self.x < 1500:
             if mode == "l":
-                self.y = self.l(self.x)
+                self.y = self.l()
                 sprite = Sprite(Dot.asset, (self.x, self.y))
                 n = math.abs(450-k*(self.x-749)-100*b-self.y)
                 while n > 0:
