@@ -33,7 +33,6 @@ class Dot(Sprite):
         return 450-k*(x-750)-100*b
         
     def step(self):
-        self.x += 1
         if self.x < 1500:
             if mode == "l":
                 self.y = self.l(self.x)
@@ -43,6 +42,7 @@ class Dot(Sprite):
                     self.y += 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     n -= 1
+            self.x += 1
                     
             elif mode == "t":
                 sprite = Sprite(Dot.asset, (self.x, 450-a*100*math.sin((self.x-750)/100)))
