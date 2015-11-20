@@ -47,6 +47,10 @@ class Dot(Sprite):
             elif mode == "t":
                 sprite = Sprite(Dot.asset, (self.x, 450-a*100*math.tan((self.x-750)/100)))
                 self.x += 1
+                
+            elif mode == "p":
+                sprite = Sprite(Dot.asset, (self.x, 450-((self.x-750)**2/100)))
+                self.x += 1
               
             
             
