@@ -39,7 +39,7 @@ class Dot(Sprite):
                 sprite = Sprite(Dot.asset, (self.x, self.y))
                 n = self.y-(450-k*(self.x-750+1)-100*b)
                 while n > 0:
-                    self.y -= 1
+                    self.y -= 2
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     n -= 1
                     print(n)
