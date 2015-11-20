@@ -41,7 +41,7 @@ class Dot(Sprite):
                 n = math.abs(self.y1 - self.y)
                 while n > 0:
                     sprite = Sprite(Dot.asset, (self.x, self.y))
-                    self.y += 1
+                    self.y += 2
                     n -= 1
                     
             elif mode == "t":
@@ -55,8 +55,8 @@ class Grapher(App):
         
         black = Color(0x000000, 1.0)
         thinline = LineStyle(0, black)
-        xaxis = RectangleAsset(1500,2, thinline, black)
-        yaxis = RectangleAsset(2,1050, thinline, black)
+        xaxis = RectangleAsset(1500,1, thinline, black)
+        yaxis = RectangleAsset(1,1050, thinline, black)
         sprite1 = Sprite(xaxis, (0, 450))
         sprite2 = Sprite(yaxis, (750, 0))
         
