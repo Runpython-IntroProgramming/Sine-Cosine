@@ -42,7 +42,7 @@ class Dot(Sprite):
                     self.y += 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     n -= 1
-                    print("Yeah")
+                    print(n)
                 self.x += 1
                     
             elif mode == "t":
