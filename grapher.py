@@ -13,7 +13,7 @@ purple = Color(0xff00ff, 1.0)
 thinline = LineStyle(0, black)
 
 xcord = range(0, 1500, 1)
-suhan = False
+in_loop = False
 
 mode = input("Which type of function do you have? \nl for linear, t for Trig, p for Parabola ")
 if mode == "l":
@@ -36,10 +36,11 @@ class Dot(Sprite):
     def step(self):
         if self.x < 1500:
             if mode == "l":
-                if in_loop == False:
+                if not in_loop:
                     self.y = self.l()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
                     n = self.y-(450-k*(self.x-750+1)-100*b)
+                    print("ha")
                 if n > 0:
                     in_loop = True
                     self.y -= 2
