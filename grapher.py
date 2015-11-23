@@ -40,7 +40,7 @@ class Dot(Sprite):
                     self.y = self.l()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
                     n = self.y-(450-k*(self.x-750+1)-100*b)
-                if n > 1:
+                if n > 0:
                     suhan = True
                     self.y -= 2
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
