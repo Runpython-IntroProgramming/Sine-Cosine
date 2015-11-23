@@ -35,15 +35,17 @@ class Dot(Sprite):
         
     def step(self):
         if self.x < 1500:
-            if mode == "l" and suhan == False:
-                self.y = self.l()
-                sprite = Sprite(Dot.asset, (self.x, self.y))
-                n = self.y-(450-k*(self.x-750+1)-100*b)
+            if mode == "l":
+                if suhan == False:
+                    self.y = self.l()
+                    sprite = Sprite(Dot.asset, (self.x, self.y))
+                    n = self.y-(450-k*(self.x-750+1)-100*b)
                 if n > 0:
                     suhan = True
                     self.y -= 2
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     n -= 1
+                    
                 else:
                     suhan = False
                     self.x += 1
