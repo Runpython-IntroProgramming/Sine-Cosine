@@ -43,10 +43,10 @@ class Dot(Sprite):
                     n = self.y-(450-k*(self.x-750+1)-100*b)
                 if n > 0:
                     print("2")
-                    self.loop = True
                     self.y -= 2
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     print(n)
+                    self.loop = True
                     n -= 1
                 else:
                     print("3")
