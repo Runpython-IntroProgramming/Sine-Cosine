@@ -44,8 +44,8 @@ class Dot(Sprite):
                     suhan = True
                     self.y -= 2
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
+                    print(n)
                     n -= 1
-                    
                 else:
                     suhan = False
                     self.x += 1
