@@ -37,19 +37,19 @@ class Dot(Sprite):
         if self.x < 1500:
             if mode == "l":
                 if not self.loop:
-                    print("ha")
+                    print("1")
                     self.y = self.l()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
                     n = self.y-(450-k*(self.x-750+1)-100*b)
                 if n > 0:
-                    print("ha")
+                    print("2")
                     self.loop = True
                     self.y -= 2
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     print(n)
                     n -= 1
                 else:
-                    print("ha")
+                    print("3")
                     self.loop = False
                     self.x += 1
                     
