@@ -2,8 +2,8 @@ from ggame import App, Color, LineStyle, Sprite
 from ggame import RectangleAsset, CircleAsset
 import math
 
-SCREEN_WIDTH = 1200
-SCREEN_HEIGHT = 900
+SCREEN_WIDTH = 1500
+SCREEN_HEIGHT = 950
 
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
@@ -48,10 +48,10 @@ class Dot(Sprite):
                     self.y -= 2
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     self.loop = True
-                    n -= 1
+                    n -= 2
                 else:
                     self.loop = False
-                    self.x += 1
+                    self.x += 2
                     
             elif mode == "t":
                 n = self.y-(450-a*100*math.tan((self.x-750)/100))
