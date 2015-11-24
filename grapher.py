@@ -51,7 +51,7 @@ class Dot(Sprite):
                     n -= 2
                 else:
                     self.loop = False
-                    self.x += 2
+                    self.x += 1
                     
             elif mode == "t":
                 n = self.y-(450-a*100*math.tan((self.x-750)/100))
