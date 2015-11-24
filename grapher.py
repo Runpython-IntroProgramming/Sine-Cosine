@@ -34,7 +34,7 @@ class Dot(Sprite):
         return 450-k*(self.x-750)-100*b
     
     def t(self):
-        return 450-a*100*math.tan((self.x-750)/100)
+        return 450-a*100*math.sin((self.x-750)/100)
         
     def step(self):
         if self.x < 1500:
@@ -54,7 +54,7 @@ class Dot(Sprite):
                     self.x += 1
                     
             elif mode == "t":
-                n = self.y-(450-a*100*math.tan((self.x-750)/100))
+                n = self.y-(450-a*100*math.sin((self.x-750)/100))
                 if not self.loop:
                     self.y = self.t()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
@@ -63,7 +63,7 @@ class Dot(Sprite):
                     self.y -= 2
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     self.loop = True
-                    n -= 1
+                    n -= 2
                 else:
                     self.loop = False
                     self.x += 1
