@@ -38,19 +38,15 @@ class Dot(Sprite):
             if mode == "l":
                 n = self.y-(450-k*(self.x-750+1)-100*b)
                 if not self.loop:
-                    print("1")
                     self.y = self.l()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
                     
                 if n > 0:
-                    print("2")
-                    self.y -= 2
+                    self.y -= 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
-                    print(n)
                     self.loop = True
                     n -= 1
                 else:
-                    print("3")
                     self.loop = False
                     self.x += 1
                     
