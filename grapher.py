@@ -36,11 +36,12 @@ class Dot(Sprite):
     def step(self):
         if self.x < 1500:
             if mode == "l":
+                n = self.y-(450-k*(self.x-750+1)-100*b)
                 if not self.loop:
                     print("1")
                     self.y = self.l()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
-                    n = self.y-(450-k*(self.x-750+1)-100*b)
+                    
                 if n > 0:
                     print("2")
                     self.y -= 2
