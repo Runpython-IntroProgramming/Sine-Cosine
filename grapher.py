@@ -23,7 +23,7 @@ elif mode == "t":
         
 class Dot(Sprite):
     
-    asset = RectangleAsset(2,2, thinline, blue)
+    asset = CircleAsset(2, thinline, blue)
 
     def __init__(self, position):
         super().__init__(Dot.asset, position)
@@ -54,7 +54,7 @@ class Dot(Sprite):
                     self.x += 1
                     
             elif mode == "t":
-                n = abs(self.y-(450-a*100*math.sin((self.x-750)/100)))
+                n = abs(self.y-450+a*100*math.sin((self.x-750)/100))
                 if not self.loop:
                     self.y = self.t()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
