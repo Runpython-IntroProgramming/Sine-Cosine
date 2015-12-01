@@ -19,13 +19,13 @@ if mode == "l":
     k = float(input("f(x) = kx + b, set the value of k: "))
     b = float(input("f(x) = kx + b, set the value of b: "))
 elif mode == "t":
-    a = int(input("f(x) = a sin h (x + k) , set the value of a: "))
-    h = int(input("f(x) = a sin h (x + k) , set the value of h: "))
-    k = int(input("f(x) = a sin h (x + k) , set the value of k: "))
+    a = float(input("f(x) = a sin h (x + k) , set the value of a: "))
+    h = float(input("f(x) = a sin h (x + k) , set the value of h: "))
+    k = float(input("f(x) = a sin h (x + k) , set the value of k: "))
 elif mode == "p":
-    a = int(input("f(x) = ax^2 + bx + c , set the value of a: "))
-    b = int(input("f(x) = ax^2 + bx + c , set the value of b: "))
-    c = int(input("f(x) = ax^2 + bx + c , set the value of c: "))
+    a = float(input("f(x) = ax^2 + bx + c , set the value of a: "))
+    b = float(input("f(x) = ax^2 + bx + c , set the value of b: "))
+    c = float(input("f(x) = ax^2 + bx + c , set the value of c: "))
         
 class Dot(Sprite):
     
