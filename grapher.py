@@ -61,7 +61,7 @@ class Dot(Sprite):
                     self.x += 1
                     
             elif mode == "t":
-                n = self.y-450+a*100*math.sin(h*(self.x-750+100*k)/100)
+                n = self.y-450+a*100*math.sin(h*(self.x-750+k)/100)
                 if not self.loop:
                     self.y = self.t()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
