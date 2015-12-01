@@ -67,14 +67,14 @@ class Dot(Sprite):
                     sprite = Sprite(Dot.asset, (self.x, self.y))
                     print("1")
                     
-                if n > 1:
+                if n > 0:
                     self.y -= 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     self.loop = True
                     n -= 1
                     print("2")
                     
-                elif n < -1:
+                elif n < 0:
                     self.y += 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     self.loop = True
