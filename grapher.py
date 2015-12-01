@@ -5,6 +5,8 @@ import math
 SCREEN_WIDTH = 1920
 SCREEN_HEIGHT = 1200
 
+y = 0
+
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -35,6 +37,7 @@ class Dot(Sprite):
         super().__init__(Dot.asset, position)
         self.x = 0
         self.loop = False
+        y = l()
     
     def l(self):
         return 450-k*(self.x-750)-100*b
@@ -99,7 +102,7 @@ class Grapher(App):
         #black = Color(0x000000, 1.0)
         #thinline = LineStyle(0, black)
         xaxis = RectangleAsset(1500,1, thinline, black)
-        yaxis = RectangleAsset(1,950, thinline, black)
+        yaxis = RectangleAsset(1,y, thinline, black)
         sprite1 = Sprite(xaxis, (0, 450))
         sprite2 = Sprite(yaxis, (750, 0))
         
