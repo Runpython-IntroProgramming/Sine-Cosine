@@ -21,6 +21,7 @@ if mode == "l":
 elif mode == "t":
     a = int(input("f(x) = a sin h (x + k) , set the value of a: "))
     h = int(input("f(x) = a sin h (x + k) , set the value of h: "))
+    k = int(input("f(x) = a sin h (x + k) , set the value of k: "))
 elif mode == "p":
     a = int(input("f(x) = ax^2 + bx + c , set the value of a: "))
     b = int(input("f(x) = ax^2 + bx + c , set the value of b: "))
@@ -60,7 +61,7 @@ class Dot(Sprite):
                     self.x += 1
                     
             elif mode == "t":
-                n = self.y-450+a*100*math.sin((self.x-750)/100)
+                n = self.y-450+a*100*math.sin(h*(self.x-750+100*k)/100)
                 if not self.loop:
                     self.y = self.t()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
