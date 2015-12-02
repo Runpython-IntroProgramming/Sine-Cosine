@@ -45,7 +45,7 @@ class Dot(Sprite):
         return 450-a*100*math.sin((self.x-750)/100)
         
     def step(self):
-        if self.x < 1500:
+        if self.l() >= 0:
             if mode == "l":
                 n = self.y-(450-k*(self.x-750+1)-100*b)
                 if not self.loop:
@@ -59,7 +59,7 @@ class Dot(Sprite):
                     n -= 2
                 else:
                     self.loop = False
-                    self.x += 1
+                    
                     
             elif mode == "t":
                 n = self.y-(450-a*100*math.sin(h*(self.x-750+100*k)/100))
@@ -84,13 +84,13 @@ class Dot(Sprite):
                     
                 else:
                     self.loop = False
-                    self.x += 1
+                    
                     print("4")
                 
             elif mode == "p":
                 sprite = Sprite(Dot.asset, (self.x, 450-(a*(self.x-750)**2/100+100*b*self.x+100*c)))
-                self.x += 1
-              
+                
+        self.x += 1     
             
             
 class Grapher(App):
