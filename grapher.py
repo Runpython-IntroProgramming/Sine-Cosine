@@ -3,7 +3,8 @@ from ggame import RectangleAsset, CircleAsset
 import math
 
 
-y = 0
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1080
 
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
@@ -38,16 +39,16 @@ class Dot(Sprite):
         
     
     def l(self):
-        return 525-k*(self.x-840)-100*b
+        return 500-k*(self.x-840)-100*b
     
     
     def t(self):
-        return 525-a*100*math.sin((self.x-840)/100)
+        return 500-a*100*math.sin((self.x-840)/100)
         
     def step(self):
         if 0 <= self.l() <= 1080:
             if mode == "l":
-                n = self.y-(525-k*(self.x-840+1)-100*b)
+                n = self.y-(500-k*(self.x-840+1)-100*b)
                 if not self.loop:
                     self.y = self.l()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
@@ -62,7 +63,7 @@ class Dot(Sprite):
                     
                     
             elif mode == "t":
-                n = self.y-(525-a*100*math.sin(h*(self.x-840+100*k)/100))
+                n = self.y-(500-a*100*math.sin(h*(self.x-840+100*k)/100))
                 if not self.loop:
                     self.y = self.t()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
@@ -88,7 +89,7 @@ class Dot(Sprite):
                     print("4")
                 
             elif mode == "p":
-                sprite = Sprite(Dot.asset, (self.x, 525-(a*(self.x-840)**2/100+100*b*self.x+100*c)))
+                sprite = Sprite(Dot.asset, (self.x, 500-(a*(self.x-840)**2/100+100*b*self.x+100*c)))
                 
         self.x += 1     
             
@@ -97,15 +98,13 @@ class Grapher(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         
-        SCREEN_WIDTH = 1920
-        SCREEN_HEIGHT = 1080
         
         xaxis = RectangleAsset(1920,1, thinline, black)
         yaxis = RectangleAsset(1,1080, thinline, black)
-        sprite1 = Sprite(xaxis, (0, 525))
+        sprite1 = Sprite(xaxis, (0, 500))
         sprite2 = Sprite(yaxis, (840, 0))
         
-        Dot((0,525))
+        Dot((0,500))
         
     def step(self):
         for dot in self.getSpritesbyClass(Dot):
