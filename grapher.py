@@ -2,8 +2,6 @@ from ggame import App, Color, LineStyle, Sprite
 from ggame import RectangleAsset, CircleAsset
 import math
 
-SCREEN_WIDTH = 1920
-SCREEN_HEIGHT = 1200
 
 y = 0
 
@@ -99,9 +97,10 @@ class Grapher(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         
-        #black = Color(0x000000, 1.0)
-        #thinline = LineStyle(0, black)
-        xaxis = RectangleAsset(1500,1, thinline, black)
+        SCREEN_WIDTH = 1920
+        SCREEN_HEIGHT = 1200
+        
+        xaxis = RectangleAsset(1920,1, thinline, black)
         yaxis = RectangleAsset(1,450+k*750-100*b, thinline, black)
         sprite1 = Sprite(xaxis, (0, 450))
         sprite2 = Sprite(yaxis, (750, 0))
