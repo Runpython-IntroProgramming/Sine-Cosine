@@ -38,16 +38,16 @@ class Dot(Sprite):
         
     
     def l(self):
-        return 450-k*(self.x-750)-100*b
+        return 550-k*(self.x-750)-100*b
     
     
     def t(self):
-        return 450-a*100*math.sin((self.x-750)/100)
+        return 550-a*100*math.sin((self.x-750)/100)
         
     def step(self):
-        if self.l() >= 0:
+        if 0 <= self.l() <= 1080:
             if mode == "l":
-                n = self.y-(450-k*(self.x-750+1)-100*b)
+                n = self.y-(550-k*(self.x-750+1)-100*b)
                 if not self.loop:
                     self.y = self.l()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
@@ -62,7 +62,7 @@ class Dot(Sprite):
                     
                     
             elif mode == "t":
-                n = self.y-(450-a*100*math.sin(h*(self.x-750+100*k)/100))
+                n = self.y-(550-a*100*math.sin(h*(self.x-750+100*k)/100))
                 if not self.loop:
                     self.y = self.t()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
@@ -88,7 +88,7 @@ class Dot(Sprite):
                     print("4")
                 
             elif mode == "p":
-                sprite = Sprite(Dot.asset, (self.x, 450-(a*(self.x-750)**2/100+100*b*self.x+100*c)))
+                sprite = Sprite(Dot.asset, (self.x, 550-(a*(self.x-750)**2/100+100*b*self.x+100*c)))
                 
         self.x += 1     
             
@@ -98,21 +98,19 @@ class Grapher(App):
         super().__init__(width, height)
         
         SCREEN_WIDTH = 1920
-        SCREEN_HEIGHT = 1200
+        SCREEN_HEIGHT = 1080
         
         xaxis = RectangleAsset(1920,1, thinline, black)
-        yaxis = RectangleAsset(1,450+k*750-100*b, thinline, black)
-        sprite1 = Sprite(xaxis, (0, 450))
+        yaxis = RectangleAsset(1,1080, thinline, black)
+        sprite1 = Sprite(xaxis, (0, 550))
         sprite2 = Sprite(yaxis, (750, 0))
         
-        Dot((0,450))
-        #sprite0 = [Sprite(Dot.asset, (x, 450-k*(x-750)-100*b)) for x in xcord]
+        Dot((0,550))
         
     def step(self):
         for dot in self.getSpritesbyClass(Dot):
             dot.step()
-        #for dot in self.getSpritesbyClass(Dot):
-            #dot.step()
+      
             
 myapp = Grapher(SCREEN_WIDTH, SCREEN_HEIGHT)
 myapp.run()
