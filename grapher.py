@@ -38,16 +38,16 @@ class Dot(Sprite):
         
     
     def l(self):
-        return 550-k*(self.x-750)-100*b
+        return 600-k*(self.x-750)-100*b
     
     
     def t(self):
-        return 550-a*100*math.sin((self.x-750)/100)
+        return 600-a*100*math.sin((self.x-750)/100)
         
     def step(self):
         if 0 <= self.l() <= 1080:
             if mode == "l":
-                n = self.y-(550-k*(self.x-750+1)-100*b)
+                n = self.y-(600-k*(self.x-750+1)-100*b)
                 if not self.loop:
                     self.y = self.l()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
@@ -62,7 +62,7 @@ class Dot(Sprite):
                     
                     
             elif mode == "t":
-                n = self.y-(550-a*100*math.sin(h*(self.x-750+100*k)/100))
+                n = self.y-(600-a*100*math.sin(h*(self.x-750+100*k)/100))
                 if not self.loop:
                     self.y = self.t()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
@@ -88,7 +88,7 @@ class Dot(Sprite):
                     print("4")
                 
             elif mode == "p":
-                sprite = Sprite(Dot.asset, (self.x, 550-(a*(self.x-750)**2/100+100*b*self.x+100*c)))
+                sprite = Sprite(Dot.asset, (self.x, 600-(a*(self.x-750)**2/100+100*b*self.x+100*c)))
                 
         self.x += 1     
             
@@ -102,10 +102,10 @@ class Grapher(App):
         
         xaxis = RectangleAsset(1920,1, thinline, black)
         yaxis = RectangleAsset(1,1080, thinline, black)
-        sprite1 = Sprite(xaxis, (0, 550))
+        sprite1 = Sprite(xaxis, (0, 600))
         sprite2 = Sprite(yaxis, (750, 0))
         
-        Dot((0,550))
+        Dot((0,600))
         
     def step(self):
         for dot in self.getSpritesbyClass(Dot):
