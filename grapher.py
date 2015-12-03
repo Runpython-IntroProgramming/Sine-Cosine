@@ -43,7 +43,7 @@ class Dot(Sprite):
     
     
     def t(self):
-        return 500-a*100*math.sin((self.x-840)/100)
+        return 500-a*100*math.sin(h*(self.x-840+100*k)/100)
         
     def step(self):
         if 0 <= self.l() <= 1080:
