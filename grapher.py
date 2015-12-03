@@ -96,22 +96,25 @@ class Dot(Sprite):
                 if not self.loop:
                     self.y = self.p()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
+                    print("1")
                     
                 if n > 1:
                     self.y -= 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     self.loop = True
                     n -= 1
+                    print("2")
                     
                 elif n < -1:
                     self.y += 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     self.loop = True
                     n += 1
+                    print("3")
                     
                 else:
                     self.loop = False
-                    
+                    print("4")
         self.x += 1     
             
             
