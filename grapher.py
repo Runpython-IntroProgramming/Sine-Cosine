@@ -92,7 +92,7 @@ class Dot(Sprite):
                     print("4")
                 
             elif mode == "p":
-                n = self.y-(500-k*(self.x-840+1)-100*b)
+                n = self.y-(500-(a*(self.x-840)**2/100+100*b*self.x+100*c))
                 if not self.loop:
                     self.y = self.p()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
