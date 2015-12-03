@@ -10,7 +10,7 @@ red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
 green = Color(0x00ff00, 1.0)
 black = Color(0x000000, 1.0)
-purple = Color(0xff00ff, 1.0)
+pink = Color(0xff00ff, 1.0)
 thinline = LineStyle(0, black)
 
 xcord = range(0, 1500, 1)
@@ -30,7 +30,7 @@ elif mode == "p":
         
 class Dot(Sprite):
     
-    asset = CircleAsset(2, thinline, blue)
+    asset = CircleAsset(2, thinline, pink)
 
     def __init__(self, position):
         super().__init__(Dot.asset, position)
