@@ -66,7 +66,7 @@ class Dot(Sprite):
                     
                     
             elif mode == "t":
-                n = self.y-(500-a*100*math.sin(h*(self.x-840+100*k)/100))
+                n = self.y-(500-a*100*math.sin(h*(self.x-840+1+100*k)/100))
                 if not self.loop:
                     self.y = self.t()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
@@ -92,7 +92,7 @@ class Dot(Sprite):
                     print("4")
                 
             elif mode == "p":
-                n = self.y-(500-(a*(self.x-840)**2/100+100*b*self.x+100*c))
+                n = self.y-(500-(a*(self.x+1-840)**2/100+100*b*(self.x+1)+100*c))
                 if not self.loop:
                     self.y = self.p()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
