@@ -116,7 +116,7 @@ class Dot(Sprite):
                     self.loop = False
                     print("4")
         if not self.loop:
-            self.x += 1     
+            self.x += 1    
             
             
 class Grapher(App):
