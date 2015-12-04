@@ -36,9 +36,13 @@ class Dot(Sprite):
         super().__init__(Dot.asset, position)
         
         if mode == "l":
-            if k > 0.5625:
+            if k >= 0.5625:
                 self.x = (840*k-100*b-580)/k
-            else:
+            elif 0.5625 > k > 0:
+                self.x = 0
+            elif k <= -0.5625:
+                self.x = (840*k+500-100*b)/k
+            elif 0 > k > -0.5625:
                 self.x = 0
         elif mode == "t":
             self.x = 0
