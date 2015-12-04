@@ -34,19 +34,28 @@ class Dot(Sprite):
 
     def __init__(self, position):
         super().__init__(Dot.asset, position)
-        self.x = 0
+        
+        if mode == "l":
+            if k > 0.5625:
+                self.x = (840*k-100*b-580)/k
+            else:
+                self.x = 0
+        elif mode == "t":
+            self.x = 0
+        elif mode == "p":
+            self.x = 1920 - ((-b-sqrt(b**2-4*a*c))/2*a)
+        
         self.loop = False
         
     
     def l(self):
         return 500-k*(self.x-840)-100*b
     
-    
     def t(self):
         return 500-a*100*math.sin(h*(self.x-840+100*k)/100)
         
     def p(self):
-        return 500-(a*(self.x-840)**2/100+100*b*self.x+100*c)
+        return 500-(100*a*(self.x-840)**2+100*b*self.x+100*c)
         
     def step(self):
         if 0 <= self.y <= 1080:
