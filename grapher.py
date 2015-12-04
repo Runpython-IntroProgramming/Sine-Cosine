@@ -58,7 +58,7 @@ class Dot(Sprite):
         return 500-(100*a*(self.x-840)**2+100*b*self.x+100*c)
         
     def step(self):
-        if 0 <= self.y <= 1080:
+        if 0 <= self.y:
             if mode == "l":
                 n = self.y-(500-k*(self.x-840+1)-100*b)
                 if not self.loop:
