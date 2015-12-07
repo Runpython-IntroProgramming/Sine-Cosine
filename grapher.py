@@ -47,7 +47,7 @@ class Dot(Sprite):
         elif mode == "t":
             self.x = 0
         elif mode == "p":
-            self.x = 1920 - ((-b - math.sqrt(b**2-4*a*c))/2*a)
+            self.x = (-b - math.sqrt(b**2-4*a*c))/2*a
         
         self.loop = False
         
