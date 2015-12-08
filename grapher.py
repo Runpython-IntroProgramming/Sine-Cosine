@@ -150,7 +150,10 @@ class Grapher(App):
     def step(self):
         for dot in self.getSpritesbyClass(Dot):
             dot.step()
-      
+        for dot in self.getSpritesbyClass(Dot):
+            dot.step()
+        for dot in self.getSpritesbyClass(Dot):
+            dot.step()
             
 myapp = Grapher(SCREEN_WIDTH, SCREEN_HEIGHT)
 myapp.run()
