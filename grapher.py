@@ -50,7 +50,7 @@ class Dot(Sprite):
             if a > 0:
                 self.x = (-100*b - math.sqrt((100*b)**2-4*a*100*(c-500)))/(2*a)+840
             elif a < 0:
-                self.x = (-100*b - math.sqrt((100*b)**2-4*a*100*(c+500)))/(2*a)+840
+                self.x = (-100*b + math.sqrt((100*b)**2-4*a*100*(c+500)))/(2*a)+840
         self.loop = False
         
     
@@ -144,7 +144,7 @@ class Grapher(App):
         xaxis = RectangleAsset(1920,1, thinline, black)
         yaxis = RectangleAsset(1,1080, thinline, black)
         sprite1 = Sprite(xaxis, (0, 500))
-        sprite2 = Sprite(yaxis, (840, 0))
+        sprite2 = Sprite(yaxis, (840, 0))  #origin (840,500)
         
         Dot((0,0))
         
