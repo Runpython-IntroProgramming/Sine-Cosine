@@ -113,25 +113,25 @@ class Dot(Sprite):
                 if not self.loop:
                     self.y = self.p()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
-                    print("one")
+                    print("new dot")
                     
                 if n > 1:
                     self.y -= 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     self.loop = True
                     n -= 1
-                    print("second")
+                    print("going up")
                     
                 elif n < -1:
                     self.y += 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     self.loop = True
                     n += 1
-                    print("third")
+                    print("going down")
                     
                 else:
                     self.loop = False
-                    print("four")
+                    print("loop finished")
         if not self.loop:
             self.x += 1    
             
@@ -146,7 +146,7 @@ class Grapher(App):
         sprite1 = Sprite(xaxis, (0, 500))
         sprite2 = Sprite(yaxis, (840, 0))
         
-        Dot((0,1080))
+        Dot((0,0))
         
     def step(self):
         for dot in self.getSpritesbyClass(Dot):
