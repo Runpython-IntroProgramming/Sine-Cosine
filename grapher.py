@@ -108,6 +108,7 @@ class Dot(Sprite):
                 
             elif mode == "p":
                 print(self.x)
+                print(self.y)
                 n = self.y-500+(100*a*((self.x-839)/100)**2+100*b*(self.x+1)+100*c)
                 if not self.loop:
                     self.y = self.p()
