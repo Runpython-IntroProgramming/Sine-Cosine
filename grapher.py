@@ -107,31 +107,31 @@ class Dot(Sprite):
                     print("4")
                 
             elif mode == "p":
-                print(self.x)
-                print(self.y)
+                print(int(self.x))
+                print(int(self.y))
                 n = self.y-500+(100*a*((self.x-839)/100)**2+100*b*(self.x+1)+100*c)
                 if not self.loop:
                     self.y = self.p()
                     sprite = Sprite(Dot.asset, (self.x, self.y))
-                    print("1")
+                    print("one")
                     
                 if n > 1:
                     self.y -= 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     self.loop = True
                     n -= 1
-                    print("2")
+                    print("second")
                     
                 elif n < -1:
                     self.y += 1
                     sprite1 = Sprite(Dot.asset, (self.x, self.y))
                     self.loop = True
                     n += 1
-                    print("3")
+                    print("third")
                     
                 else:
                     self.loop = False
-                    print("4")
+                    print("four")
         if not self.loop:
             self.x += 1    
             
