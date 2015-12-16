@@ -50,7 +50,7 @@ class Dot(Sprite):
             if a > 0:
                 self.x = 100*(-b-math.sqrt(b**2-4*a*c+20*a))/(2*a)
             elif a < 0:
-                self.x = -223
+                self.x = 100*(-b-math.sqrt(b**2-4*a*c+23.2*a))/(2*a)
         self.loop = False
         
     
@@ -146,7 +146,7 @@ class Grapher(App):
         sprite1 = Sprite(xaxis, (0, 500))
         sprite2 = Sprite(yaxis, (840, 0))  #origin (840,500)
         
-        Dot((0,0))
+        Dot((1920,1080))
         
     def step(self):
         for dot in self.getSpritesbyClass(Dot):
