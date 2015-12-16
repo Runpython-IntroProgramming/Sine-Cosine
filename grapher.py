@@ -146,7 +146,7 @@ class Grapher(App):
         sprite1 = Sprite(xaxis, (0, 500))
         sprite2 = Sprite(yaxis, (840, 0))  #origin (840,500)
         
-        Dot((1920,1080))
+        Dot((0,0))
         
     def step(self):
         for dot in self.getSpritesbyClass(Dot):
