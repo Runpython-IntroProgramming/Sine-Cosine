@@ -50,8 +50,7 @@ class Dot(Sprite):
             if a > 0:
                 self.x = 100*(-b-math.sqrt(b**2-4*a*c+20*a))/(2*a)
             elif a < 0:
-                self.x = -223
-                #self.x = 100*(-b-math.sqrt(b**2-4*a*c-23.2*a))/(2*a)
+                self.x = -100*(-b-math.sqrt(b**2-4*a*c-23.2*a))/(2*a)
         self.loop = False
         
     
