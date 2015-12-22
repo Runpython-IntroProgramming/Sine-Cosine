@@ -61,7 +61,7 @@ class Dot(Sprite):
         return 500-a*100*math.sin(h*(self.x-840+100*k)/100)
         
     def p(self):
-        return a*100*(self.x/100)**2+100*b*self.x+100*c
+        return a*100*(self.x/100)**2+b*self.x+100*c
         
     def step(self):
         if 10 == 10:
@@ -109,7 +109,7 @@ class Dot(Sprite):
             elif mode == "p":
                 print(int(self.x+840))
                 print(int(self.y+500))
-                n = self.y + a*100*((self.x+1)/100)**2-b*(self.x+1)+100*c
+                n = self.y - a*100*((self.x+1)/100)**2-b*(self.x+1)-100*c
                 if not self.loop:
                     self.y = self.p()
                     sprite = Sprite(Dot.asset, (self.x+840, self.y+500))
