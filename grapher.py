@@ -112,19 +112,19 @@ class Dot(Sprite):
                 n = self.y - a*100*((self.x+1)/100)**2-b*(self.x+1)-100*c
                 if not self.loop:
                     self.y = self.p()
-                    sprite = Sprite(Dot.asset, (self.x+840, self.y+500))
+                    sprite = Sprite(Dot.asset, (self.x+840, -self.y+500))
                     print("new dot")
                     
                 if n > 1:
                     self.y -= 1
-                    sprite1 = Sprite(Dot.asset, (self.x+840, self.y+500))
+                    sprite1 = Sprite(Dot.asset, (self.x+840, -self.y+500))
                     self.loop = True
                     n -= 1
                     print("going up")
                     
                 elif n < -1:
                     self.y += 1
-                    sprite1 = Sprite(Dot.asset, (self.x+840, self.y+500))
+                    sprite1 = Sprite(Dot.asset, (self.x+840, -self.y+500))
                     self.loop = True
                     n += 1
                     print("going down")
