@@ -61,7 +61,7 @@ class Dot(Sprite):
         return 500-a*100*math.sin(h*(self.x-840+100*k)/100)
         
     def p(self):
-        return -(a*100*(self.x/100)**2+b*self.x+100*c)
+        return a*100*(self.x/100)**2+100*b*self.x+100*c
         
     def step(self):
         if 10 == 10:
