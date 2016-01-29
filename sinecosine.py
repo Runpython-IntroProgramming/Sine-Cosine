@@ -38,7 +38,7 @@ green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 purple = Color(0x8904B1, 1.0)
 
-thinline = LineStyle(1, black)
+thinline = LineStyle(1, green)
 #thinline2 = LineStyle(1,)
 mycircle = CircleAsset(5, thinline, blue)
 mycircle2 = CircleAsset(5, thinline, red)
