@@ -39,10 +39,14 @@ blue = Color(0x0000ff, 1.0)
 purple = Color(0x8904B1, 1.0)
 
 thinline = LineStyle(1, black)
+#thinline2 = LineStyle(1,)
 mycircle = CircleAsset(5, thinline, blue)
+mycircle2 = CircleAsset(5, thinline, red)
 xcoordinates = range(0, 360, 10)
 
 # Generate a list of sprites that form a line!
+sprites = [Sprite(mycircle, (x, 100*sin(radians(x)) + 100)) for x in xcoordinates]
+sprites = [Sprite(mycircle2, (x, 100*cos(radians(x)) + 100)) for x in xcoordinates]
 sprites = [Sprite(mycircle, (x, 100*sin(radians(x)) + 100)) for x in xcoordinates]
 
 myapp = App()
