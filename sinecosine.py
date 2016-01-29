@@ -47,7 +47,7 @@ xcoordinates = range(0, 360, 10)
 # Generate a list of sprites that form a line!
 sprites = [Sprite(mycircle, (x, 100*sin(radians(x)) + 100)) for x in xcoordinates]
 sprites = [Sprite(mycircle2, (x, 100*cos(radians(x)) + 100)) for x in xcoordinates]
-sprites = [Sprite(mycircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)) for x in xcoordinates]
+sprites = [Sprite(mycircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
