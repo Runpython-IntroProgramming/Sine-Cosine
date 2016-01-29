@@ -31,4 +31,4 @@ for detailed information on ggame.
 """
 
 from ggame import App, Color, LineStyle, Sprite, CircleAsset
-from ggame import 
+from math import sin, cos, radians
