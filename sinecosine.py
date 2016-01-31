@@ -1,6 +1,6 @@
 """
 sinecosine.py
-Author: <your name here>
+Author: Payton
 Credit: <list sources used, if any>
 
 Assignment:
