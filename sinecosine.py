@@ -39,14 +39,14 @@ black = Color(0x000000, 1.0)
 purple = Color(0x8E2EC9, 1.0)
 thinline = LineStyle(1, black)
 
-circleblue = (5, thinline, blue)
-circlered = (5, thinline, red)
-circlepurple = (5, thinline, purple)
+bluecircle = (5, thinline, blue)
+redcircle = (5, thinline, red)
+purplecircle = (5, thinline, purple)
 xcoordinates = range(0, 360, 10)
 
-sprites = [Sprite(circlered, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
-sprites = [Sprite(circleblue, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
-sprites = [Sprite(circlepurple, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
+sprites = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
+sprites = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
+sprites = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
