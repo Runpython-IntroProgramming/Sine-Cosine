@@ -43,9 +43,9 @@ sine = CircleAsset(5, thinline, blue)
 xcoordinates = range(0, 360, 10)
 cosine = CircleAsset(5, thinline, red)
 
-# Generate a list of sprites that form a line!
 sprites = [Sprite(sine, (x, 100+100*math.sin(math.radians(x)))) for x in xcoordinates]
 sprites = [Sprite(cosine, (x, 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
+sprites = [Sprite(radians, (x, 100+100*cos(radians(x)), (400+100*sin(radians(x)))]
 
 myapp = App()
 myapp.run()
