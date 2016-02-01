@@ -32,17 +32,14 @@ for detailed information on ggame.
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 from math import sin, cos, radians
 red = Color(0xff0000, 1.0)
-green = Color(0x00ff00, 1.0)
+purple = Color
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 thinishlineblue=LineStyle(1, blue)
 thinishlinered=LineStyle(1, red)
 blucircle = CircleAsset(4, thinishlineblue, blue)
 redcircle = CircleAsset(4, thinishlinered, red)
-xcoordinates = range (0, 360, 10)
-thinline = LineStyle(1, black)
-mycircle = CircleAsset(5, thinline, blue)
-xcoordinates = range(0, 360, 10)
-sprites = [Sprite(blucircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
+xvalues = range(0, 360, 10)
+sprites = [Sprite(blucircle, (x, 100+100*sin(radians(x)))) for x in xvalues]
 myapp = App()
 myapp.run()
