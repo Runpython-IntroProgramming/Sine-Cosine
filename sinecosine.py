@@ -44,6 +44,7 @@ scos = CircleAsset(3, thinline, red)
 xcord = range(0, 360, 10)
 
 sprites = [Sprite(ssine, (x, 100+100*math.sin(math.radians(x)))) for x in xcord]
+sprites = [Sprite(scos, (x, 100+100*math.cos(math.radians(x)))) for x in xcord]
 
 myapp = App()
 myapp.run()
