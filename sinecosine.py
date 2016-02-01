@@ -44,9 +44,9 @@ xcoordinates = range(0, 360, 10)
 cosine = CircleAsset(5, noline, red)
 radianc = CircleAsset(5, noline, purple)
 
-sprites = [Sprite(sine, (x, 100+100*math.sin(math.radians(x)))) for x in xcoordinates]
-sprites = [Sprite(cosine, (x, 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
-sprites = [Sprite(radianc, (x, 100+100*math.cos(math.radians(x))), (x, 400+100*math.sin(math.radians(x)))) for x in xcoordinates]
+sineg = [Sprite(sine, (x, 100+100*math.sin(math.radians(x)))) for x in xcoordinates]
+cosineg = [Sprite(cosine, (x, 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
+radiancg = [Sprite(radianc, (x, 100+100*math.cos(math.radians(x))), (x, 400+100*math.sin(math.radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
