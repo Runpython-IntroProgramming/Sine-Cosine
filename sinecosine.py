@@ -34,18 +34,19 @@ from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
 
 red = Color(0xff0000, 1.0)
-green = Color(0x00ff00, 1.0)
+purple = Color(0x8500B5, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
-thinline = LineStyle(1, black)
-sine = CircleAsset(5, thinline, blue)
+noline = LineStyle(0, black)
+sine = CircleAsset(5, noline, blue)
 xcoordinates = range(0, 360, 10)
-cosine = CircleAsset(5, thinline, red)
+cosine = CircleAsset(5, noline, red)
+radianc = CircleAsset(5, noline, purple)
 
 sprites = [Sprite(sine, (x, 100+100*math.sin(math.radians(x)))) for x in xcoordinates]
 sprites = [Sprite(cosine, (x, 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
-sprites = [Sprite(radians, (x, 100+100*cos(radians(x)), (400+100*sin(radians(x)))]
+sprites = [Sprite(radianc, (x, 100+100*math.cos(math.radians(x))), (400+100*math.sin(math.radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
