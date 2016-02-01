@@ -39,8 +39,8 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
-ssine = CircleAsset(1, thinline, blue)
-scos = CircleAsset(1, thinline, red)
+ssine = CircleAsset(3, thinline, blue)
+scos = CircleAsset(3, thinline, red)
 xcord = range(0, 360, 10)
 
 sprites = [Sprite(ssine, (x, 100+100*math.sin(math.radians(x)))) for x in xcord]
