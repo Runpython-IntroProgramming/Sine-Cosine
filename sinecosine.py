@@ -46,7 +46,7 @@ xcoordinates = range(0, 360, 10)
 
 sprites = [Sprite(bluecircle, (x+10, 100+100*sin(radians(x))+10)) for x in xcoordinates]
 sprites = [Sprite(redcircle, (x+10, 100+100*cos(radians(x))+10)) for x in xcoordinates]
-sprites = [Sprite(purplecircle, (100+100*cos(radians(x))+10, 400+100*sin(radians(x))-20)) for x in xcoordinates]
+sprites = [Sprite(purplecircle, (100+100*cos(radians(x))+20, 400+100*sin(radians(x))-30)) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
