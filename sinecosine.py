@@ -39,9 +39,9 @@ black = Color(0x000000, 1.0)
 purple = Color(0x8E2EC9, 1.0)
 thinline = LineStyle(1, black)
 
-bluecircle = (5, thinline, blue)
-redcircle = (5, thinline, red)
-purplecircle = (5, thinline, purple)
+bluecircle = CircleAsset(5, thinline, blue)
+redcircle = CircleAsset(5, thinline, red)
+purplecircle = CircleAsset(5, thinline, purple)
 xcoordinates = range(0, 360, 10)
 
 sprites = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
