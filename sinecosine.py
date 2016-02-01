@@ -43,6 +43,8 @@ ssine = CircleAsset(1, green)
 scos = CircleAsset(1, red)
 xcord = range(0, 360, 10)
 
+sprites = [Sprite(x, 
+
 myapp = App()
 myapp.run()
 
