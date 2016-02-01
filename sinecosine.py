@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Payton
-Credit: <list sources used, if any>
+Credit: Morgan, Mr. Dennison
 
 Assignment:
 
