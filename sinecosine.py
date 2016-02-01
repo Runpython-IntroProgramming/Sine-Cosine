@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Adam Glueck
+Credit: Looked at https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Programmed-Graphics for notation help, also looked at my picture.py for ggame knowledge
 
 Assignment:
 
@@ -29,4 +29,20 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
-
+from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
+from math import sin, cos, radians
+red = Color(0xff0000, 1.0)
+purple = Color(0x8800AD, 1.0)
+blue = Color(0x0062FF, 1.0)
+thinishlineblue=LineStyle(1, blue)
+thinishlinered=LineStyle(1, red)
+thinlinepurple=LineStyle(1, purple)
+blucircle = CircleAsset(4, thinishlineblue, blue)
+redcircle = CircleAsset(4, thinishlinered, red)
+purplcircl = CircleAsset(4, thinlinepurple, purple)
+xvalues = range(0, 360, 10)
+sprites = [Sprite(blucircle, (x, 100+100*sin(radians(x)))) for x in xvalues]
+sprites = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xvalues]
+sprites = [Sprite(purplcircl, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xvalues]
+myapp = App()
+myapp.run()
