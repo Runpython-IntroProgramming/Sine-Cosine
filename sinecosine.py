@@ -38,13 +38,16 @@ green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
+
 thinline = LineStyle(1, black)
 ssine = CircleAsset(3, thinline, blue)
 scos = CircleAsset(3, thinline, red)
+uc = CircleAsset(3, thinline, purple)
 xcord = range(0, 360, 10)
 
 sprites = [Sprite(ssine, (x, 100+100*math.sin(math.radians(x)))) for x in xcord]
 sprites = [Sprite(scos, (x, 100+100*math.cos(math.radians(x)))) for x in xcord]
+sprites = [Sprite(uc, (x, 100+100*math.cos(math.radians(x)))) for x in xcord]
 
 myapp = App()
 myapp.run()
