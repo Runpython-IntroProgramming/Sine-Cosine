@@ -39,11 +39,11 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
-ssine = CircleAsset(1, blue)
-scos = CircleAsset(1, red)
+ssine = CircleAsset(1, thinline, blue)
+scos = CircleAsset(1, thinline, red)
 xcord = range(0, 360, 10)
 
-sprites = [Sprite(ssine, (x, x*0.5 + 100)) for x in xcoordinates]
+sprites = [Sprite(ssine, (x, x*0.5 + 100)) for x in xcord]
 
 myapp = App()
 myapp.run()
