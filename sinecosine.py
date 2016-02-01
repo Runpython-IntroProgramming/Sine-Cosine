@@ -38,6 +38,10 @@ green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
+thinline = LineStyle(1, black)
+ssine = CircleAsset(1, green)
+scos = CircleAsset(1, red)
+xcord = range(0, 360, 10)
 
 myapp = App()
 myapp.run()
