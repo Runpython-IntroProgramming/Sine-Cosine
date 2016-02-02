@@ -43,13 +43,13 @@ thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(100, 600, 10)
 redcircle = CircleAsset(5, thinline, red)
-xcoordinatesblue = range(0, 360, 10)
+xcoordinatesblue = range(300, 360, 10)
 
 
 # Generate a list of sprites that form a line!
 sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
 
-spritesred= [Sprite(redcircle, (x, x*.5 + 100)) for x in xcoordinatesblue]
+spritesred= [Sprite(redcircle, (x, x*.5 + 300)) for x in xcoordinatesblue]
 
 myapp = App()
 myapp.run()
