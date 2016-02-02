@@ -33,10 +33,9 @@ for detailed information on ggame.
 from ggame import App, Color, LineStyle, Sprite
 from math import sin, cos, radians
 
-Red = Color(0xff0000, 1.0)
-Green = Color(0x00ff00, 1.0)
-Blue = Color(0x0000ff, 1.0)
 Black = Color(0x000000, 1.0)
+Blue = Color(0x0000ff, 1.0)
+Red = Color(0xff0000, 1.0)
 Purple = Color(0x800080, 1.0)
 
 Line = LineStyle(1, Black)
