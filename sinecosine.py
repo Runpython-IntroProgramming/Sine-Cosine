@@ -38,7 +38,13 @@ Green = Color(0x00ff00, 1.0)
 Blue = Color(0x0000ff, 1.0)
 Black = Color(0x000000, 1.0)
 
+Line = LineStyle(1, Black)
+
+BlueCircle = CircleAsset(5, Line, Blue)
+
 XCorBR = range(0, 360, 10)
+
+SinGraph = [Sprite(
 
 myapp = App()
 myapp.run()
