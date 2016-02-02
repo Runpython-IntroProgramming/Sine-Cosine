@@ -37,16 +37,20 @@ Red = Color(0xff0000, 1.0)
 Green = Color(0x00ff00, 1.0)
 Blue = Color(0x0000ff, 1.0)
 Black = Color(0x000000, 1.0)
+Purple = Color(0x800080, 1.0)
 
 Line = LineStyle(1, Black)
 
 BlueCircle = CircleAsset(5, Line, Blue)
 RedCircle = CircleAsset(5, Line, Red)
+PurpleCircle = CircleAsset(5, Line, Purple)
 
 XCorSC = range(0, 360, 10)
+XCorCrc = [100+100*cos(radians(x)) for x in XCorSC]
 
 SinGraph = [Sprite(BlueCircle, (x, 100+100*sin(radians(x)))) for x in XCorSC]
 CosGraph = [Sprite(RedCircle, (x, 100+100*cos(radians(x)))) for x in XCorSC]
+CrcGraph = [Sprite(PurpleCircle, (x, 400+100*sin(radians(x)))) for x in XCorCrc]
 
 myapp = App()
 myapp.run()
