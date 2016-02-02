@@ -30,3 +30,8 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+from ggame import App, Color, LineStyle, Sprite
+from math import Sine, Cosine
+
+myapp = App()
+myapp.run()
