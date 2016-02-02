@@ -44,7 +44,7 @@ BlueCircle = CircleAsset(5, Line, Blue)
 
 XCorBR = range(0, 360, 10)
 
-SinGraph = [Sprite(BlueCircle, (x, 100+100*sin(radians(x))) for x in XCorBR)]
+SinGraph = [Sprite(BlueCircle, (x, 100+100*sin(radians(x)))) for x in XCorBR]
 
 myapp = App()
 myapp.run()
