@@ -43,7 +43,7 @@ thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(100, 600, 10)
 redcircle = CircleAsset(5, thinline, red)
-xcoordinatesblue = range(300, 360, 10)
+xcoordinatesblue = range(5, 360, 10)
 
 
 # Generate a list of sprites that form a line!
