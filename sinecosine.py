@@ -33,5 +33,12 @@ for detailed information on ggame.
 from ggame import App, Color, LineStyle, Sprite
 from math import sin, cos, radians
 
+Red = Color(0xff0000, 1.0)
+Green = Color(0x00ff00, 1.0)
+Blue = Color(0x0000ff, 1.0)
+Black = Color(0x000000, 1.0)
+
+XCorBR = range(0, 360, 10)
+
 myapp = App()
 myapp.run()
