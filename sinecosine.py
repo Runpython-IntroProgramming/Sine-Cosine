@@ -49,7 +49,7 @@ xcoordinatesred = range(100, 700, 10)
 # Generate a list of sprites that form a line!
 sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
 
-spritesred= [Sprite(redcircle, (x, x*3 + 100)) for x in xcoordinatesred]
+spritesred= [Sprite(redcircle, (x, x*0.5 + 100)) for x in xcoordinatesred]
 
 myapp = App()
 myapp.run()
