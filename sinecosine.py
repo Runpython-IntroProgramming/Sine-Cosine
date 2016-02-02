@@ -41,10 +41,12 @@ Black = Color(0x000000, 1.0)
 Line = LineStyle(1, Black)
 
 BlueCircle = CircleAsset(5, Line, Blue)
+RedCircle = CircleAsset(5, Line, Red)
 
-XCorBR = range(0, 360, 10)
+XCorSC = range(0, 360, 10)
 
-SinGraph = [Sprite(BlueCircle, (x, 100+100*sin(radians(x)))) for x in XCorBR]
+SinGraph = [Sprite(BlueCircle, (x, 100+100*sin(radians(x)))) for x in XCorSC]
+CosGraph = [Sprite(RedCircle, (x, 100+100*cos(radians(x)))) for x in XCorSC]
 
 myapp = App()
 myapp.run()
