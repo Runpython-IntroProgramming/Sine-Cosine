@@ -63,7 +63,7 @@ redcircle=CircleAsset(5, redline, red)
 purplecircle=CircleAsset(5, purpleline, purple)
 
 #x_coordinates
-xcoordinates=(0, 360, 10)
+xcoordinates=range(0, 360, 10)
 
 #y_coordinates
 
