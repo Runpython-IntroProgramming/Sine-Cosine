@@ -30,7 +30,7 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
-from ggame import App, Color, LineStyle, Sprite
+from ggame import App, Color, LineStyle, Sprite, CircleAsset
 from math import sin, cos, radians
 
 Black = Color(0x000000, 1.0)
