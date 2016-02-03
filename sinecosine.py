@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Billy B
-Credit: Mr Dennison, Mathisfun.com
+Credit: Mr Dennison, Mathisfun.com, David
 
 Assignment:
 
