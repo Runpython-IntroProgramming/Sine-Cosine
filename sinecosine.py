@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Billy B
-Credit: Mr Dennison
+Credit: Mr Dennison, Mathisfun.com
 
 Assignment:
 
@@ -38,18 +38,22 @@ red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
+purple = Color(0xFF00FF, 1.0)
 
 thinline = LineStyle(1, black)
 bluecircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(0, 360, 10)
 redcircle = CircleAsset(5, thinline, red)
 xcoordinatesred = range(0, 360, 10)
-
+purplecircle = CircleAsset(5, thinline, purple)
+xcoordinatespurple = range(
 
 # Generate a list of sprites that form a line!
 sprites = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 
 spritesred= [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinatesred]
+
+spritespurple = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x))) for x in xcoordinatespurple]
 
 myapp = App()
 myapp.run()
