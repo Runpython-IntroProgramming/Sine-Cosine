@@ -40,11 +40,15 @@ from ggame import RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
 purple = Color(0x551a8b, 1.0)
+black = Color(0x000000, 1.0)
+
 
 thinline = LineStyle(1, black)
-thickline = LineStyle (2, green)
+thickline = LineStyle (2, blue)
 
-circle = CircleAsset(4, thinline, red)
+circle = CircleAsset(4, thinline, purple)
+
+Sprite(circle, (100, 200))
 
 
 
