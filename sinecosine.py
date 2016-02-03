@@ -68,7 +68,7 @@ xcoordinates=range(0, 360, 10)
 
 
 #sprites
-sprite=[Sprite(bluecircle, (100+100*sin(radians(x)))) for x in range(0, 360, 10)]
+sprite=[Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in range(0, 360, 10)]
 
 
 myapp=App()
