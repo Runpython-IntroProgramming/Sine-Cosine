@@ -65,11 +65,11 @@ purplecircle=CircleAsset(5, purpleline, purple)
 #x_coordinates
 xcoordinates=range(0, 360, 10)
 
-#y_coordinates
-
 
 
 #sprites
-[Sprite(bluecircle, (100+100*sin(radians(x)))) for x in xcoordinates]
+sprite=[Sprite(bluecircle, (100+100*sin(radians(x)))) for x in range(0, 360, 10)]
 
 
+myapp=App()
+myapp.run()
