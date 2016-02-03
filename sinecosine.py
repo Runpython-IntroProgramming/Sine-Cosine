@@ -46,7 +46,7 @@ xcoordinates = range(0, 360, 10)
 redcircle = CircleAsset(5, thinline, red)
 xcoordinatesred = range(0, 360, 10)
 purplecircle = CircleAsset(5, thinline, purple)
-xcoordinatespurple = range(
+xcoordinatespurple = range(0, 360, 10)
 
 # Generate a list of sprites that form a line!
 sprites = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
