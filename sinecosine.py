@@ -53,7 +53,7 @@ sprites = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinate
 
 spritesred= [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinatesred]
 
-spritespurple = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x))) for x in xcoordinatespurple]
+spritespurple = [Sprite(purplecircle, (100+100*cos(radians(x)), (400+100*sin(radians(x))) for x in xcoordinatespurple]
 
 myapp = App()
 myapp.run()
