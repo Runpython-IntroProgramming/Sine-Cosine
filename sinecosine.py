@@ -38,13 +38,13 @@ green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
-
-myapp = App()
-myapp.run()
-
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(0, 360, 10)
 
-# Generate a list of sprites that form a line!
 sprites = [Sprite(mycircle, (100+100*sin(radians(x))))for x in xcoordinates]
+
+myapp = App()
+myapp.run()
+
+
