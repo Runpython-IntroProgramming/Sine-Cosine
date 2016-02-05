@@ -34,7 +34,7 @@ from ggame import CircleAsset
 from math import sin, cos, radians
 
 red = Color(0xff0000, 1.0)
-purple = Color(0x00ff00, 1.0)
+purple = Color(0x2E0854, 1.0)
 blue = Color(0x0000ff, 1.0)
 
 
