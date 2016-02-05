@@ -37,6 +37,10 @@ from math import sin, cos, radians
 from ggame import App, Color, LineStyle, Sprite
 from ggame import RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 
+myapp = App()
+myapp.run()
+
+
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
 purple = Color(0x551a8b, 1.0)
@@ -46,9 +50,16 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 thickline = LineStyle (2, blue)
 
+xcoordinates = range(100, 600, 10)
+
+# Generate a list of sprites that form a line!
+sprites = [Sprite(circle, (x, x*0.5 + 100)) for x in xcoordinates]
+
+
 circle = CircleAsset(4, thinline, purple)
 
 Sprite(circle, (100, 200))
+
 
 
 
