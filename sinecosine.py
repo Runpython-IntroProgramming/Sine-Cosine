@@ -46,13 +46,15 @@ blue = Color(0x0000ff, 1.0)
 purple = Color(0xb81c9a, 1.0)
 black = Color(0x000000, 1.0)
 
+thinline = LineStyle(1, black)
+thickline = LineStyle (2, blue)
+
+
 circle1 = CircleAsset(5, thinline, blue)
 circle2 = CircleAsset(5, thinline, red)
 circle3 = CircleAsset(5, thinline, purple)
 
 
-thinline = LineStyle(1, black)
-thickline = LineStyle (2, blue)
 
 list(range(0, 360, 10))
 [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 
