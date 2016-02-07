@@ -47,7 +47,7 @@ purple = Color(0xb81c9a, 1.0)
 black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
-thickline = LineStyle (2, blue)
+
 
 
 circle1 = CircleAsset(5, thinline, blue)
