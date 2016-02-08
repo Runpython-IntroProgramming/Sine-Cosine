@@ -30,10 +30,13 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 import math
-import ggame
-
 from math import sin, cos, radians
 
+myapp = App()
+myapp.run()
+
+
+import ggame
 from ggame import App, Color, LineStyle, Sprite
 from ggame import RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 
