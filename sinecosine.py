@@ -32,9 +32,6 @@ for detailed information on ggame.
 import math
 from math import sin, cos, radians
 
-myapp = App()
-myapp.run()
-
 
 import ggame
 from ggame import App, Color, LineStyle, Sprite
