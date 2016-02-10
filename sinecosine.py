@@ -37,9 +37,11 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 yellow = Color(0xFFFF00, 1.0)
  
- thinline = LineStyle(1,black)
+thinline = LineStyle(1,black)
+
+rectangle = RectangleAsset(50, 20, thinline, blue)
+circle = CircleAsset(50, thinline, yellow)
+triangle = PolygonAsset(50, thinline
  
- rectangle = RectangleAsset
- 
- myapp = App()
- myapp.run()
+myapp = App()
+myapp.run()
