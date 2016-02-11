@@ -41,7 +41,7 @@ thinline = LineStyle(1,black)
 
 rectangle = RectangleAsset(50, 20, thinline, blue)
 circle = CircleAsset(50, thinline, yellow)
-triangle = PolygonAsset(50, thinline
+triangle = PolygonAsset(50, thinline, blue)
  
 myapp = App()
 myapp.run()
