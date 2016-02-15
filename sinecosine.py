@@ -30,8 +30,8 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 import ggame 
+from ggame import App, Color, LineStyle, Sprite, CircleAsset
 import math
-from ggame import App, Color, LineStyle, Sprite, CircleAsset 
 from math import sin, cos, radians
 
 red = Color(0xff0000, 1.0)
@@ -48,14 +48,13 @@ circleC = CircleAsset(5, thinline, purple)
 list(range(0, 360, 10))
 [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 
 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 
-280, 290, 300, 310, 320, 330, 340, 350]
+280, 290, 300, 310, 320, 330, 340, 350, 360]
 
 xcoordinates = range(0, 360, 10)
-
 # Generate a list of sprites that form a line!
-spriteA = [Sprite(CircleA,(x, 100+100*sin(radians(x))) for x in xcoordinates] 
-spriteB = [Sprite(CircleB,(x, 100+100*cos(radians(x))) for x in xcoordinates]
-spriteC = [Sprite(CircleC (100+100*cos(radians(x)), 400+100*sin(radians(x))))
+spriteA = [Sprite(circleA, (x, 100+100*sin(radians(x))) for x in xcoordinates] 
+spriteB = [Sprite(circleB, (x, 100+100*cos(radians(x))) for x in xcoordinates]
+spriteC = [Sprite(circleC, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
