@@ -29,19 +29,32 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
-from ggame import App, Color, LineStyle, Sprite,RectangleAsset, CircleAsset, EllipseAsset
- 
-red = Color(0xff0000, 1.0)
-green = Color(0x00ff00, 1.0)
-blue = Color(0x0000ff, 1.0)
-black = Color(0x000000, 1.0)
-yellow = Color(0xFFFF00, 1.0)
- 
-thinline = LineStyle(1,black)
+from ggame import App, Color, LineStyle, Sprite, CircleAsset 
+from math import sin, cos, radians
 
-rectangle = RectangleAsset(50, 20, thinline, blue)
-circle = CircleAsset(50, thinline, yellow)
-triangle = PolygonAsset(50, thinline, blue)
- 
+red = Color(0xff0000, 1.0)
+blue = Color(0x0000ff, 1.0)
+purple = Color(0x91219E, 1.0)
+thinlineR = LineStyle(1, red)
+thinlineB = LineStyle(1, blue)
+thinlineP = LineStyle(1, purple)
+
+circleA = CircleAsset(5, thinline, red)
+cirbleB = CircleAsset(5, thinline, blue)
+circleC = CircleAsset(5, thinline, purple)
+
+list(range(0, 360, 10))
+[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 
+150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 
+280, 290, 300, 310, 320, 330, 340, 350]
+
+xcoordinates = range(0, 360, 10)
+
+thinline = LineSytle(1, black)
+circle = CircleAsset(10, thinline, red)
+
+# Generate a list of sprites that form a line!
+sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates] 
+sprite = [Sprite(circle, (100+100*sin(radians(x)) for x in ycoordinate]
 myapp = App()
 myapp.run()
