@@ -29,6 +29,8 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
+import ggame 
+import math
 from ggame import App, Color, LineStyle, Sprite, CircleAsset 
 from math import sin, cos, radians
 
@@ -50,11 +52,10 @@ list(range(0, 360, 10))
 
 xcoordinates = range(0, 360, 10)
 
-thinline = LineSytle(1, black)
-circle = CircleAsset(10, thinline, red)
-
 # Generate a list of sprites that form a line!
-sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates] 
-sprite = [Sprite(circle, (100+100*sin(radians(x)) for x in ycoordinate]
+spriteA = [Sprite(CircleA,(x, 100+100*sin(radians(x))) for x in xcoordinates] 
+spriteB = [Sprite(CircleB,(x, 100+100*cos(radians(x))) for x in xcoordinates]
+spriteC = [Sprite(CircleC (100+100*cos(radians(x)), 400+100*sin(radians(x))))
+
 myapp = App()
 myapp.run()
