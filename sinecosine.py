@@ -32,11 +32,14 @@ for detailed information on ggame.
 
 from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
+from math import cos, sin, radians
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
+
+
 
 
 (range(0, 360, 10))
@@ -53,6 +56,7 @@ black = Color(0x000000, 1.0)
 200*cos(radians(x))
 200*cos(radians(x))
 500*sin(radians(x))
+
 
 myapp = App()
 myapp.run()
