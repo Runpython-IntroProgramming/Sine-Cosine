@@ -39,5 +39,8 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
 
+100+100*sin(radians(x)))
+
+
 myapp = App()
 myapp.run()
