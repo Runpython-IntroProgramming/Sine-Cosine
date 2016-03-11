@@ -49,7 +49,7 @@ XCorCrc = [100+100*cos(radians(x)) for x in XCorSC]
 
 SinGraph = [Sprite(BlueCircle, (x, 100+100*sin(radians(x)))) for x in XCorSC]
 CosGraph = [Sprite(RedCircle, (x, 100+100*cos(radians(x)))) for x in XCorSC]
-CrcGraph = [Sprite(PurpleCircle, (x, 400+100*sin(radians(x)))) for x in XCorCrc]
+CrcGraph = [Sprite(PurpleCircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in XCorSC]
 
 myapp = App()
 myapp.run()
