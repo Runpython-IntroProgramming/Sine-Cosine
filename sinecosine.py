@@ -52,10 +52,12 @@ black = Color(0x000000, 1.0)
 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 
 66, 68, 70]
 
-200*sin(radians(x))
-200*cos(radians(x))
-200*cos(radians(x))
-500*sin(radians(x))
+sprites = [Sprite(mycircle, (x,200*sin(radians(x)))) for x in range(0, 360, 10)]
+
+#200*sin(radians(x))
+#200*cos(radians(x))
+#200*cos(radians(x))
+#500*sin(radians(x))
 
 
 myapp = App()
