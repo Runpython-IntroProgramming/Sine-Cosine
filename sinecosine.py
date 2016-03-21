@@ -39,6 +39,12 @@ green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
+grey = Color(0x818181, 1.0)
+line = LineStyle(2, black)
+
+sprite1 = CircleAsset(75, line, grey)
+
+Sprite1 = CircleAsset( 20, 20, line, grey )
 
 
 
