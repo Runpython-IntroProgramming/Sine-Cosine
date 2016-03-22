@@ -46,7 +46,7 @@ line = LineStyle(2, black)
 sprite1 = CircleAsset(5, line, blue)
 sprite2 = CircleAsset(5, line, red)
 sprite3 = CircleAsset(5, line, purple)
-sprite4 = CircleAsset(5, line, purlpe)
+sprite4 = CircleAsset(5, line, purple)
 
 
 
