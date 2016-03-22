@@ -49,18 +49,6 @@ sprite3 = CircleAsset(5, line, purple)
 sprite4 = CircleAsset(5, line, purple)
 
 
-
-
-(range(0, 360, 10))
-[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 
-150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 
-280, 290, 300, 310, 320, 330, 340, 350]
-
-[x//5 for x in range(0, 360, 10)]
-[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 
-34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 
-66, 68, 70]
-
 sprites = [Sprite(sprite1, (x,100+100*sin(radians(x)))) for x in range(0, 360, 10)]
 sprites = [Sprite(sprite2, (x,100+100*cos(radians(x)))) for x in range(0, 360, 10)]
 sprites = [Sprite(sprite3, (x,100+100*cos(radians(x)))) for x in range(0, 360, 10)]
