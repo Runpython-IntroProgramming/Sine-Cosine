@@ -43,7 +43,7 @@ grey = Color(0x818181, 1.0)
 line = LineStyle(2, black)
 
 sprite1 = CircleAsset(5, line, grey)
-
+sprite1 = CircleAsset(5, line, red)
 
 
 
@@ -59,6 +59,8 @@ sprite1 = CircleAsset(5, line, grey)
 66, 68, 70]
 
 sprites = [Sprite(sprite1, (x,100+100*sin(radians(x)))) for x in range(0, 360, 10)]
+sprites = [Sprite(sprite2, (x,100+100*cos(radians(x)))) for x in range(0, 360, 10)]
+
 
 #200*sin(radians(x))
 #200*cos(radians(x))
