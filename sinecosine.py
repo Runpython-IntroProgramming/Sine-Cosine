@@ -42,10 +42,10 @@ black = Color(0x000000, 1.0)
 grey = Color(0x818181, 1.0)
 line = LineStyle(2, black)
 
-sprite1 = CircleAsset(5, line, grey)
+sprite1 = CircleAsset(5, line, blue)
 sprite2 = CircleAsset(5, line, red)
-sprite3 = CircleAsset(5, line, blue)
-sprite4 = CircleAsset(5, line, green)
+sprite3 = CircleAsset(5, line, purple)
+sprite4 = CircleAsset(5, line, purlpe)
 
 
 
