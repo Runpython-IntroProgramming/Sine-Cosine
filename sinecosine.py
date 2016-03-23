@@ -51,8 +51,8 @@ sprite4 = CircleAsset(5, line, purple)
 
 #sprites = [Sprite(sprite1, (x,100+100*sin(radians(x)))) for x in range(0, 360, 10)]
 #sprites = [Sprite(sprite2, (x,100+100*cos(radians(x)))) for x in range(0, 360, 10)]
-sprites = [Sprite(sprite3, (x,100+100*cos(radians(x)))) for x in range(0, 360, 10)]
-#sprites = [Sprite(sprite4, (x,400+100*sin(radians(x)))) for x in range(0, 360, 10)]
+#sprites = [Sprite(sprite3, (x,100+100*cos(radians(x)))) for x in range(0, 360, 10)]
+sprites = [Sprite(sprite4, (x,400+100*sin(radians(x)))) for x in range(0, 360, 10)]
 
 #200*sin(radians(x))
 #200*cos(radians(x))
