@@ -33,8 +33,8 @@ from math import sin, cos, radians
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 
 blue = Color(0x07608f, 1.0)
-purple = Color(0xf41844, 1.0)
-red = Color(0x993299, 1.0)
+purple = Color(0x993299, 1.0)
+red = Color(0xf41844, 1.0)
 bline = LineStyle(1, blue)
 pline = LineStyle(1, purple)
 rline = LineStyle(1, red)
@@ -42,8 +42,12 @@ rline = LineStyle(1, red)
 xcoords = range(0, 360, 10)
 bcircle = CircleAsset(4, bline, blue)
 rcircle = CircleAsset(4, rline, red)
+pcircle = CircleAsset(4, pline, purple)
 
 sine_sprites = [Sprite(bcircle, (x,100+100*sin(radians(x)))) for x in xcoords]
+cos_sprites = [Sprite(rcircle, (x,100+100*cos(radians(x)))) for x in xcoords]
+purple_sprites = [Sprite(pcircle, (100+100*cos(radians(x)),400+100*sin(radians(x)))) for x in xcoords]
+
 
 
 myapp = App()
