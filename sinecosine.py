@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Liam S
-Credit: None
+Credit: Mr Dennison
 
 Assignment:
 
@@ -46,11 +46,11 @@ xcoordinates = range(0, 360, 10)
 xcoordinates2 = range(0, 360, 10)
 xcoord = lambda x:(100+100*cos(radians(x)))
 xcoordinates3 = range(0, 360, 10)
-xcoordinates4 = [xcoord for x in xcoordinates3]
+xcoordinates4 = [xcoord(x) for x in xcoordinates3]
 
 # Generate a list of sprites that form a line!
 sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 sprites = [Sprite(mycircle2, (x, 100+100*cos(radians(x)))) for x in xcoordinates2]
-sprites = [Sprite(mycircle3, (x, 400+100*sin(radians(x)))) for x in xcoordinates4]
+sprites = [Sprite(mycircle3, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates3]
 myapp = App()
 myapp.run()
