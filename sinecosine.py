@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Matthew Fenner
-Credit: None
+Credit: Robbie
 
 Assignment:
 
