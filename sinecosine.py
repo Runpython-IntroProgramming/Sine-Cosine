@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Johannes Testorf
-Credit: <list sources used, if any>
+Credit: picture code, december.com
 
 Assignment:
 
