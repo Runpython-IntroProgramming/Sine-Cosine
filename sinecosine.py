@@ -45,7 +45,7 @@ thinline = LineStyle(1, black)
 sincircle = CircleAsset(5, thinline, blue)
 coscircle = CircleAsset(5, thinline, red)
 
-sinenums=
+sinenums = range(0,360,10)
 Sine = [Sprite
 
 
