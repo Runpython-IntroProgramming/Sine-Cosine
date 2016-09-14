@@ -47,7 +47,7 @@ coscircle = CircleAsset(5, thinline, red)
 
 sinenums = range(0,360,10)
 Sine = [Sprite(sincircle, (x, 100+100*sin(radians(x)))) for x in sinenums]
-
+Cosine = [Sprite(coscircle, (x, 100+100*cos(radians(x)))) for x in sinenums]
 
 myapp = App()
 myapp.run()
