@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Johannes Testorf
+Credit: picture code, december.com
 
 Assignment:
 
@@ -30,3 +30,27 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
+from math import sin, cos, radians
+
+red = Color(0xff0000, 1.0)
+green = Color(0x00ff00, 1.0)
+blue = Color(0x0000ff, 1.0)
+black = Color(0x000000, 1.0)
+yellow = Color(0xffff00, 1.0)
+brown = Color(0xf4a460, 1.0)
+purple = Color(0x7D26CD, 1.0)
+
+thinline = LineStyle(1, black)
+
+sincircle = CircleAsset(5, thinline, blue)
+coscircle = CircleAsset(5, thinline, red)
+mixcircle = CircleAsset(5, thinline, purple)
+
+sinenums = range(0,360,10)
+Sine = [Sprite(sincircle, (x, 100+100*sin(radians(x)))) for x in sinenums]
+Cosine = [Sprite(coscircle, (x, 100+100*cos(radians(x)))) for x in sinenums]
+Mix = [Sprite(mixcircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in sinenums]
+
+myapp = App()
+myapp.run()
