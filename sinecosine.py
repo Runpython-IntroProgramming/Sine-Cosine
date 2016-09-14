@@ -44,6 +44,7 @@ thinline = LineStyle(1, black)
 
 sincircle = CircleAsset(5, thinline, blue)
 coscircle = CircleAsset(5, thinline, red)
+mixcircle = CircleAsset(5, thinline, purple)
 
 sinenums = range(0,360,10)
 Sine = [Sprite(sincircle, (x, 100+100*sin(radians(x)))) for x in sinenums]
