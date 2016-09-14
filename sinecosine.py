@@ -45,6 +45,9 @@ thinline = LineStyle(1, black)
 sincircle = CircleAsset(5, thinline, blue)
 coscircle = CircleAsset(5, thinline, red)
 
+sinenums=
+Sine = [Sprite
+
 
 myapp = App()
 myapp.run()
