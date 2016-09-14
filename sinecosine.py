@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Bauti G
-Credit: 
+Credit: Vinzent
 
 Assignment:
 
@@ -31,22 +31,23 @@ for detailed information on ggame.
 """
 from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
+from math import sin, cos, radians
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
+purple = Color(0x551a8b, 0.32)
 
 thickline=LineStyle(3,black)
 thinline=LineStyle(1,black)
 
 mycircle = CircleAsset(5, thinline, blue)
 yourcircle = CircleAsset(5, thickline, red)
-xcoordinates = range(100, 600, 10)
-ycoordinates = range(150, 500, 20)
+anothercircle = CircleAsset(5, thickline, purple)
+xcoordinates = range(0, 360, 10)
 
-sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
-sprite = [Sprite(yourcircle, (x, x*0.5 + 25)) for x in ycoordinates]
-
+sprites = [Sprite(yourcircle, (x,100+100*sin(radians(x)))) for x in xcoordinates]
+sprites = [Sprite(mycircle, (x,100+100*cos(radians(x)))) for x in xcoordinates]
+sprites = [Sprite(anothercircle, (100+100*cos(radians(x)),400+100*sin(radians(x)))) for x in xcoordinates]
 myapp = App()
-myapp.run()
