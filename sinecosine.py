@@ -32,6 +32,7 @@ for detailed information on ggame.
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 from math import sin, cos
+
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
@@ -41,6 +42,8 @@ brown = Color(0xf4a460, 1.0)
 
 thinline = LineStyle(1, black)
 
+sincircle = CircleAsset(5, thinline, blue)
+coscircle = CircleAsset(5, thinline, red)
 
 
 myapp = App()
