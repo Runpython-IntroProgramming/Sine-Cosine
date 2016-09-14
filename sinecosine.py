@@ -39,6 +39,7 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 yellow = Color(0xffff00, 1.0)
 brown = Color(0xf4a460, 1.0)
+purple = Color(0x7D26CD, 1.0)
 
 thinline = LineStyle(1, black)
 
