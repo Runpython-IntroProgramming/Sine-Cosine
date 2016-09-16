@@ -52,7 +52,7 @@ rb_xcoord = range(100, 600, 10)
 
 sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in rb_xcoord]
 sprites = [Sprite(urcircle, (x, 100+100*cos(radians(x)))) for x in rb_xcoord]
-#sprites = [Sprite(arcircle, (x, x*0.6 + 20)) for x in gen_xcoor]
+sprites = [Sprite(arcircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in gen_xcoor]
 
 
 
