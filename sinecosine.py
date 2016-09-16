@@ -47,12 +47,12 @@ noline = LineStyle(0.1, blue)
 mycircle = CircleAsset(5, thinline, blue)
 urcircle = CircleAsset(6, thinline, crimson)
 arcircle = CircleAsset(6, thinline, purp)
-rb_xcoord = range(100, 600, 10)
+rb_xcoord = range(0, 360, 10)
 #gen_xcoor
 
 sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in rb_xcoord]
 sprites = [Sprite(urcircle, (x, 100+100*cos(radians(x)))) for x in rb_xcoord]
-sprites = [Sprite(arcircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in gen_xcoor]
+sprites = [Sprite(arcircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in rb_xcoord]
 
 
 
