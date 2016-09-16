@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Liam A
-Credit: <list sources used, if any>
+Credit: none
 
 Assignment:
 
@@ -10,9 +10,7 @@ of certain mathematical functions: sine and cosine.
 
 The sine and cosine functions are provided in the Python math library. These functions are used
 to relate *angles* to *rectangular* (x,y) coordinate systems and can be very useful in computer
-game design.
-
-Unlike the last assignment using ggame`, this one will not provide any "skeleton" code to fill
+game design. Unlike the last assignment using ggame`, this one will not provide any "skeleton" code to fill
 in. You should use your submission for the Picture assignment 
 (https://github.com/HHS-IntroProgramming/Picture) as a reference for starting this assignment. 
 
