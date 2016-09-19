@@ -47,7 +47,7 @@ xcoordinates=range(0,360,10)
 
 blueSin=[Sprite(BlueCircles,(x,100+100*sin(radians(x)))) for x in xcoordinates]
 redCos=[Sprite(RedCircles,(x,100+100*cos(radians(x)))) for x in xcoordinates]
-purpleCos=[Sprite(PurpleCircles,(100+100*cos(radians(x)),100+100*cos(radians(x)))) for x in xcoordinates]
+purpleCos=[Sprite(PurpleCircles,(100+100*cos(radians(x)),400+100*sin(radians(x)))) for x in xcoordinates]
 
 
 
