@@ -40,15 +40,17 @@ red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
+purple = Color(0x7D26CD, 1.0)
 
-thinline = LineStyle(3, red)
-mycircle = CircleAsset(10, thinline, green)
-mycircle2 = CircleAsset(5, thinline, red)
-mycircle3 = CircleAsset(5, thinline, black)
+thinline = LineStyle(3, black)
+mycircle = CircleAsset(10, thinline, blue)
+mycircle2 = CircleAsset(10, thinline, red)
+mycircle3 = CircleAsset(10, thinline, purple)
 xcoordinates = range(0, 360, 10)
 
-sprites = [Sprite(mycircle, (x, (100+100*math.sin(math.radians(x))))) for x in xcoordinates]
-sprites = [Sprite(mycircle2, x, (100+100*math.cos(math.radians(x)))) for x in xcoordinates]
+# Generate a list of sprites that form a line!
+sprites = [Sprite(mycircle, (x, 100+100*math.sin(math.radians(x)))) for x in xcoordinates]
+sprites = [Sprite(mycircle2, (x, 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
 sprites = [Sprite(mycircle3, (100+100*math.cos(math.radians(x)), 400+100*math.sin(math.radians(x)))) for x in xcoordinates]
 
 myapp = App()
