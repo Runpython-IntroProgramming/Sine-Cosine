@@ -1,57 +1,96 @@
 """
-sinecosine.py
-Author: brian
-Credit: finn
-
+birthday.py
+Author: Brian
+Credit: none
 Assignment:
-
-In this assignment you must use *list comprehensions* to generate sprites that show the behavior
-of certain mathematical functions: sine and cosine. 
-
-The sine and cosine functions are provided in the Python math library. These functions are used
-to relate *angles* to *rectangular* (x,y) coordinate systems and can be very useful in computer
-game design.
-
-Unlike the last assignment using ggame`, this one will not provide any "skeleton" code to fill
-in. You should use your submission for the Picture assignment 
-(https://github.com/HHS-IntroProgramming/Picture) as a reference for starting this assignment. 
-
-See:
-https://github.com/HHS-IntroProgramming/Sine-Cosine/blob/master/README.md
-for a detailed list of requirements for this assignment.
-
-https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Displaying-Graphics
-for general information on how to use ggame.
-
-https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Programmed-Graphics
-for general information on using list comprehensions to generate graphics.
-
-http://brythonserver.github.io/ggame/
-for detailed information on ggame.
+Your program will ask the user the following questions, in this order:
+1. Their name.
+2. The name of the month they were born in (e.g. "September").
+3. The year they were born in (e.g. "1962").
+4. The day they were born on (e.g. "11").
+If the user's birthday fell on October 31, then respond with:
+  You were born on Halloween!
+If the user's birthday fell on today's date, then respond with:
+  Happy birthday!
+Otherwise respond with a statement like this:
+  Peter, you are a winter baby of the nineties.
+Example Session
+  Hello, what is your name? Eric
+  Hi Eric, what was the name of the month you were born in? September
+  And what year were you born in, Eric? 1972
+  And the day? 11
+  Eric, you are a fall baby of the stone age.
 """
+from datetime import datetime
+from calendar import month_name
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+todaymonth = month_name[todaymonth]
+name = input("Hello, what is your name? ")
+month = str(input("Hi {0}, what was the name of the month you were born in? " .format(name)))
+year = int(input("And what year were you born in, {0}? " .format(name)))
+day = int(input("And the day? "))
 
-from ggame import App, Color, LineStyle, Sprite
-from ggame import CircleAsset
-import math
-from math import sin, cos, radians 
+if month == "October":
+    halloweenmonth = 1
+else:
+    halloweenmonth = 0
+
+if day == 31:
+    halloweenday = 1
+else:
+    halloweenday = 0
+
+if halloweenday == 1 and halloweenmonth == 1:
+    halloween = 1
+else:
+    halloween = 0
+
+if todaymonth == month:
+    birthmonth = 1
+else:
+    birthmonth = 0
+
+if todaydate == day:
+    birthday = 1
+else:
+    birthday = 0
+
+if birthday == 1 and birthmonth == 1:
+    birthdate = 1
+else:
+    birthdate = 0
+
+if month == "June" or month == "July" or month == "August":
+    season = "summer"
+
+elif month == "March" or month == "April" or month == "May":
+    season = "spring"
+
+elif month == "September" or month == "October" or month == "November":
+    season = "fall"
+
+elif month == "December" or month == "January" or month == "February":
+    season = "winter"
+else:
+    season = "none"
+
+if year >= 2000:
+    yeard = "two thousands"
+elif year <= 1980:
+    yeard = "stone age"
+elif year < 2000 and year >= 1990:
+    yeard = "nineties"
+elif year < 1990 and year >= 1980:
+    yeard = "eighties"
+else:
+    yeard = "you gave me an invalid year"
 
 
-red = Color(0xff0000, 1.0)
-green = Color(0x00ff00, 1.0)
-blue = Color(0x0000ff, 1.0)
-black = Color(0x000000, 1.0)
-purple = Color(0x7D26CD, 1.0)
-
-thinline = LineStyle(3, black)
-mycircle = CircleAsset(10, thinline, blue)
-mycircle2 = CircleAsset(10, thinline, red)
-mycircle3 = CircleAsset(10, thinline, purple)
-xcoordinates = range(0, 360, 10)
-
-# Generate a list of sprites that form a line!
-sprites = [Sprite(mycircle, (x, 100+100*math.sin(math.radians(x)))) for x in xcoordinates]
-sprites = [Sprite(mycircle2, (x, 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
-sprites = [Sprite(mycircle3, (100+100*math.cos(math.radians(x)), 400+100*math.sin(math.radians(x)))) for x in xcoordinates]
-
-myapp = App()
-myapp.run()
+if halloween == 1:
+    print("You were born on Halloween!")
+else:
+    if birthdate == 1:
+        print("Happy birthday!")
+    else:
+        print("{0}, you are a {1} baby of the {2}." .format(name, season, yeard))
