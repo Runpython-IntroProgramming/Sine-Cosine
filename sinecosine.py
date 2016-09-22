@@ -45,13 +45,14 @@ mycircle = CircleAsset(5, thinline, blue)
 mycircle2 = CircleAsset(5, thinline, red)
 mycircle3 = CircleAsset(5, thinline, purple)
 xcoordinates = range(100, 600, 10)
+xcoordinates = [(100+100*cos(radians(x))) for x in xcoordinates]
 xcoordinates1 = range(100, 600, 10)
 xcoordinates2 = range(100, 600, 10)
 
 # Generate a list of sprites that form a line!
-sprites = [Sprite(mycircle, (x, x*0.5 + 200)) for x in xcoordinates]
-sprites = [Sprite(mycircle2, (x, x*0.5 + 100)) for x in xcoordinates1]
-sprites = [Sprite(mycircle3, (x, x*0.5 + 300)) for x in xcoordinates2]
+sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)), + 400)) for x in xcoordinates]
+sprites = [Sprite(mycircle2, (x, 100+100*cos(radians(x)), + 100)) for x in xcoordinates1]
+sprites = [Sprite(mycircle3, (x, 400+100*sin(radians(x)), + 700)) for x in xcoordinates2]
 
 myapp = App()
 myapp.run()
