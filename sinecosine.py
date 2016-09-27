@@ -29,4 +29,12 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
+from ggame import App, Color, LineStyle, Sprite
+from ggame import CircleAsset
 
+red = Color(0xff0000, 1.0)
+blue = Color(0x0000ff, 1.0)
+purple = Color(0x8A2BE2, 1.0)
+
+myapp = App()
+myapp.run()
