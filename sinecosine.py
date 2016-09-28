@@ -35,6 +35,13 @@ from ggame import CircleAsset
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
 purple = Color(0x8A2BE2, 1.0)
+black = Color(0x000000, 1.0)
+
+thinline = LineStyle(1, black)
+mycircle = CircleAsset(5, thinline, blue)
+xcoordinates = range(100, 600, 10)
+ycoordinates = range(100, 600, 100)
+sprites = [Sprite(mycircle, (x, 100+100*sin(x)) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
