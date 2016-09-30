@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: John Warhold
-Credit: <list sources used, if any>
+Credit: 
 
 Assignment:
 
