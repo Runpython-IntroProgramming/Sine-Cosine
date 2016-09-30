@@ -39,11 +39,15 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
-
+wemissuharambe = CircleAsset(5, thinline, red)
+harambe2 = CircleAsset(5, thinline, purp)
 xcoordinates = range(0, 600, 10)
 list(range(0, 360, 10))
 
-# Generate a list of sprites that form a line!
+
 sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
+harmbe = [Sprite(wemissuharambe , (x, 100+100*cos(radians(x)))) for x in xcoordinates]
+joke = [Sprite(harambe2, (100+100*cos(radians(x)),400+100*sin(radians(x)))) for x in xcoordinates]
+
 myapp = App()
 myapp.run()
