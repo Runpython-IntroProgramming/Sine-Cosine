@@ -41,9 +41,11 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
+redcircle = CircleAsset(5, thinline, red)
 xcoordinates = range(100, 600, 10)
 ycoordinates = range(100, 600, 100)
 sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x))))for x in xcoordinates]
-sprites = [Sprite(mycircle, (x, 100+100*cos(radians(x))))for x in xcoordinates]
+sprites = [Sprite(redcircle, (x, 100+100*cos(radians(x))))for x in xcoordinates]
+sprites
 myapp = App()
 myapp.run()
