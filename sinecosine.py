@@ -44,8 +44,9 @@ thinline = LineStyle(1, black)
 r = range(0,370,10)
 
 sine = CircleAsset(5,thinline, blue)
+cosine = CircleAsset(5,thinline, red)
 sprites = [Sprite(sine, (x, (100+100*sin(radians(x))))) for x in r]
-
+sprites1 = [Sprite(cosine, (x, (100+100*cos(radians(x))))) for x in r]
 
 
 myapp = App()
