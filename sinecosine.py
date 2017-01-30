@@ -39,6 +39,14 @@ green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 purple = Color(0x800080, 1.0)
+thinline = LineStyle(1, black)
+
+r = range(0,370,10)
+
+sine = CircleAsset(5,thinline, blue)
+sprites = [sine, (x, 100+100*sin(radians(x))) for x in r]
+
+
 
 myapp = App()
 myapp.run()
