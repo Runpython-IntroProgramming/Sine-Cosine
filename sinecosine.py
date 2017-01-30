@@ -44,7 +44,7 @@ thinline = LineStyle(1, black)
 r = range(0,370,10)
 
 sine = CircleAsset(5,thinline, blue)
-sprites = [sine, (x, 100+100*sin(radians(x))) for x in r]
+sprites = [sine, (x, (100+100*sin(radians(x)))) for x in r]
 
 
 
