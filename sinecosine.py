@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Kai Darrow
+Credit: Me 
 
 Assignment:
 
@@ -30,3 +30,8 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
+"""i just want to go home and sleep"""
+from math import sin, cos, radians
+"""HELP"""
+sin = 
