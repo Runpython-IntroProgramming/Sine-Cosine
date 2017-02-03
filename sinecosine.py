@@ -29,4 +29,7 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
+from ggame import App, Color, LineStyle, Sprite
+from ggame import CircleAsset
+from math import sin, cos, radians
 
