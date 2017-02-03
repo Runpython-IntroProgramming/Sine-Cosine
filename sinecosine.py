@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <Brendan>
-Credit: <list sources used, if any>
+Author: Brendan
+Credit: none
 
 Assignment:
 
