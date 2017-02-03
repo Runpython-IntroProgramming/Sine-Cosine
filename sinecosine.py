@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: will laycock
+Credit: did myself
 
 Assignment:
 
