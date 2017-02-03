@@ -36,3 +36,13 @@ from math import sin, cos, radians
 red = Color(0xff0000, 1.0)
 purple = Color(0x7D26CD, 1.0)
 blue = Color(0x0000ff, 1.0)
+thinline = LineStyle(1, black)
+
+bluecirc = CircleAsset(5, thinline, blue)
+redcirc = CircleAsset(5, thinline, red)
+purpcirc = CircleAsset(5, thinline, purple)
+xcoordinatesbr = range(0, 360, 10)
+
+bluesin = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
+sprites = [Sprite(mycircle2, (x, x*0.5 + 200)) for x in x1coordinates]
+
