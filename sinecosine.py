@@ -46,7 +46,7 @@ xcoordinatesbr = range(0, 360, 10)
 
 bluesin = [Sprite(bluecirc, (x, 100+100*sin(radians(x)))) for x in xcoordinatesbr]
 redcos = [Sprite(redcirc, (x, 100+100*cos(radians(x)))) for x in xcoordinatesbr]
-purpcirc1 = [Sprite(purpcirc, (100+100*cos(radians(x)), 400+100*sin(radians(x))))]
+purpcirc1 = [Sprite(purpcirc, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinatesbr]
 
 myapp = App()
 myapp.run()
