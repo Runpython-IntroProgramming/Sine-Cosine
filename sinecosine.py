@@ -35,6 +35,7 @@ from math import sin, cos, radians
 
 red = Color(0xff0000, 1.0)
 purple = Color(0x7D26CD, 1.0)
+black = Color(0x000000, 1.0)
 blue = Color(0x0000ff, 1.0)
 thinline = LineStyle(1, black)
 
@@ -43,6 +44,6 @@ redcirc = CircleAsset(5, thinline, red)
 purpcirc = CircleAsset(5, thinline, purple)
 xcoordinatesbr = range(0, 360, 10)
 
-bluesin = [Sprite(bluecirc, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
-redcos = [Sprite(redcirc, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
+bluesin = [Sprite(bluecirc, (x, 100+100*sin(radians(x)))) for x in xcoordinatesbr]
+redcos = [Sprite(redcirc, (x, 100+100*cos(radians(x)))) for x in xcoordinatesbr]
 purpcirc1 = [Sprite(purpcirc, (100+100*cos(radians(x)), 400+100*sin(radians(x))))]
