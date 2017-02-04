@@ -43,6 +43,6 @@ redcirc = CircleAsset(5, thinline, red)
 purpcirc = CircleAsset(5, thinline, purple)
 xcoordinatesbr = range(0, 360, 10)
 
-bluesin = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
+bluesin = [Sprite(bluecirc, (x, 100+100*sin(radians(x))))) for x in xcoordinates]
 sprites = [Sprite(mycircle2, (x, x*0.5 + 200)) for x in x1coordinates]
 
