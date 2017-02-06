@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Emma Supattapone
-Credit: <list sources used, if any>
+Credit: Abby Feyrer
 
 Assignment:
 
