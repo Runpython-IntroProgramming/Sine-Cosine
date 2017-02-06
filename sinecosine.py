@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author:Abby
+Credit: Emma
 
 Assignment:
 
@@ -46,7 +46,7 @@ xcoordinates = range(0, 360, 10)
 
 sine = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 cosine = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
-purplething=[Sprite(purcircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
+circle=[Sprite(purcircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
 
 
 myapp = App()
