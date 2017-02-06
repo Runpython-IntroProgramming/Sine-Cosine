@@ -38,21 +38,19 @@ red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
+purple= Color(0x9933ff,1.0)
 
 brxcoordinates = range(0, 360, 10)
-
-pxcoordinates = (100+100*cos(radians(x)) for x in brxcoordinates)
-
 
 
 thinline = LineStyle(.5, black)
 bcirc = CircleAsset(5, thinline, blue)
 rcirc = CircleAsset(5, thinline, red)
-pcirc = CircleAsset(5, thinline, green)
+pcirc = CircleAsset(5, thinline, purple)
 
-sin = [Sprite(bcirc, (x, 100+100*sin(radians(x)))) for x in brxcoordinates]
-cos = [Sprite(rcirc, (x, 100+100*cos(radians(x)))) for x in brxcoordinates]
-purp = [Sprite(pcirc, (x, 400+100*sin(radians(x)))) for x in pxcoordinates]
+sine = [Sprite(bcirc, (x, 100+100*sin(radians(x)))) for x in brxcoordinates]
+cosine = [Sprite(rcirc, (x, 100+100*cos(radians(x)))) for x in brxcoordinates]
+purp = [Sprite(pcirc, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in brxcoordinates]
 
 
 
