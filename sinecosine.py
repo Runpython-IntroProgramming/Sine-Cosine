@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Daniel
+Credit: list sources used, if any
 
 Assignment:
 
@@ -30,3 +30,14 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+from ggame import App
+from math import sin, cos, radians
+
+list(range(0, 360, 10))
+
+thinline = LineStyle(1, black)
+mycircle = CircleAsset(5, thinline, blue)
+xcoordinates = range(0, 360, 10)
+
+# Generate a list of sprites that form a line!
+sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x))) for x in xcoordinates]
