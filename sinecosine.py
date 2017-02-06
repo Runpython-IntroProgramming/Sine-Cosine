@@ -59,7 +59,7 @@ circle = CircleAsset(5, thinline, purple)
 
 
 xcoordinates = range(0, 360, 10)
-juoksentelisinkohan = [100+100*cos(radians(x)) for x in range(0, 360, 10)]
+juoksentelisinkohan = [100+100*cos(radians(x)) for x in xcoordinates]
 
 # Generate a list of sprites that form a line!
 sprites = [Sprite(sine, (x, 100 + 100*sin(radians(x)))) for x in xcoordinates]
