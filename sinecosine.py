@@ -39,7 +39,7 @@ red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
-purple = Color(800080, 1.0)
+purple = Color(800081, 1.0)
 
 list(range(0, 360, 10))
 [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 
