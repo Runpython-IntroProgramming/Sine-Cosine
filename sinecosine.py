@@ -40,7 +40,10 @@ green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
+list(range(0,360,10))
+[x//1 for x in range(0,360,10)]
 
+sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
