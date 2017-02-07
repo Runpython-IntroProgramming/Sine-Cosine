@@ -30,7 +30,7 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
-from ggame import App
+from ggame import App, Color, LineStyle, Sprite, CircleAsset
 from math import sin, cos, radians
 
 
