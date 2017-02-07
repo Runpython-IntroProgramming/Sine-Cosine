@@ -43,7 +43,9 @@ list(range(0, 360, 10))
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
+othercircle = CircleAsset(5, thinline, red)
 xcoordinates = range(0, 360, 10)
 
 # Generate a list of sprites that form a line!
 sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
+sproot = [Sprite(othercircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
