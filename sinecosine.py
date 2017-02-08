@@ -50,7 +50,7 @@ lastcircle = CircleAsset(5, thinline, purple)
 xcoordinates = range(0, 360, 10)
 
 # Generate a list of sprites that form a line!
-sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
+sprites = [Sprite(mycircle, (x, (100+100*sin(radians(x))))) for x in xcoordinates]
 sproot = [Sprite(othercircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
-sprut = [Sprite(purplecircle, (x,100+100*cos(radians(x))) for x in xcoordinates]
-spright = [Sprite(lastcircle, (x, 400+100*sin(radians(x))) for x in xcoordinates]
+sprut = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
+
