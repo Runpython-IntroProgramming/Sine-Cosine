@@ -54,3 +54,5 @@ sprites = [Sprite(mycircle, (x, (100+100*sin(radians(x))))) for x in xcoordinate
 sproot = [Sprite(othercircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
 sprut = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
 
+myapp = App()
+myapp.run()
