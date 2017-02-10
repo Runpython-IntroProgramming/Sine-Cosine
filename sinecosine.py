@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <Jasper>
-Credit: <nobody>
+Author: Jasper
+Credit: nobody
 
 Assignment:
 
