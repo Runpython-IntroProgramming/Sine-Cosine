@@ -54,4 +54,4 @@ xcoordinates = range(0, 360, 10)
 # Generate a list of sprites that form a line!
 sprites = [Sprite(Blue, (x, 100 + 100*sin(radians(x)))) for x in xcoordinates]
 sprites = [Sprite(Red, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
-sprites = [Sprite(Purple, (100+100*cos(radians(x)))), 400+100*sin(radians(x))for x in xcoordinates]
+sprites = [Sprite(Purple, (, x*.5+ 100)) for x in xcoordinates]
