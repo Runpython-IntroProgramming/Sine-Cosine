@@ -43,10 +43,13 @@ list(range(0, 360, 10))
 280, 290, 300, 310, 320, 330, 340, 350]
 thinline = LineStyle(1, blue)
 
+
 myapp = App()
 myapp.run()
 mycircle = CircleAsset(5, thinline, blue)
+circle = CircleAsset(5, thinline, red)
 xcoordinates = range(100, 600, 10)
 sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
+sprites = [Sprite(circle, (x, x*0.5 - 100)) for x in xcoordinates]
 100+100*sin(radians(x))
 
