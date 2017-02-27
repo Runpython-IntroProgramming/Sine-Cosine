@@ -50,6 +50,6 @@ mycircle = CircleAsset(5, thinline, blue)
 circle = CircleAsset(5, thinline, red)
 xcoordinates = range(0, 360, 10)
 sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
-sprites = [Sprite(circle, (x, x*0.5 + 200)) for x in xcoordinates]
+sprites = [Sprite(circle, (x,100+100*cos(radians(x))) for x in xcoordinates]
 
 
