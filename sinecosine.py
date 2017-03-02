@@ -54,6 +54,6 @@ xcoordinates = range(0, 360, 10)
 pcoordinates = range(100+100,360, 10)
 sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 sprites = [Sprite(circle, (x, 100-100*cos(radians(x)))) for x in xcoordinates]
-sprites = [Sprite(circle1, (x, 100-100*cos(radians(x)))) for x in pcoordinates]
+sprites = [Sprite(circle1, (x, 100-100*sin(radians(x)))) for x in pcoordinates]
 
 
