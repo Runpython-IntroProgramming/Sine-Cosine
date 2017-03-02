@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: nathalie
-Credit: 
+Credit: none 
 
 Assignment:
 
@@ -37,7 +37,7 @@ from math import sin,cos,radians
 ##800080
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
-purple = Color(800080, 1.0)
+purple = Color(90-292440-190000, 1.0)
 list(range(0, 360, 10))
 [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 
 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 
@@ -51,7 +51,7 @@ mycircle = CircleAsset(5, thinline, blue)
 circle = CircleAsset(5, thinline, red)
 circle1 = CircleAsset(5, thinline, purple)
 xcoordinates = range(0, 360, 10)
-pcoordinates = range(100+100,360, 10)
+pcoordinates = range(0, 360, 10)
 sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 sprites = [Sprite(circle, (x, 100-100*cos(radians(x)))) for x in xcoordinates]
 sprites = [Sprite(circle1, (x, 100-100*sin(radians(x)))) for x in pcoordinates]
