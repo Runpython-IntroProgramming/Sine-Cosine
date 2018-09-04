@@ -47,7 +47,7 @@ xcoor=list(range(0,370,10))
 
 bluecircles=[Sprite(bc, (x , 100+100*sin(radians(x)))) for x in xcoor]
 redcircles=[Sprite(rc, (x , 100+100*cos(radians(x)))) for x in xcoor]
-purple=[Sprite(pc, (100+100*cos(radians(x))), 400+100*sin(radians(x))) for x in xcoor]
+purple=[Sprite(pc, (100+100*cos(radians(x)), 400+100*sin(radians(x))) for x in xcoor]
 
 myapp=App()
 myapp.run()
