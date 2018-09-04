@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Noah Pikielny
+Credit: http://www.december.com/html/spec/color4.html - for hexadecimal colors
 
 Assignment:
 
@@ -29,4 +29,28 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
+from ggame import CircleAsset, App, Color, LineStyle, Sprite
+from math import sin, cos, radians
+i = 0
+xVal = []
 
+blue = Color(0x0000ff, 1.0)
+red = Color(0xff0000, 1.0)
+purple = Color(0x7D26CD, 1.0)
+blueLine = LineStyle(1, blue)
+redLine = LineStyle(1, red)
+purpleLine = LineStyle(1, purple)
+
+while i <= 360:
+    xVal.append(i)
+    i += 10
+
+for k in xVal:
+    circleB = CircleAsset(5, redLine, blue)
+    circleR = CircleAsset(5, purpleLine, red)
+    circleP = CircleAsset(5, blueLine, purple)
+    Sprite(circleB, (k, 100 + 100 * sin(radians(k))))
+    Sprite(circleR, (k, 100 + 100 * cos(radians(k))))
+    Sprite(circleP, (100+100*cos(radians(k)), 400+100*sin(radians(k))))
+myApp = App()
+myApp.run()
