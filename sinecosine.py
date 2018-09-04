@@ -39,7 +39,7 @@ purple=Color(0xBDA0CB, 1.0)
 
 noline=LineStyle(0, red)
 
-bc=CircleAsset(4,noline,blue)
+bc=CircleAsset(6,noline,blue)
 rc=CircleAsset(4,noline,red)
 pc=CircleAsset(4,noline,purple)
 
@@ -48,4 +48,4 @@ xcoor=list(range(0,370,10))
 bluecircles=[Sprite(bc, (x , 100+100*sin(radians(x)))) for x in xcoor]
 
 myapp=App()
-myapp.run
+myapp.run()
