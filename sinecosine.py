@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Noah Pikielny
+Credit: http://www.december.com/html/spec/color4.html - for hexadecimal colors
 
 Assignment:
 
