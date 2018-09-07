@@ -41,7 +41,7 @@ purple = Color(0x6A5ACD, 1.0)
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
-xcoordinates = range(0, 360, 10)
+xcoordinates = range(180, 540, 10)
 
 bluecircles = CircleAsset(25, thinline, blue)
 redcircles = CircleAsset(25, thinline, red)
