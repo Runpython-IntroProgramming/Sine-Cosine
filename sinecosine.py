@@ -33,13 +33,13 @@ for detailed information on ggame.
 from ggame import CircleAsset
 import math
 
-black = (0x000000, 1.0)
-point = CircleAsset(5, black)
+black = Color(0x000000, 1.0)
+point = CircleAsset(1, 5, black)
 
 
 
 
-
+app = App(500,500) 
 myapp = App()
 myapp.run()
 
