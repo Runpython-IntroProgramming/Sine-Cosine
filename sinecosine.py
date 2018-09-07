@@ -1,7 +1,9 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Andrew Chen
+Credit:
+https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Programmed-Graphics
+
 
 Assignment:
 
@@ -32,15 +34,16 @@ for detailed information on ggame.
 from ggame import CircleAsset, App, Color, LineStyle, Sprite
 from math import sin, cos, radians
 
-red = Color(0xff0000, 1.0)
-green = Color(0x00ff00, 1.0)
-blue = Color(0x0000ff, 1.0)
-purple = Color(0xae00ff, 1.0)
+red = Color(0xff0000, .5)
+green = Color(0x00ff00, .5)
+blue = Color(0x0000ff, .5)
+purple = Color(0xae00ff, .5)
 black = Color(0x000000, 1.0)
 
-line = LineStyle(3, black)
-purplescircle = CircleAsset(3, purple)
+thinline = LineStyle(1, black)
 
+purplecircle = CircleAsset(50, thinline, purple)
+Sprite(purplecircle)
 
 myapp = App()
 myapp.run()
