@@ -30,7 +30,7 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
-from ggame import CircleAsset
+from ggame import CircleAsset, Color, Sprite, App
 import math
 
 black = Color(0x000000, 1.0)
