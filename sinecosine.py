@@ -37,14 +37,14 @@ black = Color(0x000000, 1.0)
 line = LineStyle(2, black)
 xcoordinates = range( 0, 360, 10)
 
-bluecircle = CircleAsset(40, line, blue)
-sprites = [Sprite(bluecircle, (x, 100+100*sin(radians(x))))for x in xcoordinates]
+bluecircle = CircleAsset(6, line, blue)
+sprites = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 
-redcircle = CircleAsset(40, line, red)
+redcircle = CircleAsset(6, line, red)
 sprites = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
 
-purplecircle = CircleAsset(40, line, purple)
-sprites = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x))))]
+purplecircle = CircleAsset(6, line, purple)
+sprites = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
