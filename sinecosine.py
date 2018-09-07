@@ -36,7 +36,7 @@ import math
 black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 
-yaxis = RectangleAsset(2, 500, thinline, black)
+yaxis = RectangleAsset(2, 250, thinline, black)
 Sprite((yaxis), (250,0))
 point = CircleAsset(1, thinline, black)
 Sprite((point), (100,100))
