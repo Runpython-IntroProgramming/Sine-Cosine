@@ -1,12 +1,9 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Jack Meehan
+Credit: https://www.webucator.com/blog/2015/03/python-color-constants-module/ (used for colors)
 
 Assignment:
-
-In this assignment you must use *list comprehensions* to generate sprites that show the behavior
-of certain mathematical functions: sine and cosine. 
 
 The sine and cosine functions are provided in the Python math library. These functions are used
 to relate *angles* to *rectangular* (x,y) coordinate systems and can be very useful in computer
@@ -30,3 +27,24 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+from ggame import App, Sprite, Color, CircleAsset, RectangleAsset, LineStyle
+from math import sin, cos, radians
+
+red = Color(0xff0000, 1.0)
+purple = Color(0x9A32CD, 1.0)
+blue = Color(0x0000EE, 1.0)
+black = Color(0x000000, 1.0)
+line = LineStyle(2, black)
+xcoordinates = range( 0, 360, 10)
+
+bluecircle = CircleAsset(40, line, blue)
+sprites = [Sprite(bluecircle, (x, 100+100*sin(radians(x))))for x in xcoordinates]
+
+redcircle = CircleAsset(40, line, red)
+sprites = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
+
+purplecircle = CircleAsset(40, line, purple)
+sprites = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x))))]
+
+myapp = App()
+myapp.run()
