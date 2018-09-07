@@ -3,7 +3,7 @@ sinecosine.py
 Author: Andrew Chen
 Credit:
 https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Programmed-Graphics
-
+https://github.com/HHS-IntroProgramming/Standards-and-Syllabus/wiki/Lists-and-sequences-using-Runpython-Console
 
 Assignment:
 
@@ -33,17 +33,31 @@ for detailed information on ggame.
 """
 from ggame import CircleAsset, App, Color, LineStyle, Sprite
 from math import sin, cos, radians
-
-red = Color(0xff0000, .5)
-green = Color(0x00ff00, .5)
 blue = Color(0x0000ff, .5)
+red = Color(0xff0000, .5)
 purple = Color(0xae00ff, .5)
 black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 
-purplecircle = CircleAsset(50, thinline, purple)
-Sprite(purplecircle)
+deg = 0
+deglist = []
+
+bluecircle = CircleAsset(10, thinline, blue)
+redcircle = CircleAsset(10, thinline, red)
+purplecircle = CircleAsset(10, thinline, purple)
+
+while deg <= 360:
+    deglist.append(deg)
+    deg += 10
+for x in deglist:
+    bluey = 100+100*sin(radians(x))
+    redy = 100+100*cos(radians(x))
+    purplex = 100+100*cos(radians(x))
+    purpley = 400+100*sin(radians(x))
+    Sprite(bluecircle, (x, bluey))
+    Sprite(redcircle, (x, redy))
+    Sprite(purplecircle, (purplex, purpley))
 
 myapp = App()
 myapp.run()
