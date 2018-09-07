@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Christopher Lee
-Credit: <list sources used, if any>
+Credit: Noah
 
 Assignment:
 
@@ -43,9 +43,11 @@ circleb = CircleAsset(5, line, blue)
 circler = CircleAsset(5, line, red)
 circlep = CircleAsset(5, line, purple)
 
-xcoordinates = range(1, 360)
+xcoordinates = list(range(1, 37))
 
-Sprite(circleb, (xcoordinates, 100+100*sin(radians(xcoordinates)))) 
+Sprite(circleb, (xcoordinates * 10, 100+100*sin(radians(xcoordinates * 10)))) 
+Sprite(circler, (xcoordinates * 10, 100+100*cos(radians(xcoordinates * 10))))
+Sprite(circlep, (100+100*cos(radians(xcoordinates*10)), 400+100*sin(radians(xcoordinates))))
 
 
 
