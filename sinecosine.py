@@ -30,13 +30,13 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
-from ggame import CircleAsset, Color, Sprite, App, LineStyle
+from ggame import CircleAsset, Color, Sprite, App, LineStyle, RectangleAsset
 import math
 
 black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 
-point = CircleAsset(5, thinline, black)
+point = CircleAsset(1, thinline, black)
 Sprite((point), (100,100))
 
 
