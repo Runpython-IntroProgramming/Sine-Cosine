@@ -34,7 +34,7 @@ from ggame import CircleAsset, Color, Sprite, App
 import math
 
 black = Color(0x000000, 1.0)
-point = CircleAsset(1, 5, black)
+point = CircleAsset(5, black)
 
 
 
