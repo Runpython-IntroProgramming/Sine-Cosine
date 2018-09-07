@@ -34,7 +34,9 @@ from ggame import CircleAsset, Color, Sprite, App
 import math
 
 black = Color(0x000000, 1.0)
-point = CircleAsset(5, black)
+thinline = LineStyle(1, black)
+
+point = CircleAsset(5, thinline, black)
 
 
 
