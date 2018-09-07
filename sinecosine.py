@@ -37,7 +37,7 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 
 point = CircleAsset(5, thinline, black)
-
+Sprite(point)(100,100)
 
 
 
