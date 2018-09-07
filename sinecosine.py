@@ -45,9 +45,10 @@ circlep = CircleAsset(5, line, purple)
 
 xcoordinates = list(range(1, 37))
 
-Sprite(circleb, (xcoordinates * 10, 100+100*sin(radians(xcoordinates * 10)))) 
-Sprite(circler, (xcoordinates * 10, 100+100*cos(radians(xcoordinates * 10))))
-Sprite(circlep, (100+100*cos(radians(xcoordinates*10)), 400+100*sin(radians(xcoordinates))))
+spriteblue = [Sprite(circleb, (x * 10, 100+100*sin(radians(x * 10)))) for x in xcoordinates]
+spritered = [Sprite(circler, (x * 10, 100+100*cos(radians(x * 10)))) for x in xcoordinates]
+spritepurple = [Sprite(circlep, (100+100*cos(radians(x * 10)), 400+100*sin(radians(x * 10)))) for x in xcoordinates]
+
 
 
 
