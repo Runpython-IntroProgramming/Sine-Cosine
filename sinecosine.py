@@ -39,7 +39,7 @@ thinline = LineStyle(1, black)
 yaxis = RectangleAsset(1, 250, thinline, black)
 Sprite((yaxis), (250,0))
 xaxis = yaxis = RectangleAsset(250, 1, thinline, black)
-Sprite((yaxis), (0,250))
+Sprite((xaxis), (0,250))
 point = CircleAsset(1, thinline, black)
 Sprite((point), (100,100))
 
