@@ -49,7 +49,7 @@ purplecircle = CircleAsset(25, thinline, purple)
  
 cool = [Sprite(bluecircles,(x,100+100*sin(radians(x)))) for x in xcoordinates]
 cool = [Sprite(redcircles,(x,100+100*cos(radians(x)))) for x in xcoordinates]
-cool = [Sprite(purplecircle,(100+100*cos(radians(x)),400+100*sin(radians(x)))) for x in x coordinates]
+cool = [Sprite(purplecircle,(100+100*cos(radians(x)),400+100*sin(radians(x)))) for x in xcoordinates]
 
 
 myapp = App()
