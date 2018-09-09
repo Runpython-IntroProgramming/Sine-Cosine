@@ -30,3 +30,30 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+from ggame import App, CircleAsset, RectangleAsset, Color, LineStyle, Sprite, PolygonAsset
+from math import sin, cos, radians
+
+xcoordinates = range (0, 360, 10)
+
+red = Color(0xff0000, 1.0)
+blue = Color(0x0000ff, 1.0)
+purple = Color(0xa301cd, 1.0)
+black = Color(0xffffff, 1.0)
+
+edge = LineStyle(1, black)
+
+bluecircle = CircleAsset(8, edge, blue)
+redcircle = CircleAsset(7, edge, red)
+purplecircle = CircleAsset(7, edge, purple)
+
+blues = [Sprite (bluecircle, (x, 100+500*sin(radians(x))))for x in xcoordinates]
+reds = [Sprite (redcircle, (x, 100+500*cos(radians(x))))for x in xcoordinates]
+
+myapp = App()
+myapp.run
+
+
+
+
+
+
