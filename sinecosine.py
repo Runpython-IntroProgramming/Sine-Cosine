@@ -33,7 +33,7 @@ for detailed information on ggame.
 from ggame import App, EllipseAsset, CircleAsset, RectangleAsset, Color, LineStyle, Sprite, PolygonAsset
 from math import sin, cos, radians
 
-xcoordinates = range (100, 1000, 10)
+xcoordinates = range (0, 360, 10)
 
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
@@ -46,8 +46,8 @@ bluecircle = CircleAsset(8, thinline, blue)
 redcircle = CircleAsset(7, thinline, red)
 purplecircle = CircleAsset(7, thinline, purple)
 
-blues = [Sprite (bluecircle, (x, 100+500*sin(radians(x))))for x in xcoordinates]
-reds = [Sprite (redcircle, (x, 100+500*cos(radians(x))))for x in xcoordinates]
+blues = [Sprite (bluecircle, (x*2.5, 100+500*sin(radians(x))))for x in xcoordinates]
+reds = [Sprite (redcircle, (x*2.5, 100+500*cos(radians(x))))for x in xcoordinates]
 
 myapp = App()
 myapp.run
