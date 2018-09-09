@@ -48,6 +48,8 @@ purplecircle = CircleAsset(7, edge, purple)
 
 blues = [Sprite (bluecircle, (x, 100+500*sin(radians(x))))for x in xcoordinates]
 reds = [Sprite (redcircle, (x, 100+500*cos(radians(x))))for x in xcoordinates]
+sprites = [Sprite(bluecircle, (x*2.5, x*0.5 + 140)) for x in xcoordinates]
+
 
 myapp = App()
 myapp.run
