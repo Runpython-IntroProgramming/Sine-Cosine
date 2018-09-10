@@ -40,10 +40,7 @@ yaxis = RectangleAsset(1, 250, thinline, black)
 Sprite((yaxis), (250,0))
 xaxis = yaxis = RectangleAsset(500, 1, thinline, black)
 Sprite((xaxis), (0,125))
-n = 36
-k = 0
 xlist = list(range(0, 360, 10))
-#pi = 4.0*sum([((-1.0)**k)/(2*k+1) for k in range(0,n)])
 y = 100+100*sin(radians(xlist))
 point = CircleAsset(1, thinline, black)
 Sprite((point), (x,y))
