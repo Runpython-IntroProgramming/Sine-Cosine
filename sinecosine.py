@@ -31,7 +31,7 @@ for detailed information on ggame.
 """
 
 from ggame import CircleAsset, Color, Sprite, App, LineStyle, RectangleAsset
-import math
+from math import sin, cos, radians
 
 black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
