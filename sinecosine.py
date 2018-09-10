@@ -42,9 +42,9 @@ Sprite((yaxis), (250,0))
 xaxis = yaxis = RectangleAsset(500, 1, thinline, black)
 Sprite((xaxis), (0,125))
 xlist = list(range(0, 360, 10))
-y = 100+100*sin(radians(xlist))
+y = 250+100*sin(radians(xlist))
 point = CircleAsset(1, thinline, black)
-Sprite((point), (x,y))
+Sprite((point), (x+250,y))
 
 
 
