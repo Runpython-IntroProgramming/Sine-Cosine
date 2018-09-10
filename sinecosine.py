@@ -38,7 +38,7 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 thinblue = LineStyle(1, blue)
 thinred = LineStyle(1, red)
-purple = 800080
+purple = Color(0x800080, 1.0)
 thinpurple = LineStyle(1, purple)
 
 xlist = range(0, 360, 10)
