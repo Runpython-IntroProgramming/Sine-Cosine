@@ -51,8 +51,6 @@ spritessin = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
 spritescos = [Sprite(pointred, (x, 100+100*cos(radians(x)))) for x in xlist]
 spritescircle = [Sprite(pointpurple, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xlist]
 
-#100+100*cos(radians(x))
-#400+100*sin(radians(x))
 app = App(500,500) 
 myapp = App()
 myapp.run()
