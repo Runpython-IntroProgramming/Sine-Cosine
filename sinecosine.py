@@ -46,9 +46,9 @@ redcircle = CircleAsset(5, line, red)
 purplecircle = CircleAsset(5, line, purple)
 xcoordinates = range(100, 600, 10)
 
-blue = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
-red = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
-purple = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
+bluecurve = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
+redcurve = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
+purplecircle = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
