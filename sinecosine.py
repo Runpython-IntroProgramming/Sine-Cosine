@@ -41,7 +41,7 @@ yaxis = RectangleAsset(1, 250, thinline, black)
 Sprite((yaxis), (250,0))
 xaxis = yaxis = RectangleAsset(500, 1, thinline, black)
 Sprite((xaxis), (0,125))
-xlist = list(range(0, 360, 10))
+xlist = range(0, 360, 10)
 x = 0
 x = [x+10 for x in xlist]
 y = 250+100*sin(radians(x))
