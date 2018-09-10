@@ -46,12 +46,12 @@ bluecircle = CircleAsset(7, thinline, blue)
 redcircle = CircleAsset(7, thinline, red)
 purplecircle = CircleAsset(7, thinline, purple)
 
-blues = [Sprite (bluecircle, (x*2.5, 100+100*sin(radians(x))))for x in xcoordinates]
-reds = [Sprite (redcircle, (x*2.5, 100+100*cos(radians(x))))for x in xcoordinates]
-purples = [Sprite (purplecircle(100+100*cos(randains(x)),400+100*sin(randians(x)))for x in xcoordinates] 
+blues = [Sprite (bluecircle, (x, 100+100*sin(radians(x))))for x in xcoordinates]
+reds = [Sprite (redcircle, (x, 100+100*cos(radians(x))))for x in xcoordinates]
+purples = [Sprite (purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x))))for x in xcoordinates] 
 
 myapp = App()
-myapp.run
+myapp.run()
 
 
 
