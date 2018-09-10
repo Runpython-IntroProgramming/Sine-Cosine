@@ -47,10 +47,9 @@ pointblue = CircleAsset(1, thinblue, blue)
 pointred = CircleAsset(1, thinred, red)
 pointpurple = CircleAsset(1, thinpurple, purple)
 spritessin = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
-#100+100*cos(radians(x))
 spritessin = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
 spritescos = [Sprite(pointred, (x, 100+100*cos(radians(x)))) for x in xlist]
-spritescircle = [Sprite(pointred, (x, 100+100*cos(radians(x)))) for x in xlist]
+spritescircle = [Sprite(pointpurple, (100+100*cos(radians(x)) for x in xlist, 400+100*sin(radians(x)))) for x in xlist]
 
 #100+100*cos(radians(x))
 #400+100*sin(radians(x))
