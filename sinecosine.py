@@ -33,3 +33,7 @@ from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, El
 from math import sin, cos, radians
 myapp = App()
 myapp.run()
+y-coord.b = 100+100*sin(radians(x)))
+y-coord.r = 100+100*cos(radians(x)))
+x-coord.p = 100+100*cos(radians(x)))
+y-coord.p = 400+100*sin(radians(x)))
