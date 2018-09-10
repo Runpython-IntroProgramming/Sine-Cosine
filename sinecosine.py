@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Eamon
-Credit: <list sources used, if any>
+Credit: github
 
 Assignment:
 
