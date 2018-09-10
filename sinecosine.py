@@ -37,3 +37,9 @@ y-coord.b = 100+100*sin(radians(x)))
 y-coord.r = 100+100*cos(radians(x)))
 x-coord.p = 100+100*cos(radians(x)))
 y-coord.p = 400+100*sin(radians(x)))
+x-coord.br = (range(0, 360, 10))
+#For later!
+
+blue = Color(0x0000ff, 1.0)
+red = Color(0xff0000, 1.0)
+purple = Color(0x800080, 1.0)
