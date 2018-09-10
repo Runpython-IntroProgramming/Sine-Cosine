@@ -45,7 +45,7 @@ xlist = range(0, 360, 10)
 #y = 250+100*sin(radians(x))
 point = CircleAsset(1, thinline, black)
 #Sprite((point), (x+250,y))
-sprites = [Sprite(point, (x, 100+100*sin(radians(x))))) for x in xlist]
+sprites = [Sprite(point, (x, 100+100*sin(radians(x)))) for x in xlist]
 
 
 app = App(500,500) 
