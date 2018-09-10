@@ -38,17 +38,22 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 thinblue = LineStyle(1, blue)
 thinred = LineStyle(1, red)
+purple = 800080
+thinpurple = LineStyle(1, purple)
 
 xlist = range(0, 360, 10)
 point = CircleAsset(1, thinline, black)
 pointblue = CircleAsset(1, thinblue, blue)
 pointred = CircleAsset(1, thinred, red)
+pointpurple = CircleAsset(1, thinpurple, purple)
 spritessin = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
 #100+100*cos(radians(x))
 spritessin = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
 spritescos = [Sprite(pointred, (x, 100+100*cos(radians(x)))) for x in xlist]
+spritescircle = [Sprite(pointred, (x, 100+100*cos(radians(x)))) for x in xlist]
 
-
+#100+100*cos(radians(x))
+#400+100*sin(radians(x))
 app = App(500,500) 
 myapp = App()
 myapp.run()
