@@ -32,16 +32,21 @@ for detailed information on ggame.
 
 from ggame import CircleAsset, Color, Sprite, App, LineStyle, RectangleAsset
 from math import sin, cos, radians
-
+red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 thinblue = LineStyle(1, blue)
+thinred = LineStyle(1, red)
 
 xlist = range(0, 360, 10)
 point = CircleAsset(1, thinline, black)
 pointblue = CircleAsset(1, thinblue, blue)
-sprites = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
+pointred = CircleAsset(1, thinred, red)
+spritessin = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
+#100+100*cos(radians(x))
+spritessin = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
+spritescos = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
 
 
 app = App(500,500) 
