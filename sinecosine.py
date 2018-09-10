@@ -44,4 +44,5 @@ thinline = LineStyle(1, black)
 sinblue = CircleAsset(5, thinline, blue)
 cosred = CircleAsset(5, thinline, red)
 circlepurple = CircleAsset(5, thinline, purple)
-s = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
+xcoordinates = range(0, 360, 10)
+s = [Sprite(sinblue, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
