@@ -39,7 +39,11 @@ x-coord.p = 100+100*cos(radians(x)))
 y-coord.p = 400+100*sin(radians(x)))
 x-coord.br = (range(0, 360, 10))
 #For later!
-
+thinlineb = LineStyle(1, blue)
+thinliner = LineStyle(1, red)
+thinlinep = LineStyle(1, purple)
+sine = (thinliner, y-coord.r, x-coord.br)
+cosine = (thinlineb, y-coord.b, x-coord.br)
 blue = Color(0x0000ff, 1.0)
 red = Color(0xff0000, 1.0)
 purple = Color(0x800080, 1.0)
