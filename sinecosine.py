@@ -39,10 +39,8 @@ thinline = LineStyle(1, black)
 thinblue = LineStyle(1, blue)
 
 xlist = range(0, 360, 10)
-#y = 250+100*sin(radians(x))
 point = CircleAsset(1, thinline, black)
 pointblue = CircleAsset(1, thinblue, blue)
-#Sprite((point), (x+250,y))
 sprites = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
 
 
