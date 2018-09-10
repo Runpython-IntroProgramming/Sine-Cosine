@@ -46,7 +46,7 @@ pointred = CircleAsset(1, thinred, red)
 spritessin = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
 #100+100*cos(radians(x))
 spritessin = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
-spritescos = [Sprite(pointblue, (x, 100+100*sin(radians(x)))) for x in xlist]
+spritescos = [Sprite(pointred, (x, 100+100*cos(radians(x)))) for x in xlist]
 
 
 app = App(500,500) 
