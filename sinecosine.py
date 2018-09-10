@@ -31,7 +31,7 @@ for detailed information on ggame.
 """
 from ggame import App, Color, LineStyle, Sprite, CircleAsset
 import math
-
+from math import sin, cos, radians
 # add your code here \/  \/  \/
 #from tutorial
 red = Color(0xff0000, 1.0)
@@ -39,5 +39,5 @@ purple = Color(0xff00ff, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
-line = LineStyle(1, black)
-
+thinline = LineStyle(1, black)
+s = sprites = [Sprite(mycircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
