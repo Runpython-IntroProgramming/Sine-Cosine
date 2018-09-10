@@ -46,3 +46,8 @@ cosred = CircleAsset(5, thinline, red)
 circlepurple = CircleAsset(5, thinline, purple)
 xcoordinates = range(0, 360, 10)
 s = [Sprite(sinblue, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
+c = [Sprite(cosred, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
+p = [Sprite(circlepurple, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
+
+myapp = App()
+myapp.run()
