@@ -36,12 +36,8 @@ from math import sin, cos, radians
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
-thinblue = Linestyle(1, blue)
+thinblue = LineStyle(1, blue)
 
-yaxis = RectangleAsset(1, 350, thinline, black)
-Sprite((yaxis), (250,0))
-xaxis = yaxis = RectangleAsset(500, 1, thinline, black)
-Sprite((xaxis), (0,125))
 xlist = range(0, 360, 10)
 #y = 250+100*sin(radians(x))
 point = CircleAsset(1, thinline, black)
