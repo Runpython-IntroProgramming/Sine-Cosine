@@ -37,7 +37,7 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 
-yaxis = RectangleAsset(1, 250, thinline, black)
+yaxis = RectangleAsset(1, 350, thinline, black)
 Sprite((yaxis), (250,0))
 xaxis = yaxis = RectangleAsset(500, 1, thinline, black)
 Sprite((xaxis), (0,125))
@@ -45,7 +45,7 @@ xlist = range(0, 360, 10)
 #y = 250+100*sin(radians(x))
 point = CircleAsset(1, thinline, black)
 #Sprite((point), (x+250,y))
-sprites = [Sprite(point, (x, 250+100*sin(radians(x)))) for x in xlist]
+sprites = [Sprite(point, (x, 100+100*sin(radians(x)))) for x in xlist]
 
 
 app = App(500,500) 
