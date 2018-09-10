@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Joe Richter
+Credit: Joe Richter
 
 Assignment:
 
@@ -40,11 +40,11 @@ ycoordr = 100+100*cos(radians(x))
 xcoordp = 100+100*cos(radians(x))
 ycoordp = 400+100*sin(radians(x))
 #For later!
+blue = Color(0x0000ff, 1.0)
+red = Color(0xff0000, 1.0)
+purple = Color(0x800080, 1.0)
 thinlineb = LineStyle(1, blue)
 thinliner = LineStyle(1, red)
 thinlinep = LineStyle(1, purple)
 sine = Sprite(thinliner, ycoordr)
 cosine = Sprite(thinlineb, ycoordb)
-blue = Color(0x0000ff, 1.0)
-red = Color(0xff0000, 1.0)
-purple = Color(0x800080, 1.0)
