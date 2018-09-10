@@ -31,6 +31,7 @@ for detailed information on ggame.
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 from math import sin, cos, radians
+from ggame import App
 myapp = App()
 myapp.run()
 y-coord.b = 100+100*sin(radians(x)))
