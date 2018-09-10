@@ -42,14 +42,11 @@ Sprite((yaxis), (250,0))
 xaxis = yaxis = RectangleAsset(500, 1, thinline, black)
 Sprite((xaxis), (0,125))
 xlist = range(0, 360, 10)
-x = 0
-x = [x+10 for x in xlist]
-y = 250+100*sin(radians(x))
+#y = 250+100*sin(radians(x))
 point = CircleAsset(1, thinline, black)
-Sprite((point), (x+250,y))
+#Sprite((point), (x+250,y))
+sprites = [Sprite(point, (x, 250+100*sin(radians(x)))) for x in xlist]
 
-#someodds = [x+1 for x in someevens]
-#(x, x*0.5 + 100)) for x in xcoordinates
 
 app = App(500,500) 
 myapp = App()
