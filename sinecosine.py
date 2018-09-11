@@ -31,7 +31,9 @@ for detailed information on ggame.
 """
 from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
-import math
+
+from math import sine
+from math import cosine
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -40,9 +42,10 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 points = CircleAsset(5, thinline, black)
+xcoordinates = range(1, 100, 10)
 
-singraph = [Sprite(points, (x, sinx)) for x in x coordinates]
-cosgraph = [Sprite(points, (x, cosx)) for x in x coordinates]
+singraph = [Sprite(points, (x, sinex)) for x in x coordinates]
+cosgraph = [Sprite(points, (x, cosinex)) for x in x coordinates]
 
 myapp = App()
 myapp.run()
