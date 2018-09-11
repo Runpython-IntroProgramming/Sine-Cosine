@@ -34,6 +34,7 @@ from ggame import CircleAsset
 
 from math import sin
 from math import cos
+from math import radians
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -42,10 +43,13 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 points = CircleAsset(5, thinline, black)
-xcoordinates = range(1, 100, 10)
+xcoordinates = range(1, 1000, 10)
 
-singraph = [Sprite(points, (x, sin(x))) for x in xcoordinates]
-cosgraph = [Sprite(points, (x, cos(x))) for x in xcoordinates]
+singraph = [Sprite(points, (x, 100*sin(radians(x))+100)) for x in xcoordinates]
+
+points = CircleAsset(5, thinline, blue)
+x2coordinates = range(1, 1000, 10)
+cosgraph = [Sprite(points, (x, 100*cos(radians(x))+100)) for x in x2coordinates]
 
 myapp = App()
 myapp.run()
