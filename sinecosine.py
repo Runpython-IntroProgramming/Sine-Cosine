@@ -41,8 +41,8 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 points = CircleAsset(5, thinline, black)
 
-singraph = [Sprite(points,(sin(x)) for x in x coordinates]
-cosgraph = [Sprite(points, (cos(x)) for x in x coordinates]
+singraph = [Sprite(points, (x, sinx)) for x in x coordinates]
+cosgraph = [Sprite(points, (x, cosx)) for x in x coordinates]
 
 myapp = App()
 myapp.run()
