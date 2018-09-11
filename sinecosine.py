@@ -38,15 +38,20 @@ purple=Color(0xff00ff, 1.0)
 black=Color(0x000000, 1.0)
 tline=LineStyle(1, black)
 
-bc=(CircleAsset(30, tline, blue))
-rc=(CircleAsset(30, tline, red))
-pc=(CircleAsset(30, tline, purple))
+bc=(CircleAsset(10, tline, blue))
+rc=(CircleAsset(10, tline, red))
+pc=(CircleAsset(10, tline, purple))
 
 x=0
-for i in range(0,37):
-    x=x+10
-    y=(100+100*sin(radians(x)))
-    print(bc,(x,y))
+for i in range(0,36):
+    x=int(x+10)
+    y=int(100+100*sin(radians(x)))
+    c=int(100+100*cos(radians(x)))
+    a=int(100+100*cos(radians(x)))
+    b=int(400+100*sin(radians(x)))
+    Sprite(bc,(x,y))
+    Sprite(rc,(x,c))
+    Sprite(pc,(a,b))
 
 myapp = App()
 myapp.run()
