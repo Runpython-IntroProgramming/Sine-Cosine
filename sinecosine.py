@@ -31,9 +31,11 @@ for detailed information on ggame.
 """
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
-
+import math 
+import sin
 # add your code here \/  \/  \/
-
+black = Color(0x000000, 1.0)
+blue = Color(0x0003ff, 1.0)
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(0, 360, 10)
