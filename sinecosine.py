@@ -29,21 +29,24 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
-#from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
-import math
+from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
+from math import sin,cos,radians
 
-#blue=(0x0000ff, 1.0)
-#red=(0xff0000, 1.0)
-#purple=(0xff00ff, 1.0)
-#black=(0x000000, 1.0)
-#tline=LineStyle(1, black)
+blue=Color(0x0000ff, 1.0)
+red=Color(0xff0000, 1.0)
+purple=Color(0xff00ff, 1.0)
+black=Color(0x000000, 1.0)
+tline=LineStyle(1, black)
 
-#bc=(CircleAsset(30, tline, blue))
-#rc=(CircleAsset(30, tline, red))
-#pc=(CircleAsset(30, tline, purple))
+bc=(CircleAsset(30, tline, blue))
+rc=(CircleAsset(30, tline, red))
+pc=(CircleAsset(30, tline, purple))
 
 x=0
 for i in range(0,37):
     x=x+10
     y=(100+100*sin(radians(x)))
-    print(y)
+    print(bc,(x,y))
+
+myapp = App()
+myapp.run()
