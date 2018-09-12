@@ -39,12 +39,19 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 bluecircle = CircleAsset(5, thinline, blue)
-redcircle = CircleAsset(5, thinline, blue)
-purplecircle = CircleAsset(5, thinline, blue)
+redcircle = CircleAsset(5, thinline, red)
+purplecircle = CircleAsset(5, thinline, purple)
 xcoordinates = range(0, 360, 10)
 
-a = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
+a = [Sprite(bluecircle, (x, (100+100*sin(radians(x))))) for x in xcoordinates]
+b = [Sprite(redcircle, (x, (100+100*cos(radians(x))))) for x in xcoordinates]
 
+px = [100+100*cos(radians(x)) for x in xcoordinates]
+py = [400+100*sin(radians(x)) for x in xcoordinates]
+
+coords = zip(px, py)
+
+c = [Sprite(purplecircle, coord) for coord in coords]
 
 myapp = App()
 myapp.run()
