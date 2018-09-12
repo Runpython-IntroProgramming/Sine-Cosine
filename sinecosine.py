@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Alice Frederick
-Credit: <list sources used, if any>
+Credit: Given tutorials
 
 Assignment: Plotting Sine and Cosine 
 
