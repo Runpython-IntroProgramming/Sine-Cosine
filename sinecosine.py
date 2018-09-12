@@ -36,17 +36,28 @@ from math import sin, cos, radians
 # colors
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
+purple = Color(0x800080, 1.0)
 black = Color(0x000000, 1.0)
 # thin black line
 thinline = LineStyle(1, black)
 
+#circles
+circle_blue = CircleAsset (10, thinline, blue)
+circle_red = CircleAsset (10, thinline, red)
+circle_purple = CircleAsset (10, thinline, purple)
 
-sin_circle = CircleAsset (10, thinline, blue)
-xcoordinates = [x//5 for x in range(0, 360, 10)]
-ycoordinates = (100+100*sin(radians(x)))
+x = range(0, 360, 10)
 
-# Generate a list of sprites that form a line!
-sprites = [Sprite(sin_circle, (ycoordinates), for x in xcoordinates]
+#sprites/equations for the circles to follow
+Sprite (circle_blue, ((anx),(100+100*sin(radians(anx)))))
+#Sprite (circle_red, ((x),(100+100*cos(radians(x)))))
+#Sprite (circle_purple, ((100+100*cos(radians(x))),(400+100*sin(radians(x)))))
+
+sprites = [Sprite (circle_blue, ((anx),(100+100*sin(radians(anx))))) for anx in x)]
+
+
+
+
 
 
 
