@@ -43,7 +43,7 @@ line = LineStyle(0.5,black)
 sincircle = CircleAsset(5, line, blue)
 coscircle = CircleAsset(5, line, red)
 circle = CircleAsset(5, line, purple)
-rads = range(0, 360, 10))
+rads = range(0, 360, 10)
 
 sines = [Sprite(sincircle, (x,100+100*sin(radians(x)))) for x in rads]
 cosines = [Sprite(coscircle, (x,100+100*cos(radians(x)))) for x in rads]
