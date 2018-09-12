@@ -49,7 +49,7 @@ blue = [Sprite(mycircle, (x, 100+100*math.sin(math.radians(x)))) for x in xcoord
 
 red = [Sprite(redcircle, (x, 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
 
-purple = [Sprite(purplecircle, (x, 100+100*math.cos(math.radians(x)) , 400+100*math.sin(math.radians(x))))]
+purple = [Sprite(purplecircle, (100+100*math.cos(math.radians(x)) , 400+100*math.sin(math.radians(x))))for x in xcoordinates]
 # add your code here /\  /\  /\
 
 
