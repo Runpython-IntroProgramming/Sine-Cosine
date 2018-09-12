@@ -44,8 +44,8 @@ mycircle2 = CircleAsset(5, line2, p)
 
 xcordinates=range(10,500,5)
 
-sprites = [Sprite(mycircle1, (x, sin(radians(x))*100)) for x in xcordinates]
-sprites = [Sprite(mycircle2, (x, cos(radians(x))*100)) for x in xcordinates]
+sprites = [Sprite(mycircle1, (x, sin(radians(x))*100+100)) for x in xcordinates]
+sprites = [Sprite(mycircle2, (x, cos(radians(x))*100+100)) for x in xcordinates]
 
 myapp = App()
 myapp.run()
