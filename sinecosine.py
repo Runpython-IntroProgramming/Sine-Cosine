@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Ella Edmonds
-Credit: None
+Credit: used https://www.rapidtables.com/web/color/purple-color.html for colors
 
 Assignment:
 
