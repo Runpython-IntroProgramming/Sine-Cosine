@@ -48,8 +48,8 @@ thinliner = LineStyle(1, red)
 thinlinep = LineStyle(1, purple)
 zippedr = list(zip(by10, ycoordr))
 zippedb = list(zip(by10, ycoordb))
-cosine = sprite(zippedr)
-sine = sprite(zippedb)
-
+cosine = Sprite(zippedr)
+sine = Sprite(zippedb)
+#^ [Sprite(circle, coord) for coord in zippedb] 
 myapp = App()
 myapp.run()
