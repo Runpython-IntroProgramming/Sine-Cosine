@@ -31,9 +31,9 @@ for detailed information on ggame.
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 from math import sin, cos, radians
+#from ggame import GFX
 from ggame import App
-myapp = App()
-myapp.run()
+#sprite = Sprite + GFX + __add__
 by10 = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310, 320, 330, 340, 350, 360]
 ycoordb = [100+100*sin(radians(x)) for x in by10]
 ycoordr = [100+100*cos(radians(x)) for x in by10]
@@ -48,5 +48,8 @@ thinliner = LineStyle(1, red)
 thinlinep = LineStyle(1, purple)
 zippedr = list(zip(by10, ycoordr))
 zippedb = list(zip(by10, ycoordb))
-cosine = Sprite(zippedr)
-sine = Sprite(zippedb)
+cosine = sprite(zippedr)
+sine = sprite(zippedb)
+
+myapp = App()
+myapp.run()
