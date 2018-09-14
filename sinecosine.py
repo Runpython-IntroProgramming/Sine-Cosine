@@ -46,16 +46,17 @@ circle_blue = CircleAsset (10, thinline, blue)
 circle_red = CircleAsset (10, thinline, red)
 circle_purple = CircleAsset (10, thinline, purple)
 
-x = range(0, 360, 10)
-
-#sprites/equations for the circles to follow
-Sprite (circle_blue, ((anx),(100+100*sin(radians(anx)))))
-#Sprite (circle_red, ((x),(100+100*cos(radians(x)))))
-#Sprite (circle_purple, ((100+100*cos(radians(x))),(400+100*sin(radians(x)))))
-
-sprites = [Sprite (circle_blue, ((anx),(100+100*sin(radians(anx))))) for anx in x)]
+#range definition
+x = range(0, 370, 10) 
 
 
+sprites = [Sprite (circle_blue, (anx,(100+100*sin(radians(anx))))) for anx in x]
+sprites = [Sprite (circle_red, (anx,(100+100*cos(radians(anx))))) for anx in x]
+sprites = [Sprite (circle_purple, (100+100*cos(radians(anx))),(400+100*sin(radians(anx)))) for anx in x]
+
+
+myapp = App()
+myapp.run()
 
 
 
