@@ -35,7 +35,7 @@ from math import sin
 from math import cos
 from math import radians
 
-myapp = App()
+
 red = Color(0xff0000, 1.0)
 purple = Color(0x8E388E, 1.0)
 blue = Color(0x0000ff, 1.0)
@@ -48,10 +48,11 @@ purplecircle = CircleAsset(5, thinline, purple)
 xcoordinates = range(0, 360, 10)
 
 # Generate a list of sprites that form a line!
+myapp = App()
 a = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 b = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
 
-c = [Sprite(purplecircle,((100*100*cos(radians(x))), 400+100*sin(radians(x)))) for x in xcoordinates]
+c = [Sprite(purplecircle,(100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
 
 
 
