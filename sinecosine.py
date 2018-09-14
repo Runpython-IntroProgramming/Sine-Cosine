@@ -51,7 +51,6 @@ xcoordinates = range(0, 360, 10)
 myapp = App()
 a = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 b = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
-
 c = [Sprite(purplecircle,(100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates]
 
 
