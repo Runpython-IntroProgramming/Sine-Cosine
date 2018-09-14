@@ -52,7 +52,7 @@ x = range(0, 370, 10)
 
 sprites = [Sprite (circle_blue, (anx,(100+100*sin(radians(anx))))) for anx in x]
 sprites = [Sprite (circle_red, (anx,(100+100*cos(radians(anx))))) for anx in x]
-sprites = [Sprite (circle_purple, (100+100*cos(radians(anx))),(400+100*sin(radians(anx)))) for anx in x]
+sprites = [Sprite (circle_purple, (100+100*cos(radians(anx)),400+100*sin(radians(anx)))) for anx in x]
 
 
 myapp = App()
