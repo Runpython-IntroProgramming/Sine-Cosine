@@ -31,6 +31,10 @@ for detailed information on ggame.
 """
 from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
+from math import sin
+from math import cos
+from math import radians
+
 
 red = Color(0xff0000, 1.0)
 purple = Color(0x8E388E, 1.0)
@@ -39,14 +43,15 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 bluecircle = CircleAsset(5, thinline, blue)
+redcircle = CircleAsset(5, thinline, red)
 xcoordinates = range(100, 360, 10)
 
 # Generate a list of sprites that form a line!
 a = [Sprite(bluecircle, (x, x*0.5 + 100)) for x in xcoordinates]
 b = [Sprite(redcircle, (x, x*0.5 + 100)) for x in xcoordinates]
 
-px = [100*100*cos(radians(x)), (x, x*0.5 + 100)) for x in xcoordinates]
-py = [400*100*sin(radians(x)), (x, x*0.5 + 100)) for x in xcoordinates]
+px = [100*100*cos(radians(x)), (x, x*0.5 + 100) for x in xcoordinates]
+py = [400*100*sin(radians(x)), (x, x*0.5 + 100) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
