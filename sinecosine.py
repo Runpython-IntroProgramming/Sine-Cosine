@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Olivia Simon
+Credit: none other than the x and y coordinate functions from github and the purple color code from an online source that listed color codes
 
 Assignment:
 
@@ -29,7 +29,6 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
-
 from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
 import math
@@ -47,9 +46,16 @@ purpleCircle = CircleAsset(5, thinline, purple)
 xcoordinates = range(0, 370, 10)
 
 # Generate a list of sprites that form a line!
-blues = [Sprite(blueCircle,(x, 100+100*sin(radians(x))) for x in xcoordinates]
-reds = [Sprite(redCircle,(x, 100+100*cos(radians(x))) for x in xcoordinates]
+blues = [Sprite(blueCircle,(x, 100+100*sin(radians(x)))) for x in xcoordinates]
+reds = [Sprite(redCircle,(x, 100+100*cos(radians(x)))) for x in xcoordinates]
 purples = [Sprite(purpleCircle, (100+100*cos(radians(x)), 400+100*sin(radians(x))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
+
+
+
+
+
+
+
