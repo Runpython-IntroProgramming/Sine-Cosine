@@ -33,23 +33,24 @@ from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, El
 from math import sin, cos, radians
 #from ggame import GFX
 from ggame import App
-#sprite = Sprite + GFX + __add__
+#sprite = Sprite + GFX
+blue = Color(0x0000ff, 1.0)
+red = Color(0xff0000, 1.0)
+purple = Color(0x800080, 1.0)
 by10 = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310, 320, 330, 340, 350, 360]
+thinliner = LineStyle(1, red)
+thinlineb = LineStyle(1, blue)
+circleb = CircleAsset(10, thinlineb, blue)
+circler = CircleAsset(10, thinliner,red)
 ycoordb = [100+100*sin(radians(x)) for x in by10]
 ycoordr = [100+100*cos(radians(x)) for x in by10]
 xcoordp = [100+100*cos(radians(x)) for x in by10]
 ycoordp = [400+100*sin(radians(x)) for x in by10]
 #For later!
-blue = Color(0x0000ff, 1.0)
-red = Color(0xff0000, 1.0)
-purple = Color(0x800080, 1.0)
-thinlineb = LineStyle(1, blue)
-thinliner = LineStyle(1, red)
-thinlinep = LineStyle(1, purple)
 zippedr = list(zip(by10, ycoordr))
 zippedb = list(zip(by10, ycoordb))
-cosine = Sprite(zippedr)
-sine = Sprite(zippedb)
+cosine = [Sprite(circler, ycoordr) for ycoordr in zippedr]
+sine = [Sprite(circleb, ycoordb) for ycoordb in zippedb]
 #^ [Sprite(circle, coord) for coord in zippedb] 
 myapp = App()
 myapp.run()
