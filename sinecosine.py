@@ -30,12 +30,13 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
-from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset,
-from math import sin, cos, radians, 
+from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
+from math import sin, cos, radians
 
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
 purple = Color(0x9A32CD, 1.0)
+
 
 
 
