@@ -47,10 +47,9 @@ purpleCircle = CircleAsset(5, thinline, purple)
 xcoordinates = range(0, 370, 10)
 
 # Generate a list of sprites that form a line!
-blues = [Sprite(blueCircle, (x, 100+100*sin(radians(x))) for x in xcoordinates]
-reds = [Sprite(redCircle, (x, 100+100*cos(radians(x))) for x in xcoordinates]
-purples = [Sprite(purpleCircle, (
-
+blues = [Sprite(blueCircle,(x, 100+100*sin(radians(x))) for x in xcoordinates]
+reds = [Sprite(redCircle,(x, 100+100*cos(radians(x))) for x in xcoordinates]
+purples = [Sprite(purpleCircle, (100+100*cos(radians(x)), 400+100*sin(radians(x))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
