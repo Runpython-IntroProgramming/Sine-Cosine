@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Claire Adner
-Credit: <list sources used, if any>
+Credit: Mr. Dennison 
 
 Assignment:
 
