@@ -33,4 +33,20 @@ for detailed information on ggame.
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 from math import sin
 from math import cos
-from math import radians 
+from math import radians
+
+red = Color(0xff0000, 1.0)
+green = Color(0x00ff00, 1.0)
+blue = Color(0x0000ff, 1.0)
+black = Color(0x000000, 1.0)
+grey = Color(0xCDC0B0, 1.0)
+firebrick1 = Color(0xFF3030, 1.0)
+purple = Color(0xBF3EFF, 1.0)
+gold = Color(0xFFD700, 1.0)
+fade1 = Color(0xff0000, 0.6)
+fade2 = Color(0xff0000, 0.4)
+fade3 = Color(0xff0000, 0.2)
+white = Color(0xF8F8FF, 1.0)
+violet = Color(0xd147c5, 1.0)
+
+thinline = LineStyle(1, black)
