@@ -44,14 +44,20 @@ purple = Color(0x800080, 1.0)
 purple2 = Color(0x9932CC, 1.0)
 
 thinline = LineStyle(1, black)
+
 points = CircleAsset(5, thinline, blue)
 xcoordinates = range(1, 1000, 10)
-
 singraph = [Sprite(points, (x, 100*sin(radians(x))+100)) for x in xcoordinates]
 
 points = CircleAsset(5, thinline, red)
 x2coordinates = range(1, 1000, 10)
 cosgraph = [Sprite(points, (x, 100*cos(radians(x))+100)) for x in x2coordinates]
+
+points = CircleAsset(5, thinline, purple)
+x3coordinates = range(1, 1000, 10)
+mycircle= [Sprite(points, (100*cos(radians(x))+100, 100*sin(radians(x))+400)) for x in x3coordinates]
+
+
 
 myapp = App()
 myapp.run()
