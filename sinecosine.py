@@ -30,17 +30,20 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
-
-thinline = LineStyle(1, black)
-
-
+from math import sin
+from math import cos
+from math import radians
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
+thinline = LineStyle
 
+circle = CircleAsset (20, thinline, red)
+
+Sprite(circle, (0,100+100*sin(radians(x)))))
 
 
 myapp = App()
