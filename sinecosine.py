@@ -49,7 +49,7 @@ xcordinates=range(0,360,10)
 
 sprites = [Sprite(mycircle1, (x, sin(radians(x))*100+100)) for x in xcordinates]
 sprites = [Sprite(mycircle2, (x, cos(radians(x))*100+100)) for x in xcordinates]
-sprites = [Sprite(mycircle3, (cos(radians(x))*100+100, sin(radians(x))*100+100)) for x in xcordinates]
+sprites = [Sprite(mycircle3, (cos(radians(x))*100+100, sin(radians(x))*100+400)) for x in xcordinates]
 
 
 myapp = App()
