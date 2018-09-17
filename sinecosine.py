@@ -32,20 +32,25 @@ for detailed information on ggame.
 from ggame import App, Color, LineStyle, Sprite, CircleAsset
 from math import sin, cos, radians
 
-l = Color(0xE6E6FA, 1.0)
+b = Color(0xFF0000, 1.0)
+r = Color(0x00FF00, 1.0)
 p = Color(0x8A2BE2, 1.0)
 
 
-line1=LineStyle(1,l)
-line2=LineStyle(1,p)
+line1=LineStyle(1,b)
+line2=LineStyle(1,r)
+line3=LineStyle(1,p)
 
-mycircle1 = CircleAsset(5, line1, l)
-mycircle2 = CircleAsset(5, line2, p)
+mycircle1 = CircleAsset(5, line1, b)
+mycircle2 = CircleAsset(5, line2, r)
+mycircle3 = CircleAsset(5, line3, p)
 
-xcordinates=range(10,500,5)
+xcordinates=range(0,360,10)
 
 sprites = [Sprite(mycircle1, (x, sin(radians(x))*100+100)) for x in xcordinates]
 sprites = [Sprite(mycircle2, (x, cos(radians(x))*100+100)) for x in xcordinates]
+sprites = [Sprite(mycircle3, (cos(radians(x))*100+100, sin(radians(x))*100+100)) for x in xcordinates]
+
 
 myapp = App()
 myapp.run()
