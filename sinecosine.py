@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Ella Edmonds
+Credit: used https://www.rapidtables.com/web/color/purple-color.html for colors
 
 Assignment:
 
@@ -29,4 +29,28 @@ for general information on using list comprehensions to generate graphics.
 http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
+from ggame import App, Color, LineStyle, Sprite, CircleAsset
+from math import sin, cos, radians
 
+b = Color(0xFF0000, 1.0)
+r = Color(0x00FF00, 1.0)
+p = Color(0x8A2BE2, 1.0)
+
+
+line1=LineStyle(1,b)
+line2=LineStyle(1,r)
+line3=LineStyle(1,p)
+
+mycircle1 = CircleAsset(5, line1, b)
+mycircle2 = CircleAsset(5, line2, r)
+mycircle3 = CircleAsset(5, line3, p)
+
+xcordinates=range(0,360,10)
+
+sprites = [Sprite(mycircle1, (x, sin(radians(x))*100+100)) for x in xcordinates]
+sprites = [Sprite(mycircle2, (x, cos(radians(x))*100+100)) for x in xcordinates]
+sprites = [Sprite(mycircle3, (cos(radians(x))*100+100, sin(radians(x))*100+400)) for x in xcordinates]
+
+
+myapp = App()
+myapp.run()
