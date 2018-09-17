@@ -1,7 +1,7 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Jackson Lake
+Credit: Github
 
 Assignment:
 
@@ -50,3 +50,19 @@ white = Color(0xF8F8FF, 1.0)
 violet = Color(0xd147c5, 1.0)
 
 thinline = LineStyle(1, black)
+
+circlesb = CircleAsset(4, thinline, blue)
+xcoordinates = range(0, 360, 10)
+sprites = [Sprite(circlesb, (x, 100 + 100 * sin(radians(x)))) for x in xcoordinates]
+
+circlesr = CircleAsset(4, thinline, firebrick1)
+xcoordinates = range(0, 360, 10)
+sprites = [Sprite(circlesr, (x, 100 + 100*cos(radians(x)))) for x in xcoordinates]
+
+circlesp = CircleAsset(4, thinline, violet)
+sprites = [Sprite(circlesp, (100+100*sin(radians(x)), 400+100*cos(radians(x)))) for x in xcoordinates]
+
+myapp = App()
+myapp.run()
+
+
