@@ -39,11 +39,13 @@ green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
-thinline = LineStyle
+thinline = LineStyle(1, black)
 
 circle = CircleAsset (20, thinline, red)
 
-Sprite(circle, (0,100+100*sin(radians(x)))))
+xvalue = list(range(0, 360, 10))
+
+Sprite(circle, (xvalue,100+100*sin(radians(xvalue)))))
 
 
 myapp = App()
