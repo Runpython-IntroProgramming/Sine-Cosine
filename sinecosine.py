@@ -44,9 +44,9 @@ thinline = LineStyle(1, black)
 
 xvalue = range(0, 360, 10)
 
-bluecircle = CircleAsset (35, thinline, blue)
-redcircle = CircleAsset (35, thinline, red)
-purplecircle = CircleAsset (35, thinline, purple)
+bluecircle = CircleAsset (15, thinline, blue)
+redcircle = CircleAsset (15, thinline, red)
+purplecircle = CircleAsset (15, thinline, purple)
 sprites = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xvalue]
 sprites = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xvalue]
 sprites = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xvalue]
