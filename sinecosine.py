@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Nathan Subrahmanian
-Credit: 
+Credit: N/A
 
 Assignment:
 
