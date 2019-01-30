@@ -40,15 +40,15 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
-yee = range(0, 360, 10)
-ybluecoordinates = (100+100*sin(radians(yee)))
-yredcoordinates = (100+100*cos(radians(yee)))
-ypurplecoordinates = 400+100*sin(radians(yee))
-xpurplecoordinates = 100+100*cos(radians(yee))
+xval = range(0, 360, 10)
+ybluecoordinates = 100+100*sin(radians(xval))
+yredcoordinates = 100+100*cos(radians(xval)
+ypurplecoordinates = 400+100*sin(radians(xval))
+xpurplecoordinates = 100+100*cos(radians(xval))
 
-bluee = [Sprite(mycircle, (x, ybluecoordinates)) for x in yee]
-reed = [Sprite(mycircle, (x, x*0.5 + 100)) for x in yee]
-puurple = [Sprite(mycircle, (x, x*0.5 + 100)) for x in yee]
+bluee = Sprite(mycircle, (xval, ybluecoordinates)) 
+reed = Sprite(mycircle, (xval, yredcoordinates)) 
+puurple = Sprite(mycircle, (xpurplecoordinates, ypurplecoordinates))
 
 myapp = App()
 myapp.run()
