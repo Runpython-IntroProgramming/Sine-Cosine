@@ -46,12 +46,14 @@ ybluecoordinates = [(100 + 100*sin(radians(x))) for x in range(0, 360, 10)]
 #ybluecoordinates = 100+100*sin(radians(xval))
 yredcoordinates = [(100+100*cos(radians(x))) for x in range(0, 360, 10)]
 #yredcoordinates = 100+100*cos(radians(xval))
-ypurplecoordinates = 400+100*sin(radians(xval))
-xpurplecoordinates = 100+100*cos(radians(xval))
+ypurplecoordinates = [(400+100*sin(radians(x))) for x in range(0, 360, 10)]
+#ypurplecoordinates = 400+100*sin(radians(xval))
+xpurplecoordinates = [(100+100*cos(radians(x))) for x in range(0, 360, 10)]
+#xpurplecoordinates = 100+100*cos(radians(xval))
 
-bluee = [Sprite(mycircle, (x, ybluecoordinates)) for x in xval] 
-reed = [Sprite(mycircle, (x, yredcoordinates)) for x in xval]
-puurple = Sprite(mycircle, (xpurplecoordinates, ypurplecoordinates))
+bluee = [Sprite(mycircle, (x, (100 + 100*sin(radians(x))))) for x in range(0, 360, 10) ] 
+reed = [Sprite(mycircle, (x, (100+100*cos(radians(x)))))  for x in range(0, 360, 10)] 
+puurple = [Sprite(mycircle, ((100+100*cos(radians(x))), (400+100*sin(radians(x))))) for x in range(0, 360, 10)]
 
 myapp = App()
 myapp.run()
