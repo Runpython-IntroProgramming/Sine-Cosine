@@ -42,7 +42,7 @@ thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xval = range(0, 360, 10)
 ybluecoordinates = 100+100*sin(radians(xval))
-yredcoordinates = 100+100*cos(radians(xval)
+yredcoordinates = 100+100*cos(radians(xval))
 ypurplecoordinates = 400+100*sin(radians(xval))
 xpurplecoordinates = 100+100*cos(radians(xval))
 
