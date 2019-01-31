@@ -52,9 +52,9 @@ ypurplecoordinates = [(400+100*sin(radians(x))) for x in range(0, 360, 10)]
 xpurplecoordinates = [(100+100*cos(radians(x))) for x in range(0, 360, 10)]
 #xpurplecoordinates = 100+100*cos(radians(xval))
 
-bluee = [Sprite(mycircle, (x, (100 + 100*sin(radians(x))))) for x in range(0, 360, 10) ] 
-reed = [Sprite(mycircle, (x, (100+100*cos(radians(x)))))  for x in range(0, 360, 10)] 
-puurple = [Sprite(mycircle, ((100+100*cos(radians(x))), (400+100*sin(radians(x))))) for x in range(0, 360, 10)]
+bluee = [Sprite(bluecircle, (x, (100 + 100*sin(radians(x))))) for x in range(0, 360, 10) ] 
+reed = [Sprite(redcircle, (x, (100+100*cos(radians(x)))))  for x in range(0, 360, 10)] 
+puurple = [Sprite(purplecircle, ((100+100*cos(radians(x))), (400+100*sin(radians(x))))) for x in range(0, 360, 10)]
 
 myapp = App()
 myapp.run()
