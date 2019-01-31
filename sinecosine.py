@@ -41,13 +41,16 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
 xval = range(0, 360, 10)
-ybluecoordinates = 100+100*sin(radians(xval))
-yredcoordinates = 100+100*cos(radians(xval))
+
+ybluecoordinates = [(100 + 100*sin(radians(x))) for x in range(0, 360, 10)]
+#ybluecoordinates = 100+100*sin(radians(xval))
+yredcoordinates = [(100+100*cos(radians(x))) for x in range(0, 360, 10)]
+#yredcoordinates = 100+100*cos(radians(xval))
 ypurplecoordinates = 400+100*sin(radians(xval))
 xpurplecoordinates = 100+100*cos(radians(xval))
 
-bluee = Sprite(mycircle, (xval, ybluecoordinates)) 
-reed = Sprite(mycircle, (xval, yredcoordinates)) 
+bluee = [Sprite(mycircle, (x, ybluecoordinates)) for x in xval] 
+reed = [Sprite(mycircle, (x, yredcoordinates)) for x in xval]
 puurple = Sprite(mycircle, (xpurplecoordinates, ypurplecoordinates))
 
 myapp = App()
