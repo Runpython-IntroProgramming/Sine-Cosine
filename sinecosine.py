@@ -39,7 +39,7 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
-blurcircle = CircleAsset(5, thinline, blue)
+bluecircle = CircleAsset(5, thinline, blue)
 purplecircle = CircleAsset(5, thinline, purple)
 redcircle = CircleAsset(5, thinline, red)
 xval = range(0, 360, 10)
