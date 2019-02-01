@@ -30,3 +30,8 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+import math
+import ggame
+
+myapp = App()
+myapp.run()
