@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Andrew
-Credit: Matt
+Credit: trinket.io, Mr. Dennison
 
 Assignment:
 
