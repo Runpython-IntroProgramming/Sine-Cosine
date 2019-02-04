@@ -49,11 +49,11 @@ sine = CircleAsset(5, thinline, red)
 tangent = CircleAsset(5, thinline, purple)
 xcoordinates = range(100, 600, 10)
 
-[Sprite(cosine, (x, cos(x))) for x in xcoordinates]
+[Sprite(cosine, (x, 100+100*sin(radians(x)))) for x in xcoordinates]
 
-[Sprite(sine, (x, sin(x))) for x in xcoordinates]
+[Sprite(sine, (x, 100+100*cos(radians(x)))) for x in xcoordinates]
 
-[Sprite(tangent, (sin(x), cos(x))) for x in xcoordinates]
+[Sprite(tangent, (100+100*sin(radians(x)), 100+100*cos(radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
