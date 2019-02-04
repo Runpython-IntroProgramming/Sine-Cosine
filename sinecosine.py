@@ -42,14 +42,6 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 purple = Color(0x800080, 1.0)
 
-list(range(0, 360, 10))
-[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 
-150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 
-280, 290, 300, 310, 320, 330, 340, 350]
-
-for x in range(0, 360, 10)]:
-    y = cos(x)
-    z = sin(x)
 
 thinline = LineStyle(1, black)
 cosine = CircleAsset(5, thinline, blue)
@@ -57,11 +49,11 @@ sine = CircleAsset(5, thinline, red)
 tangent = CircleAsset(5, thinline, purple)
 xcoordinates = range(100, 600, 10)
 
-Sprite(cosine, (x, y) for x in xcoordinates
+[Sprite(cosine, (x, cos(x))) for x in xcoordinates]
 
-Sprite(sine, (x, z) for x in xcoordinates
+[Sprite(sine, (x, sin(x))) for x in xcoordinates]
 
-Sprite(tangent, (y, z) for x in xcoordinates
+[Sprite(tangent, (sin(x), cos(x))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
