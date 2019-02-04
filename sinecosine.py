@@ -47,10 +47,9 @@ list(range(0, 360, 10))
 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 
 280, 290, 300, 310, 320, 330, 340, 350]
 
-for x in range(0, 360, 10)]
-y = cos(x)
-z = sin(x)
-
+for x in range(0, 360, 10)]:
+    y = cos(x)
+    z = sin(x)
 
 thinline = LineStyle(1, black)
 cosine = CircleAsset(5, thinline, blue)
