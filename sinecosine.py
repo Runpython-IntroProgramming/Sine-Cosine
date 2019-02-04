@@ -47,21 +47,22 @@ list(range(0, 360, 10))
 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 
 280, 290, 300, 310, 320, 330, 340, 350]
 
-[cos(x) for x in range(0, 360, 10)]
-[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 
-34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 
-66, 68, 70]
-
+for x in range(0, 360, 10)]
+y = cos(x)
+z = sin(x)
 
 
 thinline = LineStyle(1, black)
 cosine = CircleAsset(5, thinline, blue)
 sine = CircleAsset(5, thinline, red)
-soc = CircleAsset(5, thinline, purple)
+tangent = CircleAsset(5, thinline, purple)
 xcoordinates = range(100, 600, 10)
 
+Sprite(cosine, (x, y) for x in xcoordinates
 
+Sprite(sine, (x, z) for x in xcoordinates
 
+Sprite(tangent, (y, z) for x in xcoordinates
 
 myapp = App()
 myapp.run()
