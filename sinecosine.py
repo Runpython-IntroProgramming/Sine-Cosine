@@ -33,11 +33,12 @@ from ggame import App, Color, LineStyle, Sprite, CircleAsset
 from math import sin, cos, radians
 app=App()
 app.run()
-xcoords= [x for x in range(0, 360, 10)]
+xcoords = [x for x in range(0, 360, 10)]
 x=list(range(0, 360, 10))
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
-purple = Color(
+print('Its Purple If I Say it is!')
+purple = Color(0x000000, 1.0)
 #Blue Circles
 x = list(range(0, 360, 10))
 #y = 100+100**sin(radians(x))
@@ -45,8 +46,10 @@ myline = LineStyle(1, blue)
 Mycircle = CircleAsset(5, myline, blue)
 sprites = [Sprite(Mycircle, (x, 100+100*sin(radians(x)))) for x in xcoords]
 #Red Circles 
-MEINline = LineStyle(1, red)
-MEINcircle = CircleAsset(1, MEINline, red)
-sprites = [Sprite(Mycircle, (x, 100+100*cos(radians(x)))) for x in xcoords]
-#Purple Circles
-myline2 = LineStyle(1, 
+Myline2 = LineStyle(1, red)
+Mycircle2 = CircleAsset(5, Myline2, red)
+sprites = [Sprite(Mycircle2, (x, 100+100*cos(radians(x)))) for x in xcoords]
+#PurpleCircles
+Myline3 = LineStyle(1, purple)
+Mycircle3 = CircleAsset(5, Myline3, purple)
+sprites = [Sprite(Mycircle3, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoords]
