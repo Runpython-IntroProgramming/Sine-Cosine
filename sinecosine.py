@@ -44,9 +44,8 @@ redcircle = CircleAsset(5, thinline, red)
 bluecircle = CircleAsset(5, thinline, blue)
 purplecircle = CircleAsset(5, thinline, purple)
 
-xcoordinates1= range(100, 360, 10)
+xcoordinates1= range(0, 360, 10)
 
-# Generate a list of sprites that form a line!
 redcircle1 = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in xcoordinates1] 
 bluecircle1 = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in xcoordinates1]
 purplecircle1 = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in xcoordinates1]
