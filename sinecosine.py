@@ -1,7 +1,7 @@
 """
 sinecosine.py
 Author: Rain
-Credit: https://www.w3schools.com/colors/colors_picker.asp, 
+Credit: https://www.w3schools.com/colors/colors_picker.asp, tutorials
 
 Assignment:
 
