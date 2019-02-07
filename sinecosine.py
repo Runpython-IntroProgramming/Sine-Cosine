@@ -52,3 +52,6 @@ spritesblue = [Sprite(mycircleblue, (x,100+100*sin(radians(x)))) for x in xcoord
 spritesred = [Sprite(mycirclered, (x,100+100*cos(radians(x)))) for x in xcoordinates]
 
 spritespurple = [Sprite(mycirclepurple, (100+100*cos(radians(x)), 400+100*sin(radians(x))))  for x in xcoordinates]
+
+myapp = App()
+myapp.run()
