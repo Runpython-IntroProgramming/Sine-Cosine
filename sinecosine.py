@@ -52,7 +52,7 @@ purplecircle = CircleAsset(5, purpleline, purple)
 x_coordinates = range(0,360,10)
 blue_sine = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in x_coordinates]
 red_cosine = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in x_coordinates]
-purple_circle = [Sprite(bluecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in x_coordinates]
+purple_circle = [Sprite(purplecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in x_coordinates]
 
 # Execute program
 myapp = App()
