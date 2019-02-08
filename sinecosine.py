@@ -50,12 +50,6 @@ redcircle = CircleAsset(5, redline, red)
 purplecircle = CircleAsset(5, purpleline, purple)
 
 x_coordinates = range(0,360,10)
-y_blue = [100+100*sin(radians(x)) for x in x_blue]
-y_red = [100+100*cos(radians(x))) for x in x_red]
-x_purple = [100+100*cos(radians(x)) for x in x_red]
-y_purple = [400+100*sin(radians(x)) for x in x_red]
-
-
 blue_sine = [Sprite(bluecircle, (x, 100+100*sin(radians(x)))) for x in x_coordinates]
 red_cosine = [Sprite(redcircle, (x, 100+100*cos(radians(x)))) for x in x_coordinates]
 purple_circle = [Sprite(bluecircle, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in x_coordinates]
