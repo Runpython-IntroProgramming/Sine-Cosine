@@ -30,3 +30,31 @@ http://brythonserver.github.io/ggame/
 for detailed information on ggame.
 """
 
+from ggame import App, Color, LineStyle, Sprite
+from ggame import CircleAsset
+from math import sin
+from math import cos
+from math import radians
+
+black = Color(0x000000, 1.0)
+red = Color(0xff0000, 1.0)
+blue = Color(0x0000ff, 1.0)
+purple = Color(0xa020f0, 1.0)
+thinline = LineStyle(1.0, black)
+
+red = CircleAsset(10, thinline, red)
+blue = CircleAsset(10, thinline, blue)
+purple = CircleAsset(10, thinline, purple)
+
+a = [100+100*sin(radians*x for x in range(0,370,10))]
+b = [100+100*cos(radians*x for x in range(0,370,10))]
+c = [100+100*cos(radians*x for x in range(0,370,10))]
+d = [100+400*sin(radians*x for x in range(0,370,10))]
+
+Sprite(blue, (a, 0))
+Sprite(red, (0, b))
+Sprite(purple, (c, d))
+
+myapp = App()
+myapp.run()
+
