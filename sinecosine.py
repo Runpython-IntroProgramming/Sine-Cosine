@@ -49,20 +49,6 @@ circle = CircleAsset(10, thinline, red)
 circle2 = CircleAsset(10, thinline, blue)
 circle3 = CircleAsset(10, thinline, purple)
 
-joe = [100+100*sin(radians(x)) for x in range(0,370,10)]
-
-a = [100+100*sin(radians(x)) for x in range(0,370,10)]
-b = [100+100*cos(radians(x)) for x in range(0,370,10)]
-c = [100+100*cos(radians(x)) for x in range(0,370,10)]
-d = [100+400*sin(radians(x)) for x in range(0,370,10)]
-
-sprites = [Sprite(circle, (a, s)) for s in range(0,370,10)]
-sprites = [Sprite(circle2, (range(0,370,10), b))]
-sprites = [Sprite(circle3, (c, d))]
-
-Sprite(circle, (a, range(0,370,10)))
-Sprite(circle2, (range(0,370,10), b))
-Sprite(circle3, (c, d))
-
-
-
+[Sprite(circle, (x, 100+100*cos(radians(x)))) for x in range(0,370,10)]
+[Sprite(circle2, (100+100*sin(radians(x)), x)) for x in range(0, 370, 10)]
+[Sprite(circle3, (100+100*cos(radians(x)), 400+100*sin(radians(x)))) for x in range(0, 370,10)]
