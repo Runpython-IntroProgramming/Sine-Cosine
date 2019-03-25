@@ -1,9 +1,9 @@
 """
 sinecosine.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: CuPyrtch
+Credit: None
 
-Assignment:
+Assignment: Sine-Cosine
 
 In this assignment you must use *list comprehensions* to generate sprites that show the behavior
 of certain mathematical functions: sine and cosine. 
