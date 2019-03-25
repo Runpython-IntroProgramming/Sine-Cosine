@@ -36,25 +36,33 @@ from math import sin
 from math import cos
 from math import radians
 
+myapp = App()
+myapp.run()
+
 black = Color(0x000000, 1.0)
 red = Color(0xff0000, 1.0)
 blue = Color(0x0000ff, 1.0)
 purple = Color(0xa020f0, 1.0)
 thinline = LineStyle(1.0, black)
 
-red = CircleAsset(10, thinline, red)
-blue = CircleAsset(10, thinline, blue)
-purple = CircleAsset(10, thinline, purple)
+circle = CircleAsset(10, thinline, red)
+circle2 = CircleAsset(10, thinline, blue)
+circle3 = CircleAsset(10, thinline, purple)
 
-a = [100+100*sin(radians*x for x in range(0,370,10))]
-b = [100+100*cos(radians*x for x in range(0,370,10))]
-c = [100+100*cos(radians*x for x in range(0,370,10))]
-d = [100+400*sin(radians*x for x in range(0,370,10))]
+joe = [100+100*sin(radians(x)) for x in range(0,370,10)]
 
-Sprite(blue, (a, 0))
-Sprite(red, (0, b))
-Sprite(purple, (c, d))
+a = [100+100*sin(radians(x)) for x in range(0,370,10)]
+b = [100+100*cos(radians(x)) for x in range(0,370,10)]
+c = [100+100*cos(radians(x)) for x in range(0,370,10)]
+d = [100+400*sin(radians(x)) for x in range(0,370,10)]
 
-myapp = App()
-myapp.run()
+sprites = [Sprite(circle, (a, s)) for s in range(0,370,10)]
+sprites = [Sprite(circle2, (range(0,370,10), b))]
+sprites = [Sprite(circle3, (c, d))]
+
+Sprite(circle, (a, range(0,370,10)))
+Sprite(circle2, (range(0,370,10), b))
+Sprite(circle3, (c, d))
+
+
 
